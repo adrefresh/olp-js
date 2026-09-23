@@ -445,7 +445,7 @@
   .hl-num{ font-size:2rem; }
   .hl-arrow{ display:none; }
 }
-.nav-drop{position:relative}.nav-drop>a{display:flex;align-items:center;gap:.3em}.drop-menu{position:absolute;top:100%;left:0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:.5rem;opacity:0;visibility:hidden;transform:translateY(8px);transition:.22s var(--ease);box-shadow:0 20px 40px rgba(11,12,16,.15);min-width:210px}.nav-drop:hover .drop-menu,.nav-drop:focus-within .drop-menu{opacity:1;visibility:visible;transform:translateY(4px)}.drop-menu a{display:block;padding:.7rem .9rem;border-radius:10px;font-size:.83rem;font-weight:700}.drop-menu a:hover{background:#e8f6fc;color:#087daf}.home-nav-drop{position:relative}.home-nav-drop .drop-menu{top:120%}
+.nav-drop{position:relative}.nav-drop>a{display:flex;align-items:center;gap:.3em}.drop-menu{position:absolute;top:100%;left:0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:.5rem;opacity:0;visibility:hidden;transform:translateY(8px);transition:.22s var(--ease);box-shadow:0 20px 40px rgba(11,12,16,.15);min-width:210px}.nav-drop:hover .drop-menu,.nav-drop:focus-within .drop-menu{opacity:1;visibility:visible;transform:translateY(4px)}.drop-menu a{display:block;padding:.7rem .9rem;border-radius:10px;font-size:.83rem;font-weight:700;color:#0b0c10!important}.drop-menu a:hover{background:#e8f6fc;color:#087daf}.home-nav-drop{position:relative}.home-nav-drop .drop-menu{top:120%}
 .gm-track{display:flex;width:max-content;gap:3rem;animation:gm-scroll 20s linear infinite;font-size:clamp(2rem,6vw,4.5rem);font-family:'Museo',sans-serif;font-weight:800;color:rgba(255,255,255,.08);-webkit-text-stroke:1px rgba(255,255,255,.35);white-space:nowrap}
 @keyframes gm-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .gm-wrap{overflow:hidden;padding:1.5rem 0;border-top:1px solid rgba(255,255,255,.1);border-bottom:1px solid rgba(255,255,255,.1)}
@@ -461,6 +461,6 @@
 .bento>div:hover{transform:translateY(-8px) scale(1.02)}
 .bento .big{grid-column:span 2;grid-row:span 2;display:flex;flex-direction:column;justify-content:center}
 @media(max-width:800px){.bento{grid-template-columns:1fr 1fr}.bento .big{grid-column:span 2;grid-row:span 1}}
-.flip-cycle{position:relative;height:3.6em;overflow:hidden}
+.flip-cycle{position:relative;min-height:6.6rem;overflow:visible}
 .flip-line{position:absolute;inset:0;opacity:0;transform:translateY(100%);transition:transform .6s var(--ease),opacity .6s var(--ease)}
 .flip-line.show{opacity:1;transform:translateY(0)}

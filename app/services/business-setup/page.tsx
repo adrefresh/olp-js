@@ -19,7 +19,7 @@ export default function BusinessSetupPage() {
       <main>
         <section className="hero" style={{ background: "linear-gradient(135deg,#0b0c10 0%,#2c2f36 55%,#18a7e0 100%)" }}>
           <div className="wrap hero-copy reveal">
-            {/* <span className="eyebrow">Business Setup</span> */}
+            <span className="eyebrow">Business Setup</span>
             <h1>Establish your business with <em>confidence.</em></h1>
             <p>Get the support you need to establish and operationalise your business in India — from initial setup to ongoing business support.</p>
             <div className="hero-actions">
