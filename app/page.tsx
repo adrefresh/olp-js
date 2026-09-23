@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./page.css";
 import ScriptRunner from "../comps/shared/ScriptRunner";
 import CursorFx from "../comps/homepage-comps/CursorFx";
-import SiteHeader from "../comps/homepage-comps/SiteHeader";
+import SharedHeader from "../comps/shared/SharedHeader";
 import Hero from "../comps/homepage-comps/Hero";
 import CoreMessage from "../comps/homepage-comps/CoreMessage";
 import WhatWeDo from "../comps/homepage-comps/WhatWeDo";
@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <>
       <CursorFx />
-      <SiteHeader />
+      <SharedHeader active="" />
       <main id="top">
         <Hero />
         <CoreMessage />

@@ -11,9 +11,4 @@
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/utilities.css" layer(utilities);
 
-@font-face{font-family:'Manrope';src:url('/fonts/manrope-thin.woff2') format('woff2');font-weight:100;font-display:swap}
-@font-face{font-family:'Manrope';src:url('/fonts/manrope-light.woff2') format('woff2');font-weight:300;font-display:swap}
-@font-face{font-family:'Manrope';src:url('/fonts/manrope-regular.woff2') format('woff2');font-weight:400;font-display:swap}
-@font-face{font-family:'Manrope';src:url('/fonts/manrope-medium.woff2') format('woff2');font-weight:500;font-display:swap}
-@font-face{font-family:'Manrope';src:url('/fonts/manrope-semibold.woff2') format('woff2');font-weight:600;font-display:swap}
-@font-face{font-family:'Manrope';src:url('/fonts/manrope-bold.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'Museo';src:url('/fonts/MuseoModerno.ttf') format('truetype-variations');font-weight:100 900;font-display:swap}

@@ -18,11 +18,7 @@ export default function Hero() {
       <div className="wrap hero-inner">
         
         <h1 id="heroHeading" />
-        <p className="sub">
-          From EOR and HR to Business Setup and IT Services, OpsLogic brings the
-          expertise, people and solutions you need to build and grow your
-          business in India.
-        </p>
+        <p className="sub">From Business Setup &amp; EOR to dedicated HR Services and IT &amp; SAP solutions — we help organizations operate efficiently, stay compliant, and grow faster. Your success starts here.</p>
         <div className="hero-ctas">
           <a
             href="#what-we-do"
@@ -64,9 +60,26 @@ export default function Hero() {
           </div>
         </div>
       </div>
-  
-    
-     
+      <div className="scroll-cue">
+        <span className="line" />
+        Scroll to explore
+      </div>
+      <div
+        className="float-badge"
+        id="heroBadge1"
+        style={{ top: "22%", right: "7%" }}
+      >
+        <span className="icon-badge wash-dark" data-icon="check" />
+        Fast onboarding
+      </div>
+      <div
+        className="float-badge delay1"
+        id="heroBadge2"
+        style={{ bottom: "16%", right: "11%" }}
+      >
+        <span className="icon-badge wash-dark" data-icon="chart" />
+        India-ready
+      </div>
     </section>
   );
 }

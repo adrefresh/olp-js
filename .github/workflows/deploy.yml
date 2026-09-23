@@ -1,0 +1,79 @@
+name: Hostinger Build and Deploy
+
+on:
+  push:
+    branches: [main, dev]
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+
+  # ── Dev: build without GTM → deploy to /public_html/dev ───────────────────
+  build-deploy-dev:
+    name: Build & Deploy to Dev
+    if: github.ref == 'refs/heads/dev'
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Next.js
+        run: npm run build
+        # NEXT_PUBLIC_ENABLE_GTM intentionally absent — GTM suppressed in dev
+
+      - name: Sync to Hostinger via SSH
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+          SOURCE: "out/"
+          TARGET: "/home/u179427984/domains/opslogic.team/public_html/dev"
+          ARGS: "-rlgoDzvc -i --delete"
+
+  # # ── Prod: build WITH GTM → deploy to /public_html ─────────────────────────
+  # build-deploy-prod:
+  #   name: Build & Deploy to Prod
+  #   if: github.ref == 'refs/heads/main'
+  #   runs-on: ubuntu-latest
+  #   environment: prod
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
+  #
+  #     - name: Setup Node
+  #       uses: actions/setup-node@v4
+  #       with:
+  #         node-version: 'lts/*'
+  #         cache: 'npm'
+  #
+  #     - name: Install dependencies
+  #       run: npm ci
+  #
+  #     - name: Build Next.js
+  #       run: npm run build
+  #       env:
+  #         NEXT_PUBLIC_ENABLE_GTM: "true"   # baked into static HTML at build time
+  #
+  #     - name: Sync to Hostinger via SSH
+  #       uses: easingthemes/ssh-deploy@main
+  #       env:
+  #         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+  #         REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+  #         REMOTE_USER: ${{ secrets.REMOTE_USER }}
+  #         REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+  #         SOURCE: "out/"
+  #         TARGET: "/home/u179427984/domains/opslogic.team/public_html"
+  #         ARGS: "-rlgoDzvc -i --delete --exclude='dev/'"

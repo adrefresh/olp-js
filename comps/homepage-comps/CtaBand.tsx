@@ -25,8 +25,12 @@ export default function CtaBand() {
         />
         <div className="cta-band-grid">
           <div className="cta-copy reveal">
-            <span className="eyebrow orange">Ready when you are</span>
-            <h2>Let&apos;s build what&apos;s next.</h2>
+            <span className="eyebrow orange">Let's build together</span>
+            <h2>Start Your Business Journey</h2>
+            <p style={{ marginTop: "1rem" }}>
+              Get in touch: <a href="mailto:hello@opslogic.com">hello@opslogic.com</a><br />
+              Call us: <a href="tel:+1234567890">+123-456-7890</a> / <a href="tel:+123456789">123-456-789</a>
+            </p>
             <p>
               Book a free consultation — no obligations, just a conversation
               about your next move in India.

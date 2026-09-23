@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function ContactUsPage() {
   return (
     <>
-      <SharedHeader active="" />
+      <SharedHeader active="contact-us" />
       <main>
         <div className="wrap"><Breadcrumbs items={[{ label: "Contact Us" }]} /></div>
         <Hero />

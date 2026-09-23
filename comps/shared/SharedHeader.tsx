@@ -1,4 +1,4 @@
-type NavKey = "about-us" | "services" | "careers" | "success-stories" | "";
+type NavKey = "" | "about-us" | "services" | "careers" | "success-stories" | "contact-us";
 
 const SERVICE_LINKS = [
   { href: "/services/eor", label: "EOR" },
@@ -9,25 +9,28 @@ const SERVICE_LINKS = [
 
 export default function SharedHeader({ active }: { active: NavKey }) {
   return (
-    <header className="nav">
-      <div className="navin">
-        <a className="brand" href="/">
-          <span className="mark">OL</span>OpsLogic
+    <header id="siteHeader">
+      <div className="nav-inner">
+        <a href="/" className="logo">
+          <span className="logo-mark"><span>OL</span></span>
+          OpsLogic
         </a>
         <nav className="links">
-          <a className={active === "about-us" ? "active" : undefined} href="/about-us">About</a>
-          <a className={active === "success-stories" ? "active" : undefined} href="/success-stories">Stories</a>
+          <a className={active === "" ? "tpl" : undefined} href="/">Home</a>
+          <a className={active === "about-us" ? "tpl" : undefined} href="/about-us">About Us</a>
+          <a className={active === "success-stories" ? "tpl" : undefined} href="/success-stories">Success Stories</a>
           <div className="nav-drop">
-            <a className={active === "services" ? "active" : undefined} href="/services">Services ▾</a>
+            <a className={active === "services" ? "tpl" : undefined} href="/services">Services ▾</a>
             <div className="drop-menu">
               {SERVICE_LINKS.map((s) => (
                 <a href={s.href} key={s.href}>{s.label}</a>
               ))}
             </div>
           </div>
-          <a className={active === "careers" ? "active" : undefined} href="/careers">Careers</a>
+          <a className={active === "careers" ? "tpl" : undefined} href="/careers">Careers</a>
+          <a className={active === "contact-us" ? "tpl" : undefined} href="/contact-us">Contact Us</a>
         </nav>
-        <a className="button" href="/contact-us">
+        <a href="/contact-us" className="nav-cta magnetic" data-cursor="click">
           Let&apos;s talk ↗
         </a>
       </div>

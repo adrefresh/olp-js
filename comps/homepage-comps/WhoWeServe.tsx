@@ -1,49 +1,12 @@
 export default function WhoWeServe() {
   return (
-    <section>
-      <div className="wrap">
-        <span className="eyebrow orange reveal">Who we serve</span>
-        <h2
-          className="reveal"
-          style={{ margin: "1rem 0 2.4rem", maxWidth: "26ch" }}
-        >
-          For businesses moving forward.
-        </h2>
-        <p
-          className="reveal"
-          style={{
-            color: "var(--muted)",
-            maxWidth: "70ch",
-            marginBottom: "2.6rem",
-          }}
-        >
-          Whether you&apos;re establishing your first presence in India or expanding
-          an existing operation, OpsLogic provides solutions designed around
-          your stage of growth.
-        </p>
-        <div className="serve-scatter reveal">
-          <div className="serve-tile">
-            <span className="serve-mark">01</span>
-            <h3>Global Businesses</h3>
-            <p>Build and manage teams in India with confidence.</p>
-          </div>
-          <div className="serve-tile">
-            <span className="serve-mark">02</span>
-            <h3>Growing Businesses</h3>
-            <p>
-              Strengthen your people, processes and technology as you scale.
-            </p>
-          </div>
-          <div className="serve-tile">
-            <span className="serve-mark">03</span>
-            <h3>Established Businesses</h3>
-            <p>Enhance operational capabilities with specialised expertise.</p>
-          </div>
-          <div className="serve-tile">
-            <span className="serve-mark">04</span>
-            <h3>New Ventures</h3>
-            <p>Create the right foundation for your business journey.</p>
-          </div>
+    <section id="who-we-serve" className="dark-zone" style={{ textAlign: "center" }}>
+      <div className="wrap reveal" style={{marginBottom:"20%"}}>
+        <span className="eyebrow orange" style={{ justifyContent: "center" }}>Who we serve</span>
+        <div id="flipCycle" className="flip-cycle" style={{ margin: "1.5rem auto 0", maxWidth: "22ch", fontSize: "clamp(5rem,2vw,2rem)", fontWeight: 800 }}>
+          <p className="flip-line show">Trusted partner for global growth</p>
+          <p className="flip-line">Empowering businesses with smarter solutions</p>
+          <p className="flip-line">Helping global businesses build stronger teams</p>
         </div>
       </div>
     </section>

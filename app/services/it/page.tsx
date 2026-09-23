@@ -17,10 +17,9 @@ export default function ItPage() {
     <>
       <SharedHeader active="services" />
       <main>
-        <section className="hero">
-          <i className="orb" />
+        <section className="hero" style={{ background: "linear-gradient(135deg,#101820 0%,#1b3a4b 55%,#18a7e0 100%)" }}>
           <div className="wrap hero-copy reveal">
-            <span className="eyebrow">IT Services</span>
+            {/* <span className="eyebrow">IT Services</span> */}
             <h1>Enable your business with <em>technology.</em></h1>
             <p>From IT infrastructure and support to technology solutions, we help create a reliable technology environment for your business.</p>
             <div className="hero-actions">

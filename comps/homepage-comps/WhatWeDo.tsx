@@ -1,40 +1,29 @@
 const SERVICES = [
-  { num: "01", tag: "EOR", title: "Build Your Team in India", desc: "Hire and manage employees in India through our EOR solution, with support across employment, payroll, HR administration and compliance.", href: "/services/eor" },
-  { num: "02", tag: "HR Services", title: "Build a Stronger Workforce", desc: "From recruitment and onboarding to HR operations, payroll and employee support, we help you create people processes that support growth.", href: "/services/hr" },
-  { num: "03", tag: "Business Setup", title: "Establish Your Business With Confidence", desc: "Get the support you need to establish and operationalise your business in India — from initial setup to ongoing business support.", href: "/services/business-setup" },
-  { num: "04", tag: "IT Services", title: "Enable Your Business With Technology", desc: "From IT infrastructure and support to technology solutions, we help create a reliable technology environment for your business.", href: "/services/it" },
+  { num: "01", tag: "EOR", title: "Build Your Team in India", desc: "Expand your workforce in India without setting up a local entity. We manage contracts, payroll and legal compliance.", href: "/services/eor", bg: "linear-gradient(135deg,#18a7e0,#0b3d5c)" },
+  { num: "02", tag: "HR Services", title: "Build a Winning Team", desc: "From recruitment and onboarding to payroll and employee support — efficient people processes that drive performance.", href: "/services/hr", bg: "linear-gradient(135deg,#ff8a1e,#c4432e)" },
+  { num: "03", tag: "Business Setup", title: "Start Strong", desc: "Launch and structure your business the right way — company registration to compliance frameworks, handled.", href: "/services/business-setup", bg: "linear-gradient(135deg,#0b0c10,#2c2f36)" },
+  { num: "04", tag: "IT Services", title: "Technology That Powers Growth", desc: "IT &amp; SAP expertise that streamlines operations, integrates systems, and delivers scalable infrastructure.", href: "/services/it", bg: "linear-gradient(135deg,#101820,#18a7e0)" },
 ];
 
 export default function WhatWeDo() {
   return (
-    <section id="what-we-do" className="soft-zone">
-      <div className="blob" style={{ width: "200px", height: "200px", background: "var(--orange-wash)", top: "10%", right: "-70px", animationDelay: ".6s" } as React.CSSProperties} />
-      <div className="wrap">
-        <div className="services-head reveal">
-          <div>
-            <span className="eyebrow orange">What we do</span>
-            <h2>Solutions that move your business forward.</h2>
+    <section id="what-we-do">
+      <div className="wrap services-head reveal">
+        <div>
+          <span className="eyebrow orange">What we do</span>
+          <h2>Business Setup, EOR, HR, IT &amp; SAP — All Under One Roof</h2>
+        </div>
+      </div>
+      <div className="drag-strip reveal">
+        {SERVICES.map((s) => (
+          <div className="drag-panel" style={{ background: s.bg }} key={s.num}>
+            <span className="num">{s.num}</span>
+            <span className="eyebrow" style={{ background: "rgba(255,255,255,.15)", color: "#fff" }}>{s.tag}</span>
+            <h3 style={{ color: "#fff", margin: "1rem 0 .7rem", fontSize: "1.5rem" }}>{s.title}</h3>
+            <p style={{ color: "rgba(255,255,255,.85)", fontSize: ".92rem" }}>{s.desc}</p>
+            <a href={s.href} data-cursor="click">Explore →</a>
           </div>
-        </div>
-        <div className="hl-list reveal">
-          {SERVICES.map((s) => (
-            <a className="hl-row" href={s.href} data-cursor="click" key={s.num}>
-              <span className="hl-num">{s.num}</span>
-              <div className="hl-body">
-                <span className="hl-tag !text-lg md:!text-lg font-bold tracking-[0.06em]">
-  {s.tag}
-</span>
-                <h3>{s.title}</h3>
-                <p>{s.desc}</p>
-              </div>
-              <span className="hl-arrow">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                  <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </span>
-            </a>
-          ))}
-        </div>
+        ))}
       </div>
     </section>
   );
