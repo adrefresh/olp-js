@@ -5,7 +5,7 @@ export default function Hero() {
         <source src="https://assets.mixkit.co/videos/40680/40680-360.mp4" type="video/mp4" />
       </video>
       <div className="wrap hero-copy reveal">
-        <span className="eyebrow orange">Proof, not promises</span>
+        {/* <span className="eyebrow orange">Proof, not promises</span> */}
         <h1>
           Good work makes a<em>ripple.</em>
         </h1>

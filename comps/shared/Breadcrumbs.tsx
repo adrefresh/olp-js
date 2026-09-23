@@ -30,7 +30,7 @@ export default function Breadcrumbs({ items }: { items: Crumb[] }) {
         flexWrap: "wrap",
         gap: ".4rem",
         padding: "0 5vw",
-        fontFamily: "'Museo', sans-serif",
+        fontFamily: "'Jakarta', sans-serif",
         fontSize: "1rem",
         textTransform: "uppercase",
         letterSpacing: ".04em",

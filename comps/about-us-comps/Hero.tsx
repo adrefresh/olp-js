@@ -6,7 +6,7 @@ export default function Hero() {
         <source src="https://assets.mixkit.co/videos/40680/40680-360.mp4" type="video/mp4" />
       </video>
         <div className="wrap hero-copy reveal">
-          <span className="eyebrow">Not your usual vendor</span>
+          {/* <span className="eyebrow">Not your usual vendor</span> */}
           <h1>
             We make the
             <em>backstage</em>
