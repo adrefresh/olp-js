@@ -4,6 +4,7 @@ import SharedHeader from "../../comps/shared/SharedHeader";
 import SharedFooter from "../../comps/shared/SharedFooter";
 import ScriptRunner from "../../comps/shared/ScriptRunner";
 import { SITE_SCRIPT } from "../../comps/shared/siteScript";
+import Breadcrumbs from "../../comps/shared/Breadcrumbs";
 import Hero from "../../comps/contact-us-comps/Hero";
 import FormSection from "../../comps/contact-us-comps/FormSection";
 import WhatHappensNext from "../../comps/contact-us-comps/WhatHappensNext";
@@ -21,6 +22,7 @@ export default function ContactUsPage() {
     <>
       <SharedHeader active="" />
       <main>
+        <div className="wrap"><Breadcrumbs items={[{ label: "Contact Us" }]} /></div>
         <Hero />
         <FormSection />
         <WhatHappensNext />

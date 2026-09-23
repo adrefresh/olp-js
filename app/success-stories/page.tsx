@@ -4,6 +4,7 @@ import SharedHeader from "../../comps/shared/SharedHeader";
 import SharedFooter from "../../comps/shared/SharedFooter";
 import ScriptRunner from "../../comps/shared/ScriptRunner";
 import { SITE_SCRIPT } from "../../comps/shared/siteScript";
+import Breadcrumbs from "../../comps/shared/Breadcrumbs";
 import Hero from "../../comps/success-stories-comps/Hero";
 import CaseFiles from "../../comps/success-stories-comps/CaseFiles";
 import CommonThread from "../../comps/success-stories-comps/CommonThread";
@@ -20,6 +21,7 @@ export default function SuccessStoriesPage() {
     <>
       <SharedHeader active="success-stories" />
       <main>
+        <div className="wrap"><Breadcrumbs items={[{ label: "Success Stories" }]} /></div>
         <Hero />
         <CaseFiles />
         <CommonThread />

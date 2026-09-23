@@ -1,18 +1,12 @@
 type NavKey = "about-us" | "services" | "careers" | "success-stories" | "";
 
-const LINKS: { key: NavKey; href: string; label: string }[] = [
-  { key: "about-us", href: "/about-us", label: "About" },
-  { key: "success-stories", href: "/success-stories", label: "Stories" },
-  { key: "services", href: "/services", label: "Services" },
-  { key: "careers", href: "/careers", label: "Careers" },
+const SERVICE_LINKS = [
+  { href: "/services/eor", label: "EOR" },
+  { href: "/services/hr", label: "HR Services" },
+  { href: "/services/business-setup", label: "Business Setup" },
+  { href: "/services/it", label: "IT Services" },
 ];
 
-/**
- * Note: the original site's `site.js` replaces this header's contents on
- * mount (same markup, same links) to keep every subpage's nav in sync from
- * one shared script. This component is that same static markup, rendered
- * as real JSX instead of a duplicated HTML string per page.
- */
 export default function SharedHeader({ active }: { active: NavKey }) {
   return (
     <header className="nav">
@@ -21,15 +15,17 @@ export default function SharedHeader({ active }: { active: NavKey }) {
           <span className="mark">OL</span>OpsLogic
         </a>
         <nav className="links">
-          {LINKS.map((link) => (
-            <a
-              key={link.key}
-              className={active === link.key ? "active" : undefined}
-              href={link.href}
-            >
-              {link.label}
-            </a>
-          ))}
+          <a className={active === "about-us" ? "active" : undefined} href="/about-us">About</a>
+          <a className={active === "success-stories" ? "active" : undefined} href="/success-stories">Stories</a>
+          <div className="nav-drop">
+            <a className={active === "services" ? "active" : undefined} href="/services">Services ▾</a>
+            <div className="drop-menu">
+              {SERVICE_LINKS.map((s) => (
+                <a href={s.href} key={s.href}>{s.label}</a>
+              ))}
+            </div>
+          </div>
+          <a className={active === "careers" ? "active" : undefined} href="/careers">Careers</a>
         </nav>
         <a className="button" href="/contact-us">
           Let&apos;s talk ↗

@@ -16,22 +16,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        {/*
-          Merged weight set covering both the home page's font link
-          (Sora 400/500/600/700/800, Inter 400/500/600/700, Space Mono
-          400/700) and every subpage's font link (Inter 400/600/700/800,
-          Sora 600/700/800, Space Mono 700) — loaded once, here, instead of
-          twice per page.
-        */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
-          rel="stylesheet"
+        {/* Manrope is self-hosted via @font-face in globals.css — no external font links needed. */}
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {"@type":"Organization","name":"OpsLogic","url":"https://www.opslogic.team","logo":"https://www.opslogic.team/favicon.ico"},
+                {"@type":"WebSite","name":"OpsLogic","url":"https://www.opslogic.team"}
+              ]
+            }) }}
         />
       </head>
       <body>{children}</body>

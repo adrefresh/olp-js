@@ -11,7 +11,15 @@ export default function SiteHeader() {
         <nav className="links">
           <a href="/about-us">About Us</a>
           <a href="/success-stories">Success Stories</a>
-          <a href="/services">Services</a>
+          <div className="nav-drop">
+            <a href="/services">Services ▾</a>
+            <div className="drop-menu">
+              <a href="/services/eor">EOR</a>
+              <a href="/services/hr">HR Services</a>
+              <a href="/services/business-setup">Business Setup</a>
+              <a href="/services/it">IT Services</a>
+            </div>
+          </div>
           <a href="/careers">Careers</a>
           <a href="/contact-us">Contact Us</a>
         </nav>

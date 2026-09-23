@@ -4,6 +4,7 @@ import SharedHeader from "../../comps/shared/SharedHeader";
 import SharedFooter from "../../comps/shared/SharedFooter";
 import ScriptRunner from "../../comps/shared/ScriptRunner";
 import { SITE_SCRIPT } from "../../comps/shared/siteScript";
+import Breadcrumbs from "../../comps/shared/Breadcrumbs";
 import Hero from "../../comps/services-comps/Hero";
 import WhatWeOffer from "../../comps/services-comps/WhatWeOffer";
 import HowItWorks from "../../comps/services-comps/HowItWorks";
@@ -21,6 +22,7 @@ export default function ServicesPage() {
     <>
       <SharedHeader active="services" />
       <main>
+        <div className="wrap"><Breadcrumbs items={[{ label: "Services" }]} /></div>
         <Hero />
         <WhatWeOffer />
         <HowItWorks />

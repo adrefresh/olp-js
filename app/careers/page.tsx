@@ -4,6 +4,7 @@ import SharedHeader from "../../comps/shared/SharedHeader";
 import SharedFooter from "../../comps/shared/SharedFooter";
 import ScriptRunner from "../../comps/shared/ScriptRunner";
 import { SITE_SCRIPT } from "../../comps/shared/siteScript";
+import Breadcrumbs from "../../comps/shared/Breadcrumbs";
 import Hero from "../../comps/careers-comps/Hero";
 import VibeCheck from "../../comps/careers-comps/VibeCheck";
 import LifeHere from "../../comps/careers-comps/LifeHere";
@@ -21,6 +22,7 @@ export default function CareersPage() {
     <>
       <SharedHeader active="careers" />
       <main>
+        <div className="wrap"><Breadcrumbs items={[{ label: "Careers" }]} /></div>
         <Hero />
         <VibeCheck />
         <LifeHere />

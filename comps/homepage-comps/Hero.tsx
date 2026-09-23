@@ -16,9 +16,7 @@ export default function Hero() {
       </video>
       <div className="video-spot" id="videoSpot" />
       <div className="wrap hero-inner">
-        <span className="hero-tag">
-          ✦ EOR · HR · Business Setup · IT Services
-        </span>
+        
         <h1 id="heroHeading" />
         <p className="sub">
           From EOR and HR to Business Setup and IT Services, OpsLogic brings the
@@ -66,26 +64,9 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="scroll-cue">
-        <span className="line" />
-        Scroll to explore
-      </div>
-      <div
-        className="float-badge"
-        id="heroBadge1"
-        style={{ top: "22%", right: "7%" }}
-      >
-        <span className="icon-badge wash-dark" data-icon="check" />
-        Fast onboarding
-      </div>
-      <div
-        className="float-badge delay1"
-        id="heroBadge2"
-        style={{ bottom: "16%", right: "11%" }}
-      >
-        <span className="icon-badge wash-dark" data-icon="chart" />
-        India-ready
-      </div>
+  
+    
+     
     </section>
   );
 }

@@ -1,46 +1,21 @@
 export default function Manifesto() {
   return (
-    <section id="manifesto">
-      <div className="wrap split">
-        <div className="reveal">
-          <span className="eyebrow orange">The OpsLogic DNA</span>
-          <h2 style={{ marginTop: "1rem" }}>Less friction. More forward.</h2>
-          <p className="muted">
-            Our work lives in the unglamorous, high-impact details: the
-            handoffs, systems, people and routines that make growth sustainable.
-          </p>
-          <a className="button" href="/services">
-            See what we solve →
-          </a>
-        </div>
-        <div className="visual reveal">
-          <span className="pill one">✦ Strategy sync</span>
-          <span className="pill two">System: live</span>
-          <svg viewBox="0 0 400 300" fill="none">
-            <circle
-              cx="200"
-              cy="150"
-              r="78"
-              fill="#fff"
-              stroke="#0b0c10"
-              strokeWidth="3"
-            />
-            <path
-              d="M126 150h148M200 76v148"
-              stroke="#18a7e0"
-              strokeWidth="3"
-            />
-            <circle
-              cx="200"
-              cy="150"
-              r="30"
-              fill="#ff8a1e"
-              stroke="#0b0c10"
-              strokeWidth="3"
-            />
-            <path d="M186 150l10 10 20-23" stroke="#0b0c10" strokeWidth="5" />
-          </svg>
-        </div>
+    <section id="story">
+      <div className="wrap" style={{ maxWidth: 900 }}>
+        <span className="eyebrow reveal">Who we are</span>
+        <h2 className="reveal" style={{ margin: "1rem 0 2rem", maxWidth: "14ch" }}>Strong operations. Strong outcomes.</h2>
+        <p className="reveal" style={{ color: "var(--muted)", fontSize: "1.05rem", lineHeight: 1.75, marginBottom: "1.4rem" }}>
+          At OpsLogic, we believe strong operations are essential to strong outcomes. We work with growing businesses to strengthen the systems, processes, and execution layers that support everyday performance and long-term growth — helping teams stay focused on strategy and leadership while every core function runs with clarity and control.
+        </p>
+        <p className="reveal" style={{ color: "var(--muted)", fontSize: "1.05rem", lineHeight: 1.75, marginBottom: "1.4rem" }}>
+          Our approach is collaborative, flexible, and tailored to your business. We integrate into your team as operational partners — working in sync with your goals, timelines, and internal workflows. Every engagement is designed to enhance efficiency, simplify complexity, and bring structure to the parts of the business that power day-to-day momentum.
+        </p>
+        <p className="reveal" style={{ color: "var(--muted)", fontSize: "1.05rem", lineHeight: 1.75, marginBottom: "1.4rem" }}>
+          The OpsLogic team brings deep, cross-functional experience in building and supporting high-performing operations. Our specialists, solution experts, and business architects have worked across industries and company stages — giving us the insight and versatility to deliver solutions that are practical and future-ready.
+        </p>
+        <p className="reveal" style={{ color: "var(--muted)", fontSize: "1.05rem", lineHeight: 1.75 }}>
+          By partnering with OpsLogic, you gain more than support — you gain a reliable extension of your team. While you lead, scale, and innovate, we provide the operational engine to match your pace.
+        </p>
       </div>
     </section>
   );

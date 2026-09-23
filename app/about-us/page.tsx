@@ -4,6 +4,7 @@ import SharedHeader from "../../comps/shared/SharedHeader";
 import SharedFooter from "../../comps/shared/SharedFooter";
 import ScriptRunner from "../../comps/shared/ScriptRunner";
 import { SITE_SCRIPT } from "../../comps/shared/siteScript";
+import Breadcrumbs from "../../comps/shared/Breadcrumbs";
 import Hero from "../../comps/about-us-comps/Hero";
 import Manifesto from "../../comps/about-us-comps/Manifesto";
 import HowWeShowUp from "../../comps/about-us-comps/HowWeShowUp";
@@ -20,6 +21,7 @@ export default function AboutUsPage() {
     <>
       <SharedHeader active="about-us" />
       <main>
+        <div className="wrap"><Breadcrumbs items={[{ label: "About Us" }]} /></div>
         <Hero />
         <Manifesto />
         <HowWeShowUp />

@@ -1,39 +1,20 @@
 export default function HowWeShowUp() {
   return (
     <section className="dark-zone">
-      <div className="wrap">
-        <span className="eyebrow orange">How we show up</span>
-        <h2
-          className="reveal"
-          style={{ maxWidth: "13ch", margin: "1rem 0 3rem" }}
-        >
-          Serious about outcomes. Playful about everything else.
-        </h2>
-        <div className="grid three">
-          <article className="card reveal">
-            <span className="number">01 / OWN IT</span>
-            <h3>Real partnership</h3>
-            <p>
-              We work inside the problem, not around it. Your goals become the
-              brief.
-            </p>
-          </article>
-          <article className="card reveal">
-            <span className="number">02 / MAKE IT CLEAR</span>
-            <h3>No fog machines</h3>
-            <p>
-              Direct communication, visible work and decisions with a point of
-              view.
-            </p>
-          </article>
-          <article className="card reveal">
-            <span className="number">03 / KEEP EVOLVING</span>
-            <h3>Built for next</h3>
-            <p>
-              We design for the team you are becoming, not the spreadsheet you
-              started with.
-            </p>
-          </article>
+      <div className="wrap split">
+        <div className="reveal">
+          <span className="eyebrow orange">Our vision</span>
+          <h3 style={{ fontSize: "1.6rem", margin: "1rem 0 .8rem" }}>Operational excellence, by design.</h3>
+          <p>
+            To be the go-to partner for operational excellence — trusted by businesses to build strong, scalable foundations that drive long-term success. We envision a future where every business operates with confidence, supported by seamless systems and smart execution.
+          </p>
+        </div>
+        <div className="reveal">
+          <span className="eyebrow orange">Our mission</span>
+          <h3 style={{ fontSize: "1.6rem", margin: "1rem 0 .8rem" }}>Structure that lets you focus on growth.</h3>
+          <p>
+            To deliver tailored, high-impact operational and business support solutions that bring structure, precision, and reliability — empowering businesses to focus on growth, strategy, and what matters most.
+          </p>
         </div>
       </div>
     </section>
