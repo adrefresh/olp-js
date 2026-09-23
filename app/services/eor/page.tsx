@@ -26,7 +26,7 @@ export default function EorPage() {
       <main>
         <section className="hero" style={{ background: "linear-gradient(135deg,#0b3d5c 0%,#18a7e0 55%,#0b0c10 100%)" }}>
           <div className="wrap hero-copy reveal">
-            <span className="eyebrow">Employer of Record</span>
+            {/* <span className="eyebrow">Employer of Record</span> */}
             <h1>Build your team in <em>India</em> — without an entity.</h1>
             <p>Hire and manage employees in India through our EOR solution, with support across employment, payroll, HR administration and compliance.</p>
             <div className="hero-actions">
