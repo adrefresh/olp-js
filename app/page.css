@@ -23,7 +23,7 @@ section{position:relative;padding:8rem 0;overflow:hidden}
 .button{display:inline-flex;align-items:center;gap:.5rem;border-radius:100px;padding:1rem 1.35rem;background:var(--orange);font-weight:800;transition:.3s var(--ease)}
 .button:hover{transform:translateY(-4px);box-shadow:0 14px 30px #ff8a1e3d}
 .button.dark{background:var(--ink);color:#fff}
-.reveal{opacity:0;transform:translateY(28px);transition:.75s var(--ease)}
+.reveal{opacity:0;transform:translateY(28px);transition:.75s var(--ease),}
 .reveal.in{opacity:1;transform:none}
 
 .site-nav{position:fixed;top:0;left:0;width:100%;z-index:50;padding:18px 0}
@@ -324,7 +324,7 @@ body:has(.internal-hero) .site-nav:not(.scrolled) .nav-drop:hover>button{color:#
 
   .eyebrow.orange{ color:#b5590c; background:var(--orange-wash); }
 
-  .reveal{ opacity:0; transform:translateY(26px); transition:opacity .75s var(--ease), transform .75s var(--ease); }
+  .reveal{ opacity:0; transform:translateY(26px); transition:opacity .75s var(--ease), transform .75s var(--ease);font-size:1.8rem }
 
   .reveal.in{ opacity:1; transform:translateY(0); }
 
