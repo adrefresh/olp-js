@@ -25,7 +25,7 @@ export default function CtaBand() {
         />
         <div className="cta-band-grid">
           <div className="cta-copy reveal">
-            <span className="eyebrow orange">Let's build together</span>
+            <span className="eyebrow orange">Let&apos;s build together</span>
             <h2>Start Your Business Journey</h2>
             <p style={{ marginTop: "1rem" }}>
               Get in touch: <a href="mailto:hello@opslogic.com">hello@opslogic.com</a><br />

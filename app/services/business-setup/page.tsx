@@ -19,7 +19,7 @@ export default function BusinessSetupPage() {
       <main>
         <section className="hero" style={{ background: "linear-gradient(135deg,#0b0c10 0%,#2c2f36 55%,#18a7e0 100%)" }}>
           <div className="wrap hero-copy reveal">
-            {/* <span className="eyebrow">Business Setup</span> */}
+            <span className="eyebrow">Business Setup</span>
             <h1>Establish your business with <em>confidence.</em></h1>
             <p>Get the support you need to establish and operationalise your business in India — from initial setup to ongoing business support.</p>
             <div className="hero-actions">
@@ -34,12 +34,12 @@ export default function BusinessSetupPage() {
             <div className="reveal">
               <span className="eyebrow orange">Getting started</span>
               <h2 style={{ fontSize: "2rem", margin: "1rem 0 1rem" }}>Entity to execution, one team.</h2>
-              <p>Registration, licensing and initial setup handled end-to-end, so you're not learning Indian business law while trying to run a company.</p>
+              <p>Registration, licensing and initial setup handled end-to-end, so you&apos;re not learning Indian business law while trying to run a company.</p>
             </div>
             <div className="reveal">
               <span className="eyebrow orange">Staying operational</span>
               <h2 style={{ fontSize: "2rem", margin: "1rem 0 1rem" }}>Ongoing business support.</h2>
-              <p>Once you're set up, we stay — handling the operational layer so your local presence keeps running smoothly.</p>
+              <p>Once you&apos;re set up, we stay — handling the operational layer so your local presence keeps running smoothly.</p>
             </div>
           </div>
         </section>

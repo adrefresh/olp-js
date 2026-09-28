@@ -1,6 +1,6 @@
 export default function CoreMessage() {
   return (
-    <section className="dark-zone" style={{ overflow: "hidden" }}>
+    <section style={{ overflow: "hidden" }}>
       <div className="gm-wrap">
         <div className="gm-track">
           <span>GROWTH PARTNER</span><span>GROWTH PARTNER</span><span>GROWTH PARTNER</span>

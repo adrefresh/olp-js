@@ -8,6 +8,24 @@ export const metadata: Metadata = {
   },
   description:
     "OpsLogic — Business Operations, IT, Hiring, Payroll, SAP & Shared Workspace solutions.",
+  metadataBase: new URL("https://www.opslogic.team"),
+};
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      name: "OpsLogic",
+      url: "https://www.opslogic.team",
+      logo: "https://www.opslogic.team/favicon.ico",
+    },
+    {
+      "@type": "WebSite",
+      name: "OpsLogic",
+      url: "https://www.opslogic.team",
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -16,17 +34,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Manrope is self-hosted via @font-face in globals.css — no external font links needed. */}
-      
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@graph": [
-                {"@type":"Organization","name":"OpsLogic","url":"https://www.opslogic.team","logo":"https://www.opslogic.team/favicon.ico"},
-                {"@type":"WebSite","name":"OpsLogic","url":"https://www.opslogic.team"}
-              ]
-            }) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       </head>
       <body>{children}</body>

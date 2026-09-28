@@ -25,7 +25,7 @@ export default function HrPage() {
       <main>
         <section className="hero" style={{ background: "linear-gradient(135deg,#ff8a1e 0%,#c4432e 55%,#0b0c10 100%)" }}>
           <div className="wrap hero-copy reveal">
-            {/* <span className="eyebrow">HR Services</span> */}
+            <span className="eyebrow">HR Services</span>
             <h1>Build a <em>stronger</em> workforce.</h1>
             <p>From recruitment and onboarding to HR operations, payroll and employee support, we help you create people processes that support growth.</p>
             <div className="hero-actions">

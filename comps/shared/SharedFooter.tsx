@@ -1,27 +1,77 @@
-export default function SharedFooter({
-  showEmail = false,
-}: {
-  showEmail?: boolean;
-}) {
+export default function SharedFooter({ showEmail }: { showEmail?: boolean } = {}) {
+  void showEmail;
   return (
-    <footer className="footer">
-      <div className="wrap footer-grid">
-        <div>
-          <a className="brand">
-            <span className="mark">OL</span>OpsLogic
-          </a>
-          <p>Let&apos;s make business move.</p>
+  <footer className="ops-footer">
+    <div className="wrap">
+      <div className="foot-top">
+        <div className="flogo">
+          Ops
+          <span className="orange">Logic</span>
         </div>
-        <p>
-          © 2026 OpsLogic
-          {showEmail ? (
-            <>
-              {" "}
-              · <a href="/contact-us">hello@opslogic.team</a>
-            </>
-          ) : null}
-        </p>
+        <div className="foot-links">
+          <div>
+            <h4>Services</h4>
+            <ul>
+              <li>
+                <a href="#services">Business Operations</a>
+              </li>
+              <li>
+                <a href="#services">IT Solutions</a>
+              </li>
+              <li>
+                <a href="#services">Hiring</a>
+              </li>
+              <li>
+                <a href="#services">Payroll</a>
+              </li>
+              <li>
+                <a href="#services">SAP</a>
+              </li>
+              <li>
+                <a href="#services">Workspaces</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li>
+                <a href="/about-us">About Us</a>
+              </li>
+              <li>
+                <a href="/success-stories">Success Stories</a>
+              </li>
+              <li>
+                <a href="/services">Services</a>
+              </li>
+              <li>
+                <a href="/careers">Careers</a>
+              </li>
+              <li>
+                <a href="/contact-us">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul>
+              <li>
+                <a href="tel:+914035009631">+91 40 3500 9631</a>
+              </li>
+              <li>
+                <a href="mailto:hello@opslogic.team">hello@opslogic.team</a>
+              </li>
+              <li>Hyderabad, India</li>
+              <li>Scarborough, Canada</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </footer>
+      <div className="foot-bottom">
+        <span>© 2025–2026 OpsLogic Private Limited. Demo redesign.</span>
+        <span>Privacy Policy</span>
+      </div>
+    </div>
+  </footer>
   );
 }

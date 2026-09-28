@@ -1,34 +1,39 @@
 import type { Metadata } from "next";
 import "./page.css";
 import SharedHeader from "../../comps/shared/SharedHeader";
+import InternalHero from "../../comps/about-us-comps/InternalHero";
+import Statement from "../../comps/about-us-comps/Statement";
+import Marquee from "../../comps/about-us-comps/Marquee";
+import Ink from "../../comps/about-us-comps/Ink";
+import Wrap from "../../comps/about-us-comps/Wrap";
+import Duo from "../../comps/about-us-comps/Duo";
+import Ink2 from "../../comps/about-us-comps/Ink2";
+import ServiceCta from "../../comps/about-us-comps/ServiceCta";
 import SharedFooter from "../../comps/shared/SharedFooter";
+import Script from "next/script";
 import ScriptRunner from "../../comps/shared/ScriptRunner";
 import { SITE_SCRIPT } from "../../comps/shared/siteScript";
-import Breadcrumbs from "../../comps/shared/Breadcrumbs";
-import Hero from "../../comps/about-us-comps/Hero";
-import Manifesto from "../../comps/about-us-comps/Manifesto";
-import HowWeShowUp from "../../comps/about-us-comps/HowWeShowUp";
-import Trajectory from "../../comps/about-us-comps/Trajectory";
 
 export const metadata: Metadata = {
   title: "About Us — OpsLogic",
-  description:
-    "About OpsLogic — an operations partner for teams with big plans and zero patience for busywork.",
+  description: "OpsLogic — operational solutions for growing businesses.",
 };
 
 export default function AboutUsPage() {
   return (
     <>
       <SharedHeader active="about-us" />
-      <main>
-        <div className="wrap"><Breadcrumbs items={[{ label: "About Us" }]} /></div>
-        <Hero />
-        <Manifesto />
-        <HowWeShowUp />
-        <Trajectory />
-      </main>
-      <SharedFooter showEmail={false} />
+      <InternalHero />
+      <Statement />
+      <Marquee />
+      <Ink />
+      <Wrap />
+      <Duo />
+      <Ink2 />
+      <ServiceCta />
+      <SharedFooter />
       <ScriptRunner script={SITE_SCRIPT} />
+      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.opslogic.team/"}, {"@type": "ListItem", "position": 2, "name": "About Us", "item": "https://www.opslogic.team/about-us"}]}' }} />
     </>
   );
 }

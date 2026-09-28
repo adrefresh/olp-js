@@ -2,7 +2,6 @@
   "name": "opslogic-site",
   "version": "1.0.0",
   "private": true,
-  "description": "OpsLogic marketing site — Next.js static export (SSG only, no server runtime).",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -25,7 +24,5 @@
     "tailwindcss": "^4.3.0",
     "typescript": "^5.7.3"
   },
-  "engines": {
-    "node": ">=20.9.0"
-  }
+  "engines": { "node": ">=20.9.0" }
 }

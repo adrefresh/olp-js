@@ -1,36 +1,37 @@
 import type { Metadata } from "next";
 import "./page.css";
 import SharedHeader from "../../comps/shared/SharedHeader";
+import InternalHero from "../../comps/careers-comps/InternalHero";
+import Statement from "../../comps/careers-comps/Statement";
+import Wrap from "../../comps/careers-comps/Wrap";
+import Ink from "../../comps/careers-comps/Ink";
+import Wrap2 from "../../comps/careers-comps/Wrap2";
+import Wrap22 from "../../comps/careers-comps/Wrap22";
+import ServiceCta from "../../comps/careers-comps/ServiceCta";
 import SharedFooter from "../../comps/shared/SharedFooter";
+import Script from "next/script";
 import ScriptRunner from "../../comps/shared/ScriptRunner";
 import { SITE_SCRIPT } from "../../comps/shared/siteScript";
-import Breadcrumbs from "../../comps/shared/Breadcrumbs";
-import Hero from "../../comps/careers-comps/Hero";
-import VibeCheck from "../../comps/careers-comps/VibeCheck";
-import LifeHere from "../../comps/careers-comps/LifeHere";
-import OpenRoles from "../../comps/careers-comps/OpenRoles";
-import NoFitCta from "../../comps/careers-comps/NoFitCta";
 
 export const metadata: Metadata = {
   title: "Careers — OpsLogic",
-  description:
-    "Careers at OpsLogic — join a team of clear thinkers, kind collaborators and restless improvers.",
+  description: "OpsLogic — operational solutions for growing businesses.",
 };
 
 export default function CareersPage() {
   return (
     <>
       <SharedHeader active="careers" />
-      <main>
-        <div className="wrap"><Breadcrumbs items={[{ label: "Careers" }]} /></div>
-        <Hero />
-        <VibeCheck />
-        <LifeHere />
-        <OpenRoles />
-        <NoFitCta />
-      </main>
-      <SharedFooter showEmail={false} />
+      <InternalHero />
+      <Statement />
+      <Wrap />
+      <Ink />
+      <Wrap2 />
+      <Wrap22 />
+      <ServiceCta />
+      <SharedFooter />
       <ScriptRunner script={SITE_SCRIPT} />
+      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.opslogic.team/"}, {"@type": "ListItem", "position": 2, "name": "Careers", "item": "https://www.opslogic.team/careers"}]}' }} />
     </>
   );
 }

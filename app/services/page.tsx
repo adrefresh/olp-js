@@ -1,36 +1,33 @@
 import type { Metadata } from "next";
 import "./page.css";
 import SharedHeader from "../../comps/shared/SharedHeader";
+import InternalHero from "../../comps/services-comps/InternalHero";
+import Statement from "../../comps/services-comps/Statement";
+import Marquee from "../../comps/services-comps/Marquee";
+import Ink from "../../comps/services-comps/Ink";
+import ServiceCta from "../../comps/services-comps/ServiceCta";
 import SharedFooter from "../../comps/shared/SharedFooter";
+import Script from "next/script";
 import ScriptRunner from "../../comps/shared/ScriptRunner";
 import { SITE_SCRIPT } from "../../comps/shared/siteScript";
-import Breadcrumbs from "../../comps/shared/Breadcrumbs";
-import Hero from "../../comps/services-comps/Hero";
-import WhatWeOffer from "../../comps/services-comps/WhatWeOffer";
-import HowItWorks from "../../comps/services-comps/HowItWorks";
-import ModularCta from "../../comps/services-comps/ModularCta";
-import Faq from "../../comps/services-comps/Faq";
 
 export const metadata: Metadata = {
   title: "Services — OpsLogic",
-  description:
-    "OpsLogic services — Business Operations, IT, Hiring, Payroll, SAP and Shared Workspaces.",
+  description: "Services — OpsLogic",
 };
 
 export default function ServicesPage() {
   return (
     <>
       <SharedHeader active="services" />
-      <main>
-        <div className="wrap"><Breadcrumbs items={[{ label: "Services" }]} /></div>
-        <Hero />
-        <WhatWeOffer />
-        <HowItWorks />
-        <ModularCta />
-        <Faq />
-      </main>
-      <SharedFooter showEmail={false} />
+      <InternalHero />
+      <Statement />
+      <Marquee />
+      <Ink />
+      <ServiceCta />
+      <SharedFooter />
       <ScriptRunner script={SITE_SCRIPT} />
+      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.opslogic.team/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.opslogic.team/services"}]}' }} />
     </>
   );
 }
