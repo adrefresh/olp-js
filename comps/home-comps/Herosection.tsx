@@ -5,7 +5,7 @@ export default function Herosection() {
       <source src="https://assets.mixkit.co/videos/40680/40680-360.mp4" type="video/mp4" />
     </video>
     <div className="video-spot" id="videoSpot" />
-    <div className="wrap hero-inner">
+    <div className="wrap hero-inner pt-24!">
       {/* <span class="hero-tag">✦ Operations partner · Est. Hyderabad</span> */}
       <h1 id="heroHeading" />
       <p className="sub">From Business Setup &amp; EOR to dedicated HR Services and IT &amp; SAP solutions — we help organizations operate efficiently, stay compliant, and grow faster. Your success starts here.</p>
@@ -22,11 +22,11 @@ export default function Herosection() {
       </div>
     </div>
     {/* <div class="scroll-cue"><span class="line"></div> */}
-    <div className="float-badge" id="heroBadge1" style={{ top: "22%", right: "7%" }}>
+    <div className="float-badge top-[22%] right-[7%]" id="heroBadge1">
       <span className="icon-badge wash-dark" data-icon="check" />
       Trusted setup
     </div>
-    <div className="float-badge delay1" id="heroBadge2" style={{ bottom: "16%", right: "11%" }}>
+    <div className="float-badge delay1 bottom-[16%] right-[11%]" id="heroBadge2">
       <span className="icon-badge wash-dark" data-icon="chart" />
       Built to scale
     </div>

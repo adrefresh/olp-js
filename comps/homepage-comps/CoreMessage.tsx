@@ -18,7 +18,7 @@ export default function CoreMessage() {
         <p style={{ maxWidth: "70ch", margin: "0 auto 2rem" }}>
           Whether you are expanding into new markets or streamlining your operations, our expert teams deliver tailored solutions that drive efficiency, ensure compliance, and accelerate your business growth.
         </p>
-        <a className="skew-cta" href="#what-we-do">Discover Our Solutions →</a>
+        <a className="skew-cta" href="#what-we-do">Discover Our Solutionsssssssssssssssss →</a>
       </div>
     </section>
   );

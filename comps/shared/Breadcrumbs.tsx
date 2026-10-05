@@ -20,31 +20,16 @@ export default function Breadcrumbs({ items }: { items: Crumb[] }) {
   return (
     <nav
       aria-label="Breadcrumb"
-      style={{
-        position: "absolute",
-        top: "110px",
-        left: 0,
-        right: 0,
-        zIndex: 5,
-        display: "flex",
-        flexWrap: "wrap",
-        gap: ".4rem",
-        padding: "0 5vw",
-        fontFamily: "'Jakarta', sans-serif",
-        fontSize: "1rem",
-        textTransform: "uppercase",
-        letterSpacing: ".04em",
-        color: "rgba(255,255,255,.75)",
-      }}
+      className="absolute top-[110px] left-0 right-0 z-[5] flex flex-wrap gap-[.4rem] px-[5vw] py-0 [font-family:'Jakarta',sans-serif] text-base uppercase tracking-[.04em] text-white/75"
     >
       {all.map((item, i) => (
-        <span key={item.label} style={{ display: "flex", alignItems: "center", gap: ".4rem" }}>
+        <span key={item.label} className="flex items-center gap-[.4rem]">
           {item.href ? (
-            <a href={item.href} style={{ color: "rgba(255,255,255,.7)" }}>
+            <a href={item.href} className="text-white/70">
               {item.label}
             </a>
           ) : (
-            <span style={{ color: "#fff", fontWeight: 700 }}>{item.label}</span>
+            <span className="text-white font-bold">{item.label}</span>
           )}
           {i < all.length - 1 && <span aria-hidden="true">/</span>}
         </span>

@@ -1,9 +1,9 @@
 export default function Contact() {
   return (
-  <section id="contact" style={{ padding: "0" }}>
+  <section id="contact" className="p-0">
     <div className="cta-band">
-      <div className="blob" style={{ width: "280px", height: "280px", background: "var(--blue-wash)", top: "-90px", left: "-70px" }} />
-      <div className="blob" style={{ width: "220px", height: "220px", background: "var(--orange-wash)", bottom: "-80px", right: "-40px", animationDelay: "1s" }} />
+      <div className="blob w-[280px] h-[280px] bg-(--blue-wash) top-[-90px] left-[-70px]" />
+      <div className="blob w-[220px] h-[220px] bg-(--orange-wash) bottom-[-80px] right-[-40px] [animation-delay:1s]" />
       <div className="cta-band-grid">
         <div className="cta-copy reveal">
           <span className="eyebrow orange">Ready when you are</span>
@@ -50,27 +50,27 @@ export default function Contact() {
               <path d="M462 150 h16 M470 142 v16" stroke="#0b0c10" strokeWidth="3" strokeLinecap="round" />
             </g>
           </svg>
-          <div className="stage-sticker" style={{ top: "2%", left: "0%", "--rot": "-6deg", animationDelay: "0s" } as React.CSSProperties} data-desc="We run the day-to-day so nothing falls through the cracks.">
+          <div className="stage-sticker top-[2%] left-[0%] [--rot:-6deg] [animation-delay:0s]" data-desc="We run the day-to-day so nothing falls through the cracks.">
             <span className="dot" />
             Operations
           </div>
-          <div className="stage-sticker" style={{ top: "10%", right: "0%", "--rot": "5deg", animationDelay: ".6s" } as React.CSSProperties} data-desc="Secure, dependable systems — infrastructure to helpdesk.">
+          <div className="stage-sticker top-[10%] right-[0%] [--rot:5deg] [animation-delay:.6s]" data-desc="Secure, dependable systems — infrastructure to helpdesk.">
             <span className="dot" />
             IT
           </div>
-          <div className="stage-sticker" style={{ top: "44%", left: "-6%", "--rot": "4deg", animationDelay: "1.1s" } as React.CSSProperties} data-desc="High-performing teams, sourced and onboarded for you.">
+          <div className="stage-sticker top-[44%] left-[-6%] [--rot:4deg] [animation-delay:1.1s]" data-desc="High-performing teams, sourced and onboarded for you.">
             <span className="dot" />
             Hiring
           </div>
-          <div className="stage-sticker" style={{ bottom: "20%", right: "-4%", "--rot": "-4deg", animationDelay: "1.6s" } as React.CSSProperties} data-desc="Accurate, on-time salaries, taxes and statutory filings.">
+          <div className="stage-sticker right-[-4%] bottom-[20%] [--rot:-4deg] [animation-delay:1.6s]" data-desc="Accurate, on-time salaries, taxes and statutory filings.">
             <span className="dot" />
             Payroll
           </div>
-          <div className="stage-sticker" style={{ bottom: "2%", left: "6%", "--rot": "6deg", animationDelay: "2s" } as React.CSSProperties} data-desc="End-to-end SAP support, plus flexible expert staffing.">
+          <div className="stage-sticker left-[6%] bottom-[2%] [--rot:6deg] [animation-delay:2s]" data-desc="End-to-end SAP support, plus flexible expert staffing.">
             <span className="dot" />
             SAP
           </div>
-          <div className="stage-sticker" style={{ bottom: "-4%", right: "24%", "--rot": "-3deg", animationDelay: "2.4s" } as React.CSSProperties} data-desc="Flexible, fully-equipped space that scales with you.">
+          <div className="stage-sticker right-[24%] bottom-[-4%] [--rot:-3deg] [animation-delay:2.4s]" data-desc="Flexible, fully-equipped space that scales with you.">
             <span className="dot" />
             Workspace
           </div>

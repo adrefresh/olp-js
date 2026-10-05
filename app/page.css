@@ -246,7 +246,7 @@ section{position:relative;padding:8rem 0;overflow:hidden}
 
 
 /* Inner-page navigation sits over the video hero, so links remain clearly white. */
-.internal-hero ~ *{}
+/* .internal-hero ~ *{} */
 
 body:has(.internal-hero) .site-nav:not(.scrolled) .nav-links>a,
 body:has(.internal-hero) .site-nav:not(.scrolled) .nav-drop>button{color:#fff}
