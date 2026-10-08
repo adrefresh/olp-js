@@ -45,11 +45,11 @@ export default function Statement() {
           </div>
           <b>↗</b>
         </a>
-        <a className="service-feature reveal" href="/shared-workspaces">
+        <a className="service-feature reveal" href="/services/eor">
           <span>06</span>
           <div>
-            <small>Gather</small>
-            <h3>Shared Workspaces</h3>
+            <small>Employ</small>
+            <h3>EOR</h3>
           </div>
           <b>↗</b>
         </a>

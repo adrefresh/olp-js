@@ -13,7 +13,7 @@ export default function Terminalwrap() {
         <div className="serve-grid mt-8">
           {STATS.map((s) => (
             <div className="serve-card" key={s.label}>
-              <div className="text-[2rem] font-extrabold text-(--blue)">{s.n}</div>
+              {/* <div className="text-[2rem] font-extrabold text-(--blue)">{s.n}</div> */}
               <p className="font-semibold">{s.label}</p>
             </div>
           ))}

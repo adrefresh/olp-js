@@ -18,7 +18,7 @@ export default function SiteHeader() {
             <a href="/hiring-services">Hiring Services</a>
             <a href="/payroll-services">Payroll Services</a>
             <a href="/sap-services">SAP Services</a>
-            <a href="/shared-workspaces">Shared Workspaces</a>
+            <a href="/services/eor">EOR</a>
           </div>
         </div>
         <a href="/careers">Careers</a>
