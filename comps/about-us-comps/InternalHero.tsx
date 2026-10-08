@@ -6,8 +6,10 @@ export default function InternalHero() {
     </video>
     <div className="hero-shade" />
     <div className="wrap hero-content reveal">
-      <span className="eyebrow orange">About OpsLogic</span>
-      <h1>Operations that become a strength.</h1>
+      <span className="eyebrow">About OpsLogic</span>
+      <h1>
+        Operations that become a <span className="hero-accent">strength.</span>
+      </h1>
       <p>We strengthen the systems, processes and execution layers behind everyday performance and long-term growth.</p>
       <div className="hero-meta">
         <span>Operations partner</span>
