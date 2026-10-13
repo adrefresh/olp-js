@@ -1,6 +1,6 @@
 export default function Wrap() {
   return (
-  <section style={{ background: "#e6f7ff" }}>
+  <section style={{ background: "#e8f4fd" }}>
     <div className="wrap statement-grid">
       <div className="reveal">
         <span className="eyebrow">Connected teams</span>

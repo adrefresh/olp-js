@@ -8,12 +8,12 @@ export default function ModularCta() {
           <svg viewBox="0 0 400 300">
             <path
               d="M80 190 C140 70 230 240 320 110"
-              stroke="#0b0c10"
+              stroke="#0b1b3a"
               strokeWidth="8"
               fill="none"
             />
-            <circle cx="80" cy="190" r="19" fill="#ff8a1e" />
-            <circle cx="320" cy="110" r="19" fill="#18a7e0" />
+            <circle cx="80" cy="190" r="19" fill="#ff6b1a" />
+            <circle cx="320" cy="110" r="19" fill="#1ea7f0" />
           </svg>
         </div>
         <div className="reveal">

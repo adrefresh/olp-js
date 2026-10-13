@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./site.css";
+import SiteCursor from "../comps/shared/SiteCursor";
 
 export const metadata: Metadata = {
   title: {
@@ -39,7 +41,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       </head>
-      <body>{children}</body>
+      <body id="top">
+        <SiteCursor />
+        {children}
+      </body>
     </html>
   );
 }

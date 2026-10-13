@@ -14,40 +14,40 @@ export default function Contact() {
         </div>
         <div className="illustration-stage reveal" id="illustrationStage">
           <svg viewBox="0 0 560 420" aria-hidden="true">
-            <ellipse cx="280" cy="378" rx="200" ry="16" fill="rgba(11,12,16,0.06)" />
-            <rect x="150" y="278" width="260" height="18" rx="9" fill="#ffffff" stroke="#0b0c10" strokeWidth="3" />
-            <rect x="168" y="296" width="12" height="56" fill="#0b0c10" />
-            <rect x="380" y="296" width="12" height="56" fill="#0b0c10" />
+            <ellipse cx="280" cy="378" rx="200" ry="16" fill="rgba(11,27,58,0.06)" />
+            <rect x="150" y="278" width="260" height="18" rx="9" fill="#ffffff" stroke="#0b1b3a" strokeWidth="3" />
+            <rect x="168" y="296" width="12" height="56" fill="#0b1b3a" />
+            <rect x="380" y="296" width="12" height="56" fill="#0b1b3a" />
             <g className="scene-bob delay1">
-              <rect x="243" y="236" width="74" height="48" rx="6" fill="#0b0c10" />
-              <rect x="249" y="242" width="62" height="34" rx="3" fill="#1ca7e0" />
+              <rect x="243" y="236" width="74" height="48" rx="6" fill="#0b1b3a" />
+              <rect x="249" y="242" width="62" height="34" rx="3" fill="#1ea7f0" />
               <path d="M258 258 l10 10 20 -20" fill="none" stroke="#ffffff" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-              <rect x="235" y="278" width="90" height="8" rx="3" fill="#0b0c10" />
+              <rect x="235" y="278" width="90" height="8" rx="3" fill="#0b1b3a" />
             </g>
             <g className="scene-bob">
-              <rect x="155" y="206" width="72" height="72" rx="30" fill="#1ca7e0" />
-              <circle cx="191" cy="180" r="30" fill="#ffe0bf" />
-              <path d="M161 180 a30 30 0 0 1 60 0 v-6 a30 26 0 0 0 -60 0 Z" fill="#0b0c10" />
+              <rect x="155" y="206" width="72" height="72" rx="30" fill="#1ea7f0" />
+              <circle cx="191" cy="180" r="30" fill="#ffe2cf" />
+              <path d="M161 180 a30 30 0 0 1 60 0 v-6 a30 26 0 0 0 -60 0 Z" fill="#0b1b3a" />
             </g>
             <g className="scene-bob delay2">
-              <rect x="333" y="206" width="72" height="72" rx="30" fill="#ff8a1e" />
-              <circle cx="369" cy="180" r="30" fill="#ffe0bf" />
-              <path d="M339 180 a30 30 0 0 1 60 0 v-6 a30 26 0 0 0 -60 0 Z" fill="#0b0c10" />
+              <rect x="333" y="206" width="72" height="72" rx="30" fill="#ff6b1a" />
+              <circle cx="369" cy="180" r="30" fill="#ffe2cf" />
+              <path d="M339 180 a30 30 0 0 1 60 0 v-6 a30 26 0 0 0 -60 0 Z" fill="#0b1b3a" />
             </g>
             <g className="scene-bob" transform="translate(280,96)">
-              <rect x="-56" y="-30" width="112" height="54" rx="18" fill="#ffffff" stroke="#0b0c10" strokeWidth="3" />
-              <path d="M-8 24 L2 42 L16 24 Z" fill="#ffffff" stroke="#0b0c10" strokeWidth="3" />
-              <circle className="chat-dot d1" cx="-22" cy="-3" r="6" fill="#1ca7e0" />
-              <circle className="chat-dot d2" cx="2" cy="-3" r="6" fill="#ff8a1e" />
-              <circle className="chat-dot d3" cx="26" cy="-3" r="6" fill="#0b0c10" />
+              <rect x="-56" y="-30" width="112" height="54" rx="18" fill="#ffffff" stroke="#0b1b3a" strokeWidth="3" />
+              <path d="M-8 24 L2 42 L16 24 Z" fill="#ffffff" stroke="#0b1b3a" strokeWidth="3" />
+              <circle className="chat-dot d1" cx="-22" cy="-3" r="6" fill="#1ea7f0" />
+              <circle className="chat-dot d2" cx="2" cy="-3" r="6" fill="#ff6b1a" />
+              <circle className="chat-dot d3" cx="26" cy="-3" r="6" fill="#0b1b3a" />
             </g>
             <g className="scene-bob delay2">
-              <circle cx="90" cy="120" r="20" fill="#ffffff" stroke="#0b0c10" strokeWidth="3" />
-              <path d="M82 120 l6 6 12 -12" fill="none" stroke="#1ca7e0" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+              <circle cx="90" cy="120" r="20" fill="#ffffff" stroke="#0b1b3a" strokeWidth="3" />
+              <path d="M82 120 l6 6 12 -12" fill="none" stroke="#1ea7f0" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
             </g>
             <g className="scene-bob delay1">
-              <circle cx="470" cy="150" r="18" fill="#ff8a1e" />
-              <path d="M462 150 h16 M470 142 v16" stroke="#0b0c10" strokeWidth="3" strokeLinecap="round" />
+              <circle cx="470" cy="150" r="18" fill="#ff6b1a" />
+              <path d="M462 150 h16 M470 142 v16" stroke="#0b1b3a" strokeWidth="3" strokeLinecap="round" />
             </g>
           </svg>
           <div className="stage-sticker top-[2%] left-[0%] [--rot:-6deg] [animation-delay:0s]" data-desc="We run the day-to-day so nothing falls through the cracks.">

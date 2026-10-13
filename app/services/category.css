@@ -1,0 +1,25 @@
+/* Core-service and sub-service cards (services overview + category pages) */
+.svc-section{background:#fff;padding:6.5rem 0}
+.svc-section h2.svc-h2{font-size:clamp(2.2rem,4.6vw,4rem);max-width:15ch;margin:1.1rem 0 3.2rem;line-height:1.02}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.6rem}
+.svc-card{position:relative;display:flex;flex-direction:column;gap:.9rem;padding:2.2rem 2rem 1.9rem;background:#fff;border:1px solid rgba(11,27,58,.12);border-radius:28px;color:var(--ink);overflow:hidden;box-shadow:0 1px 0 rgba(11,27,58,.04);transition:transform .45s var(--ease),box-shadow .45s var(--ease),border-color .3s}
+.svc-card::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.svc-card::after{content:"";position:absolute;right:-70px;bottom:-70px;width:200px;height:200px;border-radius:50%;background:rgba(30,167,240,.08);transition:transform .6s var(--ease)}
+.svc-card:hover{transform:translateY(-10px);border-color:rgba(30,167,240,.55);box-shadow:0 30px 55px rgba(11,27,58,.14)}
+.svc-card:hover::before{transform:scaleX(1)}.svc-card:hover::after{transform:scale(1.5)}
+.svc-card>*{position:relative;z-index:1}
+.svc-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:.8rem}
+.svc-ico{width:56px;height:56px;border-radius:18px;display:grid;place-items:center;background:#e8f4fd;transition:background .3s,transform .5s var(--ease)}
+.svc-ico svg{width:27px;height:27px;fill:none;stroke:var(--ink);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:stroke .3s}
+.svc-card:hover .svc-ico{background:var(--ink);transform:rotate(-6deg) scale(1.06)}.svc-card:hover .svc-ico svg{stroke:#fff}
+.svc-num{font-weight:800;font-size:1.5rem;color:rgba(11,27,58,.14);letter-spacing:-.03em}
+.svc-tag{font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#0c7ec4}
+.svc-card h3{font-size:clamp(1.5rem,2.2vw,1.9rem);line-height:1.1;letter-spacing:-.035em;margin:0}
+.svc-card p{margin:0;color:var(--muted);line-height:1.65;font-size:1rem;max-width:42ch}
+.svc-chips{list-style:none;margin:.2rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}
+.svc-chips li{font-size:.76rem;font-weight:700;padding:.45rem .8rem;border-radius:99px;background:#f4f7fb;border:1px solid rgba(11,27,58,.08);color:var(--ink)}
+.svc-go{margin-top:auto;padding-top:1.2rem;display:flex;align-items:center;gap:.6rem;font-weight:800;font-size:.9rem;color:var(--ink)}
+.svc-go i{font-style:normal;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;border:1.5px solid rgba(11,27,58,.2);transition:background .3s,color .3s,transform .4s var(--ease),border-color .3s}
+.svc-card:hover .svc-go i{background:var(--blue);border-color:var(--blue);color:#fff;transform:translateX(6px)}
+.svc-card.reveal{transition-delay:var(--d,0s)}
+@media(max-width:700px){.svc-section{padding:4.5rem 0}}

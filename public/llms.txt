@@ -1,19 +1,24 @@
 # OpsLogic
 
-> OpsLogic delivers Business Operations, IT, Hiring, Payroll, SAP and Shared
-> Workspace solutions for growing businesses.
+> OpsLogic delivers HR Operations (EOR, Payroll, Recruitment), Business Operations
+> and IT Services (SAP, Service Migrations) for growing businesses.
 
 ## Pages
 
 - [Home](https://www.opslogic.team/)
 - [About Us](https://www.opslogic.team/about-us)
 - [Services](https://www.opslogic.team/services)
-  - [Business Operations](https://www.opslogic.team/business-operations)
-  - [IT Solutions](https://www.opslogic.team/it-solutions)
-  - [Hiring Services](https://www.opslogic.team/hiring-services)
-  - [Payroll Services](https://www.opslogic.team/payroll-services)
-  - [SAP Services](https://www.opslogic.team/sap-services)
-  - [Shared Workspaces](https://www.opslogic.team/shared-workspaces)
+  - [HR Operations](https://www.opslogic.team/services/hr-operations)
+    - [EOR](https://www.opslogic.team/services/hr-operations/eor)
+    - [Payroll](https://www.opslogic.team/services/hr-operations/payroll)
+    - [Recruitment & Staffing](https://www.opslogic.team/services/hr-operations/recruitment)
+  - [Business Operations](https://www.opslogic.team/services/business-operations)
+    - [Business Setup](https://www.opslogic.team/services/business-operations/business-setup)
+    - [Process & Workflow Operations](https://www.opslogic.team/services/business-operations/process-operations)
+    - [Shared Workspaces](https://www.opslogic.team/services/business-operations/shared-workspaces)
+  - [IT Services](https://www.opslogic.team/services/it-services)
+    - [SAP Services](https://www.opslogic.team/services/it-services/sap)
+    - [Service Migrations](https://www.opslogic.team/services/it-services/service-migrations)
 - [Careers](https://www.opslogic.team/careers)
 - [Success Stories](https://www.opslogic.team/success-stories)
 - [Contact Us](https://www.opslogic.team/contact-us)

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./page.css";
+import Breadcrumbs from "../../comps/shared/Breadcrumbs";
 import SharedHeader from "../../comps/shared/SharedHeader";
 import InternalHero from "../../comps/careers-comps/InternalHero";
 import Statement from "../../comps/careers-comps/Statement";
@@ -9,7 +10,6 @@ import Wrap2 from "../../comps/careers-comps/Wrap2";
 import Wrap22 from "../../comps/careers-comps/Wrap22";
 import ServiceCta from "../../comps/careers-comps/ServiceCta";
 import SharedFooter from "../../comps/shared/SharedFooter";
-import Script from "next/script";
 import ScriptRunner from "../../comps/shared/ScriptRunner";
 import { SITE_SCRIPT } from "../../comps/shared/siteScript";
 
@@ -22,6 +22,7 @@ export default function CareersPage() {
   return (
     <>
       <SharedHeader active="careers" />
+      <Breadcrumbs items={[{ label: "Careers" }]} />
       <InternalHero />
       <Statement />
       <Wrap />
@@ -31,7 +32,6 @@ export default function CareersPage() {
       <ServiceCta />
       <SharedFooter />
       <ScriptRunner script={SITE_SCRIPT} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.opslogic.team/"}, {"@type": "ListItem", "position": 2, "name": "Careers", "item": "https://www.opslogic.team/careers"}]}' }} />
     </>
   );
 }

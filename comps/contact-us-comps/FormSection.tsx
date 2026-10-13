@@ -11,7 +11,7 @@ export default function FormSection() {
           </p>
           <div
             className="card"
-            style={{ background: "#e9f8ff", marginTop: "2rem" }}
+            style={{ background: "#e8f4fd", marginTop: "2rem" }}
           >
             <b>Say hello directly</b>
             <p>

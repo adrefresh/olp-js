@@ -6,8 +6,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://www.opslogic.team";
   const routes = [
     "", "/about-us", "/careers", "/contact-us", "/services", "/success-stories",
-    "/business-operations", "/it-solutions", "/hiring-services",
-    "/payroll-services", "/sap-services", "/shared-workspaces",
+    "/services/hr-operations", "/services/hr-operations/eor", "/services/hr-operations/payroll", "/services/hr-operations/recruitment",
+    "/services/business-operations", "/services/business-operations/business-setup", "/services/business-operations/process-operations", "/services/business-operations/shared-workspaces",
+    "/services/it-services", "/services/it-services/sap", "/services/it-services/service-migrations",
   ];
   return routes.map((r) => ({ url: base + r, lastModified: new Date() }));
 }

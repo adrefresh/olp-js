@@ -1,6 +1,6 @@
 export default function Wrap() {
   return (
-  <section style={{ background: "#e6f7ff" }}>
+  <section style={{ background: "#e8f4fd" }}>
     <div className="wrap">
       <span className="eyebrow">Cross-industry exposure</span>
       <h2 className="reveal" style={{ fontSize: "clamp(3rem,6vw,6rem)", maxWidth: "9ch", margin: "1rem 0" }}>One career. Many industries.</h2>

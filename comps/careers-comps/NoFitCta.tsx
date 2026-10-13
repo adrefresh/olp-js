@@ -1,7 +1,7 @@
 export default function NoFitCta() {
   return (
     <section>
-      <div className="wrap card reveal" style={{ background: "#fff0df" }}>
+      <div className="wrap card reveal" style={{ background: "#ffece0" }}>
         <span className="eyebrow orange">No perfect fit listed?</span>
         <h2 style={{ margin: "1rem 0", maxWidth: "14ch" }}>
           Make a case for yourself.

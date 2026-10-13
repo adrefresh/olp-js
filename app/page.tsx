@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import CursorFx from "../comps/home-comps/CursorFx";
 import SharedHeader from "../comps/shared/SharedHeader";
 import Herosection from "../comps/home-comps/Herosection";
 import Diagnostic from "../comps/home-comps/Diagnostic";
@@ -20,7 +19,6 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <CursorFx />
       <SharedHeader active="home" />
       <Herosection />
       <Diagnostic />

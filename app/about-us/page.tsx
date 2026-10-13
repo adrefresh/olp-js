@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./page.css";
+import Breadcrumbs from "../../comps/shared/Breadcrumbs";
 import SharedHeader from "../../comps/shared/SharedHeader";
 import InternalHero from "../../comps/about-us-comps/InternalHero";
 import AboutMotion from "../../comps/about-us-comps/AboutMotion";
@@ -11,7 +12,6 @@ import Duo from "../../comps/about-us-comps/Duo";
 import Ink2 from "../../comps/about-us-comps/Ink2";
 import ServiceCta from "../../comps/about-us-comps/ServiceCta";
 import SharedFooter from "../../comps/shared/SharedFooter";
-import Script from "next/script";
 import ScriptRunner from "../../comps/shared/ScriptRunner";
 import { SITE_SCRIPT } from "../../comps/shared/siteScript";
 
@@ -31,6 +31,7 @@ export default function AboutUsPage() {
     <>
       <div className={`${inter.variable} about-page-shell`}>
         <SharedHeader active="about-us" />
+        <Breadcrumbs items={[{ label: "About Us" }]} tone="light" />
         <InternalHero />
         <Statement />
         <Ink />
@@ -42,7 +43,6 @@ export default function AboutUsPage() {
         <AboutMotion />
       </div>
       <ScriptRunner script={SITE_SCRIPT} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.opslogic.team/"}, {"@type": "ListItem", "position": 2, "name": "About Us", "item": "https://www.opslogic.team/about-us"}]}' }} />
     </>
   );
 }

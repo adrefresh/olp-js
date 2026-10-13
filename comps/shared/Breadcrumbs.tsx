@@ -3,7 +3,8 @@ interface Crumb {
   href?: string;
 }
 
-export default function Breadcrumbs({ items }: { items: Crumb[] }) {
+/** Vertical breadcrumb rail, shown at the left of every inner-page hero. Styled in app/site.css. */
+export default function Breadcrumbs({ items, tone = "dark" }: { items: Crumb[]; tone?: "dark" | "light" }) {
   const all: Crumb[] = [{ label: "Home", href: "/" }, ...items];
 
   const schema = {
@@ -18,26 +19,14 @@ export default function Breadcrumbs({ items }: { items: Crumb[] }) {
   };
 
   return (
-    <nav
-      aria-label="Breadcrumb"
-      className="absolute top-[110px] left-0 right-0 z-[5] flex flex-wrap gap-[.4rem] px-[5vw] py-0 [font-family:'Jakarta',sans-serif] text-base uppercase tracking-[.04em] text-white/75"
-    >
+    <nav className={`crumbs${tone === "light" ? " crumbs-light" : ""}`} aria-label="Breadcrumb">
       {all.map((item, i) => (
-        <span key={item.label} className="flex items-center gap-[.4rem]">
-          {item.href ? (
-            <a href={item.href} className="text-white/70">
-              {item.label}
-            </a>
-          ) : (
-            <span className="text-white font-bold">{item.label}</span>
-          )}
-          {i < all.length - 1 && <span aria-hidden="true">/</span>}
+        <span className="crumb" key={`${item.label}-${i}`}>
+          {item.href ? <a href={item.href}>{item.label}</a> : <b aria-current="page">{item.label}</b>}
+          {i < all.length - 1 && <i aria-hidden="true">/</i>}
         </span>
       ))}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     </nav>
   );
 }

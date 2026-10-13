@@ -27,12 +27,12 @@ export default function Statement() {
         <div className="field">
           <label>What do you need?</label>
           <select>
+            <option>HR Operations</option>
+            <option>EOR</option>
+            <option>Payroll</option>
+            <option>Recruitment &amp; Staffing</option>
             <option>Business Operations</option>
-            <option>IT Solutions</option>
-            <option>Hiring Services</option>
-            <option>Payroll Services</option>
-            <option>SAP Services</option>
-            <option>Shared Workspaces</option>
+            <option>IT Services</option>
             <option>Something else</option>
           </select>
         </div>

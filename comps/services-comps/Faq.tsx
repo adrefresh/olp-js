@@ -1,6 +1,6 @@
 export default function Faq() {
   return (
-    <section style={{ background: "#e9f8ff" }}>
+    <section style={{ background: "#e8f4fd" }}>
       <div className="wrap">
         <span className="eyebrow">Still curious?</span>
         <h2 className="reveal" style={{ maxWidth: "13ch", margin: "1rem 0" }}>

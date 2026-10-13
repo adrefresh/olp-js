@@ -1,6 +1,6 @@
 export default function Wrap22() {
   return (
-  <section style={{ background: "#fff0df" }}>
+  <section style={{ background: "#ffece0" }}>
     <div className="wrap">
       <div className="jobs-head">
         <div>
