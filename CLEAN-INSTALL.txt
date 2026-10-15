@@ -1,0 +1,9 @@
+IMPORTANT: unzip this into a NEW, EMPTY folder. Do not unzip over your old project.
+Old files (old services pages, old components) are not deleted by unzipping and they override the new pages.
+
+1. Stop the old dev server (Ctrl+C in its terminal). Make sure nothing is still using port 3000.
+2. Create a new folder, unzip everything into it.
+3. In that folder run:  npm install
+4. Then:  npm run dev   (open the exact port it prints, e.g. http://localhost:3000)
+If you reuse the old folder: stop the server, run fix-stale-folders.bat (deletes the old shadowing folders and the .next cache), then npm run dev.
+Expected app/services contents: [cat], business-setup, eor, hr, hr-operations, it, page.css, page.tsx

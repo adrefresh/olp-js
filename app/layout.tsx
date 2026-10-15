@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./site.css";
+import "./ux.css";
 import SiteCursor from "../comps/shared/SiteCursor";
+import UxMotion from "../comps/shared/UxMotion";
 
 export const metadata: Metadata = {
   title: {
@@ -43,6 +45,8 @@ export default function RootLayout({
       </head>
       <body id="top">
         <SiteCursor />
+        <UxMotion />
+        <noscript><style>{".ux-r{opacity:1!important;transform:none!important}.ux-l>span{transform:none!important}.ux-sub{opacity:1!important}"}</style></noscript>
         {children}
       </body>
     </html>

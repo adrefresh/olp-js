@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 
 /**
- * Site-wide cursor. White + mix-blend-mode:difference (see app/site.css) inverts whatever is
+ * Custom cursor, shown only over the Home hero. White + mix-blend-mode:difference (see app/site.css) inverts whatever is
  * underneath, so it stays visible on navy, blue, orange and light backgrounds alike.
  */
 export default function SiteCursor() {
@@ -13,16 +13,19 @@ export default function SiteCursor() {
     if (window.matchMedia("(hover: none), (pointer: coarse)").matches) return;
     const d = dot.current, r = ring.current;
     if (!d || !r) return;
-    document.body.classList.add("has-site-cursor");
+    let inHero = false;
     let mx = 0, my = 0, rx = 0, ry = 0, raf = 0;
 
     const move = (e: MouseEvent) => {
       mx = e.clientX; my = e.clientY;
-      d.style.opacity = r.style.opacity = "1";
+      d.style.opacity = r.style.opacity = inHero ? "1" : "0";
       d.style.transform = `translate(${mx}px,${my}px) translate(-50%,-50%)`;
     };
     const over = (e: MouseEvent) => {
       const t = e.target as Element | null;
+      inHero = !!t?.closest("#heroSection");
+      document.body.classList.toggle("has-site-cursor", inHero);
+      d.style.opacity = r.style.opacity = inHero ? "1" : "0";
       r.classList.toggle("big", !!t?.closest("a,button,summary,input,select,textarea,[role=tab],[data-cursor]"));
     };
     const loop = () => {

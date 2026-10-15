@@ -1,14 +1,12 @@
-import type { Metadata } from "next";
-import "../page.css";
-import "../category.css";
-import CategoryPage from "../../../comps/services-comps/CategoryPage";
-import { CATEGORIES } from "../../../comps/shared/servicesData";
-
-export const metadata: Metadata = {
-  title: "HR Operations — OpsLogic",
-  description: "EOR, payroll and recruitment & staffing — hire, employ and pay your people with one partner.",
-};
-
+/** Legacy URL, kept so old links keep working. */
 export default function Page() {
-  return <CategoryPage cat={CATEGORIES[0]} />;
+  return (
+    <>
+      <meta httpEquiv="refresh" content="0; url=/services/hr-payroll/" />
+      <link rel="canonical" href="https://www.opslogic.team/services/hr-payroll" />
+      <p style={{ padding: "2rem" }}>
+        This page has moved. <a href="/services/hr-payroll/">Continue to the new page</a>.
+      </p>
+    </>
+  );
 }

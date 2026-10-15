@@ -13,23 +13,8 @@ export default function Herosection() {
         <a href="#services" className="btn-primary magnetic" data-cursor="click">Explore our solutions</a>
         <a href="#contact" className="btn-ghost-light">Talk to us</a>
       </div>
-      <div className="svc-ticker">
-        <div className="svc-ticker-track">
-          <span>EOR</span><b>✳</b><span>HR Services</span><b>✳</b><span>Business Setup</span><b>✳</b><span>IT Services</span><b>✳</b>
-          <span>EOR</span><b>✳</b><span>HR Services</span><b>✳</b><span>Business Setup</span><b>✳</b><span>IT Services</span><b>✳</b>
-          <span>EOR</span><b>✳</b><span>HR Services</span><b>✳</b><span>Business Setup</span><b>✳</b><span>IT Services</span><b>✳</b>
-        </div>
-      </div>
     </div>
     {/* <div class="scroll-cue"><span class="line"></div> */}
-    <div className="float-badge top-[22%] right-[7%]" id="heroBadge1">
-      <span className="icon-badge wash-dark" data-icon="check" />
-      Trusted setup
-    </div>
-    <div className="float-badge delay1 bottom-[16%] right-[11%]" id="heroBadge2">
-      <span className="icon-badge wash-dark" data-icon="chart" />
-      Built to scale
-    </div>
   </section>
   );
 }
