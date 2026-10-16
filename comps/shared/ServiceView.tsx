@@ -4,7 +4,7 @@ import SharedHeader from "./SharedHeader";
 import SharedFooter from "./SharedFooter";
 import ScriptRunner from "./ScriptRunner";
 import { SITE_SCRIPT } from "./siteScript";
-import { UxCta, UxHead } from "./Ux";
+import { UxHead } from "./Ux";
 import H from "./H";
 import { CATS, SERVICES, catHref, svcHref, type Block } from "./servicesContent";
 import { VARIANTS, type ListStyle, type StepStyle } from "./serviceVariants";
@@ -279,7 +279,6 @@ export function ServiceView({ slug }: { slug: string }) {
             </div>
           </section>
         ) : null}
-        <UxCta title={s.cta} />
       </main>
       <SharedFooter />
       <ScriptRunner script={SITE_SCRIPT} />

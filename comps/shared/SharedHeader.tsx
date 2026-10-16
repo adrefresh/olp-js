@@ -29,9 +29,10 @@ export default function SharedHeader({ active }: { active: NavKey }) {
               {CATEGORIES.map((c) => (
                 <div className="mega-col" key={c.slug}>
                   <a href={c.href} className="mega-title">{c.title}<span aria-hidden="true">→</span></a>
-                  {c.items.map((s) => (
+                  {c.items.slice(0, 6).map((s) => (
                     <a href={s.href} key={s.slug} className="mega-item">{s.title}</a>
                   ))}
+                  <a href={c.href} className="mega-count">All {c.total} services <span aria-hidden="true">→</span></a>
                 </div>
               ))}
             </div>

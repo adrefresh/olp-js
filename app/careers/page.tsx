@@ -5,7 +5,8 @@ import SharedHeader from "../../comps/shared/SharedHeader";
 import SharedFooter from "../../comps/shared/SharedFooter";
 import ScriptRunner from "../../comps/shared/ScriptRunner";
 import { SITE_SCRIPT } from "../../comps/shared/siteScript";
-import { UxHero, UxHead, UxCta } from "../../comps/shared/Ux";
+import TypeCards from "../../comps/shared/TypeCards";
+import { UxHero, UxHead } from "../../comps/shared/Ux";
 
 export const metadata: Metadata = {
   title: "Careers — OpsLogic",
@@ -31,11 +32,7 @@ export default function CareersPage() {
           lines={["Do work that keeps", <>other <em>businesses</em></>, "running."]}
           sub="We're always interested in people who are careful, curious and good with details."
           aside={
-            <div className="ux-stickers ux-traits" aria-hidden="true">
-              <div className="ux-stk s1"><b>Careful</b><span>gets it right</span></div>
-              <div className="ux-stk s2"><b>Curious</b><span>asks why</span></div>
-              <div className="ux-stk s3"><b>Good with details</b><span>spots the gap</span></div>
-            </div>
+            <TypeCards />
           }
         />
 
@@ -76,8 +73,6 @@ export default function CareersPage() {
             <div className="ux-btns"><a className="ux-btn d" href="mailto:hello@opslogic.team">Send your CV <span aria-hidden="true">↗</span></a></div>
           </div>
         </section>
-
-        <UxCta />
       </main>
       <SharedFooter />
       <ScriptRunner script={SITE_SCRIPT} />

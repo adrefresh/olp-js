@@ -5,7 +5,7 @@ import SharedHeader from "../../comps/shared/SharedHeader";
 import SharedFooter from "../../comps/shared/SharedFooter";
 import ScriptRunner from "../../comps/shared/ScriptRunner";
 import { SITE_SCRIPT } from "../../comps/shared/siteScript";
-import { UxHero, UxCta } from "../../comps/shared/Ux";
+import { UxHero } from "../../comps/shared/Ux";
 import { catHref } from "../../comps/shared/servicesContent";
 
 export const metadata: Metadata = {
@@ -59,7 +59,6 @@ export default function ServicesPage() {
             </section>
           );
         })}
-        <UxCta />
       </main>
       <SharedFooter />
       <ScriptRunner script={SITE_SCRIPT} />

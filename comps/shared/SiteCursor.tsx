@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 
 /**
- * Custom cursor, shown only over the Home hero. White + mix-blend-mode:difference (see app/site.css) inverts whatever is
+ * Custom cursor, shown across the whole site (native cursor is kept inside form fields). White + mix-blend-mode:difference (see app/site.css) inverts whatever is
  * underneath, so it stays visible on navy, blue, orange and light backgrounds alike.
  */
 export default function SiteCursor() {
@@ -13,7 +13,7 @@ export default function SiteCursor() {
     if (window.matchMedia("(hover: none), (pointer: coarse)").matches) return;
     const d = dot.current, r = ring.current;
     if (!d || !r) return;
-    let inHero = false;
+    let inHero = true;
     let mx = 0, my = 0, rx = 0, ry = 0, raf = 0;
 
     const move = (e: MouseEvent) => {
@@ -23,7 +23,7 @@ export default function SiteCursor() {
     };
     const over = (e: MouseEvent) => {
       const t = e.target as Element | null;
-      inHero = !!t?.closest("#heroSection");
+      inHero = !t?.closest("input,textarea,select");
       document.body.classList.toggle("has-site-cursor", inHero);
       d.style.opacity = r.style.opacity = inHero ? "1" : "0";
       r.classList.toggle("big", !!t?.closest("a,button,summary,input,select,textarea,[role=tab],[data-cursor]"));
@@ -34,11 +34,14 @@ export default function SiteCursor() {
       raf = requestAnimationFrame(loop);
     };
     raf = requestAnimationFrame(loop);
+    const leave = () => { d.style.opacity = r.style.opacity = "0"; };
+    document.documentElement.addEventListener("mouseleave", leave);
     window.addEventListener("mousemove", move);
     document.addEventListener("mouseover", over);
     return () => {
       window.removeEventListener("mousemove", move);
       document.removeEventListener("mouseover", over);
+      document.documentElement.removeEventListener("mouseleave", leave);
       cancelAnimationFrame(raf);
       document.body.classList.remove("has-site-cursor");
     };

@@ -5,7 +5,7 @@ import SharedHeader from "../../comps/shared/SharedHeader";
 import SharedFooter from "../../comps/shared/SharedFooter";
 import ScriptRunner from "../../comps/shared/ScriptRunner";
 import { SITE_SCRIPT } from "../../comps/shared/siteScript";
-import { UxHero, UxHead, UxCta } from "../../comps/shared/Ux";
+import { UxHero, UxHead } from "../../comps/shared/Ux";
 
 export const metadata: Metadata = {
   title: "About Us — OpsLogic",
@@ -59,18 +59,23 @@ export default function AboutUsPage() {
           </div>
         </section>
 
-        <section className="ux-sec t3" id="founders">
+        <section className="ux-sec t0" id="founders">
           <div className="ux-wrap">
-            <UxHead eyebrow="The founders" title="Each one leads a part of the business." />
-            <div className="ux-grid ux-g3 ux-founders">
+            <UxHead eyebrow="Leadership" title={<>The founders<span className="ux-dot">.</span></>} />
+            <div className="ux-fds">
               {FOUNDERS.map((f, i) => (
-                <article className="ux-card ux-r" style={{ ["--i" as string]: i }} key={f.name}>
-                  <div className="ux-av" aria-hidden="true">{f.ini}</div>
-                  <h3>{f.name}</h3>
-                  <p className="ux-role">{f.role}</p>
-                  <span className="ux-area">{f.area}</span>
-                  <p>{f.lead}</p>
-                  <details><summary>Read more</summary><p>{f.more}</p></details>
+                <article className={"ux-fd" + (i % 2 ? " rev" : "")} key={f.name}>
+                  <div className={"ux-fd-photo p" + (i + 1) + " ux-r"} aria-hidden="true">
+                    <i className="s1" /><i className="s2" />
+                    <b>{f.ini}</b>
+                    <em>[Founder photo]</em>
+                  </div>
+                  <div className="ux-fd-body ux-r" style={{ ["--i" as string]: 1 }}>
+                    <span className="ux-fd-n">0{i + 1} / 0{FOUNDERS.length}</span>
+                    <h3>{f.name}</h3>
+                    <div className="ux-fd-chips"><span>{f.role}</span><span className={"a a" + (i + 1)}>{f.area}</span></div>
+                    <p>{f.lead} {f.more}</p>
+                  </div>
                 </article>
               ))}
             </div>
@@ -101,7 +106,6 @@ export default function AboutUsPage() {
           </div>
         </section>
 
-        <UxCta />
       </main>
       <SharedFooter />
       <ScriptRunner script={SITE_SCRIPT} />

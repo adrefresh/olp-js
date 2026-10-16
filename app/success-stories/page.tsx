@@ -5,7 +5,7 @@ import SharedHeader from "../../comps/shared/SharedHeader";
 import SharedFooter from "../../comps/shared/SharedFooter";
 import ScriptRunner from "../../comps/shared/ScriptRunner";
 import { SITE_SCRIPT } from "../../comps/shared/siteScript";
-import { UxHero, UxHead, UxCta } from "../../comps/shared/Ux";
+import { UxHero, UxHead } from "../../comps/shared/Ux";
 
 export const metadata: Metadata = {
   title: "Success Stories — OpsLogic",
@@ -54,8 +54,6 @@ export default function SuccessStoriesPage() {
             </div>
           </div>
         </section>
-
-        <UxCta title="Let’s build the operating layer behind it." lead="Tell us where the friction is and we’ll take it from there." />
       </main>
       <SharedFooter />
       <ScriptRunner script={SITE_SCRIPT} />

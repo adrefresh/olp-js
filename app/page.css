@@ -808,3 +808,4 @@ body:has(.internal-hero.themed) .site-nav:not(.scrolled) .nav-links>a:hover,body
 /* Home hero is dark video — nav links white until scrolled (home only) */
 body:has(#heroSection) .site-nav:not(.scrolled) .nav-links>a,body:has(#heroSection) .site-nav:not(.scrolled) .brand,body:has(#heroSection) .site-nav:not(.scrolled) .nav-drop>button{color:#fff}
 body:has(#heroSection) .site-nav:not(.scrolled) .nav-links>a:hover,body:has(#heroSection) .site-nav:not(.scrolled) .nav-links>a.active,body:has(#heroSection) .site-nav:not(.scrolled) .nav-drop:hover>button{color:#fff;background:#ffffff18}
+

@@ -177,3 +177,64 @@ html body .site-nav .nav-drop .nav-mega .mega-intro a.mega-all,html body .site-n
 .site-nav .nav-drop{position:static!important}
 .site-nav .nav-drop-menu.nav-mega{position:absolute!important;left:50%!important;right:auto!important;top:calc(100% - 4px)!important;width:min(90vw,1500px)!important;max-width:none!important;margin-left:calc(min(90vw,1500px)/-2)!important}
 .nav-mega::before{top:-18px!important;height:18px!important}
+
+/* ===== footer v4: statement + badge (dark) ===== */
+.fx,.fx *{font-family:"Plus Jakarta Sans",sans-serif;box-sizing:border-box}
+.fx{position:relative;overflow:hidden;background:#0b2545;color:#c3cedd;border-radius:clamp(24px,2.6vw,40px) clamp(24px,2.6vw,40px) 0 0;margin:0!important;padding:0!important}
+.fx a{text-decoration:none}
+.fx-glow{position:absolute;left:50%;top:-260px;width:900px;height:520px;margin-left:-450px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,173,239,.18),transparent);pointer-events:none}
+.fx-wrap{position:relative;width:min(1200px,90vw);margin:0 auto;padding-top:clamp(64px,7vw,112px)}
+.fx-top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:32px;padding-bottom:clamp(48px,6vw,88px)}
+.fx-big{margin:0 0 28px;color:#fff;font-size:clamp(2.4rem,7vw,6rem);line-height:1.02;font-weight:800;letter-spacing:-.06em}
+.fx-line{display:block}
+.fx-aq{color:#00adef}.fx-o{color:#ff6b1a}
+.fx-sub{margin:0;font-size:clamp(17px,1.4vw,20px);line-height:1.6;color:#c3cedd;max-width:520px}
+.fx-badge{position:relative;flex-shrink:0;width:clamp(132px,12vw,168px);height:clamp(132px,12vw,168px);border-radius:50%;color:#fff;display:block;margin-bottom:12px}
+.fx-ring{position:absolute;inset:0;width:100%;height:100%;animation:fxSpin 22s linear infinite}
+.fx-core{position:absolute;inset:28%;border-radius:50%;background:#ff6b1a;color:#0b2545;display:flex;align-items:center;justify-content:center;transition:transform .6s cubic-bezier(.16,1,.3,1),background .4s}
+.fx-badge:hover .fx-core,.fx-badge:focus-visible .fx-core{transform:scale(1.18) rotate(45deg);background:#fff}
+.fx-badge:hover{color:#00adef}
+@keyframes fxSpin{to{transform:rotate(360deg)}}
+.fx-mid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) minmax(0,1fr);gap:40px;padding:clamp(40px,5vw,64px) 0;border-top:1px solid rgba(255,255,255,.12)}
+.fx-k{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#7f93ad;margin-bottom:18px}
+.fx-contact{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.fx-contact .fx-k{margin-bottom:6px}
+.fx-mail{position:relative;display:inline-flex;align-items:center;gap:14px;color:#fff;font-size:clamp(26px,3vw,44px);font-weight:800;letter-spacing:-.035em;line-height:1.1}
+.fx-mail::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:#ff6b1a;transform:scaleX(.16);transform-origin:left;transition:transform .7s cubic-bezier(.16,1,.3,1)}
+.fx-mail:hover::after{transform:scaleX(1)}
+.fx-mail svg{color:#00adef;transition:transform .6s cubic-bezier(.16,1,.3,1)}.fx-mail:hover svg{transform:translate(4px,-4px) rotate(45deg)}
+.fx-tel{color:#fff;font-size:clamp(18px,1.6vw,22px);font-weight:700;margin-top:10px;transition:color .3s}.fx-tel:hover{color:#00adef}
+.fx-loc{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:#9fb0c6}
+.fx-live{width:8px;height:8px;border-radius:50%;background:#00adef;display:block;animation:fxPulse 2s ease-out infinite}
+@keyframes fxPulse{0%{box-shadow:0 0 0 0 rgba(0,173,239,.6)}100%{box-shadow:0 0 0 10px rgba(0,173,239,0)}}
+.fx-col{display:flex;flex-direction:column;align-items:flex-start}.fx-col .fx-k{margin-bottom:12px}
+.fx-a{position:relative;display:inline-flex;align-items:center;padding:8px 0;color:#fff;font-size:17px;font-weight:600;overflow:hidden}
+.fx-a span{display:inline-block;transition:transform .5s cubic-bezier(.16,1,.3,1)}
+.fx-a::before{content:"";position:absolute;left:0;top:50%;width:8px;height:8px;margin-top:-4px;border-radius:50%;background:#ff6b1a;transform:scale(0);transition:transform .45s cubic-bezier(.16,1,.3,1)}
+.fx-a:hover span{transform:translateX(18px)}.fx-a:hover::before{transform:scale(1)}
+.fx-bot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:24px 0 30px;border-top:1px solid rgba(255,255,255,.12);font-size:13px;color:#9fb0c6}
+.fx-bot img{height:30px;width:auto;display:block}
+.fx-links{display:flex;align-items:center;gap:1.4rem}.fx-links a{color:#fff;font-weight:700}
+.fx-topbtn{display:inline-flex;align-items:center;gap:10px;min-height:44px}
+.fx-up{width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;transition:background .35s,color .35s,transform .5s cubic-bezier(.16,1,.3,1)}
+.fx-topbtn:hover .fx-up{background:#00adef;color:#0b2545;border-color:#00adef;transform:translateY(-4px)}
+@media(max-width:900px){.fx-mid{grid-template-columns:1fr 1fr}.fx-contact{grid-column:1/-1}}
+@media(max-width:520px){.fx-mid{grid-template-columns:1fr}}
+@media(max-width:700px){.fx-bot{flex-direction:column;align-items:flex-start}}
+@media(prefers-reduced-motion:reduce){.fx-ring,.fx-live{animation:none}}
+
+/* v31: hero: neutral overlay (no blue shade) + scroll-down button */
+#hero-video{filter:saturate(1.08) contrast(1.04)!important}
+
+.hero::before{background:none!important}
+.hero-shade{position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(90deg,rgba(0,0,0,.68) 0%,rgba(0,0,0,.52) 45%,rgba(0,0,0,.4) 100%)}
+.video-spot{background:radial-gradient(280px circle at var(--sx,50%) var(--sy,50%),rgba(255,255,255,.14),transparent 70%)!important}
+.hero-down{position:absolute;left:50%;bottom:2rem;z-index:5;width:3.4rem;height:3.4rem;margin-left:-1.7rem;border-radius:50%;display:grid;place-items:center;color:#fff;background:rgba(255,255,255,.14);border:1.5px solid rgba(255,255,255,.55);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);animation:heroBob 1.8s ease-in-out infinite;transition:background .3s,color .3s,border-color .3s}
+.hero-down:hover{background:#ff6b1a;border-color:#ff6b1a;color:#fff;animation-play-state:paused}
+@keyframes heroBob{0%,100%{transform:translateY(0)}50%{transform:translateY(12px)}}
+@media(prefers-reduced-motion:reduce){.hero-down{animation:none}}
+html{scroll-behavior:smooth}
+#who-we-are{scroll-margin-top:0}
+/* v33: hero headline colours */
+.hero h1{color:#fff!important}
+.hero h1 .accent{color:#1ea7f0!important}

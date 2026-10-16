@@ -31,21 +31,10 @@ export function UxHead({ eyebrow, title, lead }: { eyebrow: string; title: React
   );
 }
 
-/** Closing call-to-action shared by every page: one compact banner. */
-export function UxCta({ title, lead }: { title?: ReactNode; lead?: string }) {
-  return (
-    <section className="ux-sec t0 ux-ctas" aria-labelledby="ux-cta-h">
-      <div className="ux-wrap">
-        <div className="ux-cta2 ux-r">
-          <div>
-            <h2 id="ux-cta-h">{title ?? "Let\u2019s make business move."}</h2>
-            <p>{lead ?? "Book a free consultation. No pitch deck, no pressure."}</p>
-          </div>
-          <a className="ux-btn d" href="/contact-us">Talk to us <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-    </section>
-  );
+/** The closing call-to-action now lives inside the footer, so pages no longer render a separate band. */
+export function UxCta(props: { title?: ReactNode; lead?: string }) {
+  void props;
+  return null;
 }
 
 /** Two crossing, endlessly sliding tapes. Decorative section divider. */

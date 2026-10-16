@@ -11,6 +11,7 @@ export const CATEGORIES = CATS.map((c) => ({
   slug: c.slug,
   title: c.title,
   href: catHref(c.slug),
+  total: c.groups.reduce((n, g) => n + g.items.length, 0),
   items: FEATURED[c.slug].map((s) => ({ slug: s, title: SERVICES[s].title, href: svcHref(s) })),
 }));
 
