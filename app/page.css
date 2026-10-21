@@ -275,7 +275,7 @@ body:has(.internal-hero) .site-nav:not(.scrolled) .nav-drop:hover>button{color:#
 
 
 /* Final nav dropdown readability */
-.nav-drop-menu a{color:var(--ink)!important;font-weight:700!important;}
+.nav-drop-menu a{color:var(--ink)!important;font-weight:400!important;}
 
 .nav-drop-menu a:hover{color:#0c7ec4!important;background:#e8f4fd!important;}
 
@@ -302,7 +302,7 @@ body:has(.internal-hero) .site-nav:not(.scrolled) .nav-drop:hover>button{color:#
 
   html{ scroll-behavior:smooth; }
 
-  body{ margin:0; background:var(--paper); color:var(--ink); font-family:"Plus Jakarta Sans"; overflow-x:hidden; cursor:none; }
+  body{ margin:0; background:var(--paper); color:var(--ink); font-family:"Plus Jakarta Sans"; overflow-x:hidden; cursor:auto; }
 
   ::selection{ background:var(--orange); color:var(--ink); }
 
@@ -310,7 +310,7 @@ body:has(.internal-hero) .site-nav:not(.scrolled) .nav-drop:hover>button{color:#
 
   a{ color:inherit; text-decoration:none; }
 
-  button{ font-family:inherit; cursor:none; background:none; border:0; }
+  button{ font-family:inherit; cursor:auto; background:none; border:0; }
 
   h1,h2,h3{ font-family:"Plus Jakarta Sans"; font-weight:700; line-height:1.06; margin:0; letter-spacing:-.01em; }
 
@@ -420,7 +420,7 @@ body:has(.internal-hero) .site-nav:not(.scrolled) .nav-drop:hover>button{color:#
 
   .hero h1{ color:#fff; font-size:clamp(2.4rem,7vw,6rem); margin:1.2rem 0 1.4rem; max-width:15ch; }
 
-  .hero h1 .word{ display:inline-block; margin-right:.22em; transition:transform .35s var(--ease), color .35s var(--ease); cursor:none; }
+  .hero h1 .word{ display:inline-block; margin-right:.22em; transition:transform .35s var(--ease), color .35s var(--ease); cursor:auto; }
 
   .hero h1 .word:hover{ color:var(--orange); transform:translateY(-6px) rotate(-2deg); }
 
@@ -655,7 +655,7 @@ body:has(.internal-hero) .site-nav:not(.scrolled) .nav-drop:hover>button{color:#
     position:absolute; z-index:5; display:flex; align-items:center; gap:.5em;
     background:var(--card); border:2px solid var(--ink); border-radius:100px; padding:.7em 1.15em;
     font-family:"Plus Jakarta Sans"; font-weight:700; font-size:.76rem; text-transform:uppercase; white-space:nowrap;
-    box-shadow:0 10px 24px rgba(11,27,58,.14); cursor:none;
+    box-shadow:0 10px 24px rgba(11,27,58,.14); cursor:auto;
     animation:stickerfloat 5s ease-in-out infinite;
     transition:transform .25s var(--ease), background .25s var(--ease), color .25s var(--ease), box-shadow .25s var(--ease);
   }
@@ -744,7 +744,7 @@ body:has(.internal-hero) .site-nav:not(.scrolled) .nav-drop:hover>button{color:#
 @keyframes svc-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 
-a.service-slide{color:inherit;text-decoration:none;cursor:none}
+a.service-slide{color:inherit;text-decoration:none;cursor:auto}
 
 /* ---- unified navbar (same as every inner page) ---- */
 
@@ -789,7 +789,7 @@ body:has(.internal-hero) .site-nav:not(.scrolled) .nav-drop:hover>button{color:#
 
 
 /* Final nav dropdown readability */
-.nav-drop-menu a{color:var(--ink)!important;font-weight:700!important;}
+.nav-drop-menu a{color:var(--ink)!important;font-weight:400!important;}
 
 .nav-drop-menu a:hover{color:#0c7ec4!important;background:#e8f4fd!important;}
 

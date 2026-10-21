@@ -38,13 +38,14 @@ export default function ServicesPage() {
       <Breadcrumbs items={[{ label: "Services" }]} />
       <main className="ux">
         <UxHero
+          className="h-rings"
           eyebrow="Services"
           lines={["Three areas.", <>One team <em>behind</em></>, "them."]}
           sub="Whether you need one service or the whole stack, we'll scope it around what your business actually needs."
         />
         {AREAS.map((a, i) => {
                     return (
-            <section className={"ux-sec " + a.tone} key={a.slug} id={a.slug}>
+            <section className={"ux-sec " + a.tone + (i === AREAS.length - 1 ? " ux-corner" : "")} key={a.slug} id={a.slug}>
               <div className="ux-wrap ux-svc">
                 <div className="ux-r">
                   <span className="ghost" aria-hidden="true">0{i + 1}</span>

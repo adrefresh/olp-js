@@ -34,7 +34,7 @@ export function WhoWeAre() {
           </div>
           <dl className="ux-facts ux-r" style={{ ["--i" as string]: 1 }}>
             <div><dt>Established</dt><dd>2022</dd></div>
-            <div><dt>Founders</dt><dd>Three</dd></div>
+            <div><dt>Founders</dt><dd>3</dd></div>
             <div><dt>Based in</dt><dd>Hyderabad, India</dd></div>
           </dl>
         </div>

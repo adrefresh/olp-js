@@ -205,7 +205,7 @@ function FaqView({ faq, side }: { faq: { q: string; a: string }[]; side: boolean
     </div>
   );
   return (
-    <section className="ux-sec t0">
+    <section className="ux-sec t0 ux-corner">
       <div className={"ux-wrap " + (side ? "ux-split" : "ux-narrow")}>
         <div className={side ? "ux-stick" : ""}><UxHead eyebrow="FAQ" title="Questions we hear" /></div>
         {list}
@@ -219,10 +219,6 @@ export function ServiceView({ slug }: { slug: string }) {
   const cat = CATS.find((c) => c.slug === s.cat)!;
   const v = VARIANTS[slug];
   const group = cat.groups.find((g) => g.items.includes(slug));
-  const order = cat.groups.flatMap((g) => g.items);
-  const at = order.indexOf(slug);
-  const prev = order.length > 1 ? order[(at - 1 + order.length) % order.length] : null;
-  const next = order.length > 1 ? order[(at + 1) % order.length] : null;
   const related = (group?.items ?? []).filter((x) => x !== slug).slice(0, 4);
   const firstList = s.sections.flatMap((x) => x.b).find((b) => "ul" in b) as { ul: { h?: string; t: string }[] } | undefined;
   const snap = (firstList?.ul ?? []).slice(0, 4).map((x) => strip(x.h ?? x.t));
@@ -234,7 +230,7 @@ export function ServiceView({ slug }: { slug: string }) {
       <SharedHeader active="services" />
       <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: cat.title, href: catHref(cat.slug) }, { label: s.title }]} />
       <main className={"ux an-" + v.anim}>
-        <header className={"ux-hero h-" + v.hero}>
+        <header className={"ux-hero h-rings h-" + v.hero}>
           {v.hero === "orbit" ? <div className="ux-orbit" aria-hidden="true" /> : null}
           {v.hero === "ghost" ? <div className="ux-gw" aria-hidden="true">{ghost}</div> : null}
           <div className={"ux-wrap" + (v.hero === "split" ? " ux-hgrid" : "")}>
@@ -259,7 +255,6 @@ export function ServiceView({ slug }: { slug: string }) {
 
         {s.sections.map((sec, i) => <SectionView key={i} sec={sec} idx={i} list={v.list} />)}
         <StepsView steps={s.steps} style={v.steps} />
-        <FaqView faq={s.faq} side={v.faq === "side"} />
 
         {related.length ? (
           <section className="ux-sec t2">
@@ -271,14 +266,7 @@ export function ServiceView({ slug }: { slug: string }) {
             </div>
           </section>
         ) : null}
-        {prev && next ? (
-          <section className="ux-sec t0 ux-pnsec">
-            <div className="ux-wrap ux-pn">
-              <a className="ux-pnc ux-r" href={svcHref(prev)}><span>← Previous in {cat.title}</span><b>{SERVICES[prev].title}</b></a>
-              <a className="ux-pnc nx ux-r" style={{ ["--i" as string]: 1 }} href={svcHref(next)}><span>Next in {cat.title} →</span><b>{SERVICES[next].title}</b></a>
-            </div>
-          </section>
-        ) : null}
+        <FaqView faq={s.faq} side={v.faq === "side"} />
       </main>
       <SharedFooter />
       <ScriptRunner script={SITE_SCRIPT} />

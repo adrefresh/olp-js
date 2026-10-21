@@ -8,7 +8,7 @@ export default function UxMotion() {
       (es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }),
       { threshold: 0.01, rootMargin: "0px 0px -8% 0px" }
     );
-    const scan = () => document.querySelectorAll(".ux-r:not(.in),.ux-steps:not(.in),.ux-vsteps:not(.in)").forEach((el) => io.observe(el));
+    const scan = () => document.querySelectorAll(".ux-r:not(.in),.ux-steps:not(.in),.ux-vsteps:not(.in),.ux-hire:not(.in)").forEach((el) => io.observe(el));
     scan();
     const mo = new MutationObserver(scan);
     mo.observe(document.body, { childList: true, subtree: true });

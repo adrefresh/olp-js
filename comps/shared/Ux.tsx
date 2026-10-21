@@ -1,9 +1,9 @@
 import type { ReactNode } from "react";
 
 /** Inner-page hero: one h1 (each line masks up), short sub, drifting glow + the logo's orbiting dot. */
-export function UxHero({ eyebrow, lines, sub, aside }: { eyebrow: string; lines: ReactNode[]; sub?: string; aside?: ReactNode }) {
+export function UxHero({ eyebrow, lines, sub, aside, className }: { eyebrow: string; lines: ReactNode[]; sub?: string; aside?: ReactNode; className?: string }) {
   return (
-    <header className={"ux-hero" + (aside ? " has-aside" : "")}>
+    <header className={"ux-hero" + (aside ? " has-aside" : "") + (className ? " " + className : "")}>
       <div className="ux-orbit" aria-hidden="true" />
       <div className={"ux-wrap" + (aside ? " ux-hgrid" : "")}>
         <div>

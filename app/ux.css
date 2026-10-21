@@ -734,3 +734,160 @@ body:has(#heroSection) #services.ux{background:#fff5ec!important;border-top:1px 
 }
 @media(max-width:900px){.ux-hero h1{font-size:clamp(2.4rem,9.5vw,3.4rem)}}
 .ux-fd-photo i{display:none!important}
+
+/* ===== v43 ===== */
+/* 1 Home service card headings */
+#services .service-slide h3{font-size:clamp(1.9rem,2.5vw,2.35rem)!important;line-height:1.1!important;letter-spacing:-.03em}
+/* 2 Industries sits on the section grey */
+/* 3 + 8 descriptions are regular weight */
+.ux p,.ux-two p:first-child,.ux-lead,.ux-lead.first,.ux-aud p,.ux-indsec .ux-lead,.ux-hero .ux-sub,.ux-snap li,.ux-snap p,.ux p b,.ux p strong,.ux p em,.ux li b,.ux .ux-chip b,.ux-also2 b,.ux-pk p,.ux-why p,.ux-tyc span.d{font-weight:400!important}
+.hero .sub,.hero p,#services .service-slide p{font-weight:400!important}
+/* 6 services dropdown text is regular */
+a.mega-item,.site-nav .nav-mega a.mega-item,.site-nav .nav-mega .mega-item{font-weight:400!important}
+.site-nav .nav-mega .mega-intro p{font-weight:400!important}
+/* 4 testimonials: auto-scrolling strip */
+.ux-tm{margin-top:2rem;overflow:hidden;padding:.6rem 0 1rem;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.ux-tm-track{display:flex;width:max-content;animation:uxTm 38s linear infinite}
+.ux-tm:hover .ux-tm-track,.ux-tm:focus-within .ux-tm-track{animation-play-state:paused}
+.ux-tm-set{display:flex;gap:1.4rem;padding-right:1.4rem;flex:none}
+.ux-tm-card{flex:none;width:fit-content;min-width:17rem;max-width:34rem;height:14rem;padding:1.6rem 2rem;border-radius:28px;display:flex;flex-direction:column;gap:.8rem;border:1px solid rgba(255,255,255,.9);box-shadow:0 22px 44px rgba(11,27,58,.09);overflow:hidden}
+.ux-tm-card.b{background:#fff}.ux-tm-card.o{background:#ffece0}.ux-tm-card.a{background:#c9e6f9}
+.ux-tm-q{display:grid;place-items:center;width:2.8rem;height:2.8rem;flex:none;border-radius:50%;background:var(--b);color:#fff;font-size:2rem;font-weight:800;line-height:1;padding-top:.45rem}
+.ux-tm-card.o .ux-tm-q{background:var(--o)}
+.ux-tm-card blockquote{margin:0;font-size:1.4rem;font-weight:700;line-height:1.35;letter-spacing:-.02em;color:var(--n);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.ux-tm-card figcaption{margin-top:auto;display:flex;align-items:center;gap:.7rem;font-size:.9rem;font-weight:700;color:#56657a;white-space:nowrap}
+.ux-tm-card figcaption i{width:2.2rem;height:2.2rem;border-radius:50%;background:rgba(11,27,58,.08);flex:none}
+@keyframes uxTm{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.ux-tm{overflow-x:auto}.ux-tm-track{animation:none!important}}
+/* 5 footer: smaller email, social icons, tighter padding */
+.fx-wrap{padding-top:clamp(44px,5vw,76px)}
+.fx-top{padding-bottom:clamp(32px,4vw,56px)}
+.fx-mid{padding:clamp(28px,3.4vw,44px) 0;gap:32px}
+.fx-mail{font-size:clamp(18px,1.9vw,26px)}
+.fx-mail svg{width:20px;height:20px}
+.fx-bot{padding:18px 0 22px}
+.fx-soc{display:flex;gap:10px;margin-top:16px}
+.fx-soc a{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;color:#fff;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);transition:background .3s,color .3s,transform .4s cubic-bezier(.22,1,.36,1)}
+.fx-soc a:hover{background:#00adef;border-color:#00adef;color:#0b2545;transform:translateY(-3px)}
+/* 7 every inner-page hero is 70vh */
+@media(min-width:901px){
+.ux-hero{min-height:70vh!important;padding:7.5rem 0 3rem!important}
+}
+@media(max-width:900px){.ux-hero{min-height:70vh}}
+/* 10 + 12 removed bands: nothing to style */
+/* 9 cascade: the whole list starts together, so 1 > 2 > 3 > 4 > 5 always runs in order */
+.ux-hire .ux-card.in,.ux-hire .ux-card.in .n{animation-name:none}
+.ux-hire.in .ux-card:nth-child(1) .n{animation-name:uxCasN0}.ux-hire.in .ux-card:nth-child(1){animation-name:uxCasC0}
+.ux-hire.in .ux-card:nth-child(2) .n{animation-name:uxCasN1}.ux-hire.in .ux-card:nth-child(2){animation-name:uxCasC1}
+.ux-hire.in .ux-card:nth-child(3) .n{animation-name:uxCasN2}.ux-hire.in .ux-card:nth-child(3){animation-name:uxCasC2}
+.ux-hire.in .ux-card:nth-child(4) .n{animation-name:uxCasN3}.ux-hire.in .ux-card:nth-child(4){animation-name:uxCasC3}
+.ux-hire.in .ux-card:nth-child(5) .n{animation-name:uxCasN4}.ux-hire.in .ux-card:nth-child(5){animation-name:uxCasC4}
+.ux-hire.in .ux-card:nth-child(6) .n{animation-name:uxCasN5}.ux-hire.in .ux-card:nth-child(6){animation-name:uxCasC5}
+.ux-hire.in .ux-card,.ux-hire.in .ux-card .n{animation-duration:9s!important;animation-delay:.8s!important;animation-iteration-count:infinite;animation-timing-function:ease-in-out;animation-fill-mode:none}
+/* 13 contact hero art */
+.ux-ca{position:relative;height:21rem;max-width:26rem;margin-left:auto;width:100%}
+.ux-ca-phone{position:absolute;left:3.5rem;top:3rem;display:grid;place-items:center;width:9.5rem;height:9.5rem;border-radius:34px;background:#fff;border:1px solid rgba(255,255,255,.95);box-shadow:0 26px 50px rgba(11,27,58,.14);color:var(--bd);rotate:-6deg;animation:uxBob 6s ease-in-out infinite}
+.ux-ca-phone svg{animation:uxRing 2.6s ease-in-out infinite;transform-origin:50% 60%}
+.ux-ca-ring{position:absolute;inset:-14px;border-radius:44px;border:2px solid rgba(30,167,240,.5);animation:uxPing 2.6s ease-out infinite}
+.ux-ca-ring.r2{animation-delay:1.3s}
+.ux-ca-b{position:absolute;padding:.9rem 1.3rem;border-radius:22px;font-size:.98rem;font-weight:600;box-shadow:0 20px 40px rgba(11,27,58,.12);animation:uxBob 6s ease-in-out infinite}
+.ux-ca-b.b1{right:0;top:1rem;background:rgba(255,255,255,.8);border:1px solid #fff;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom-right-radius:6px;animation-delay:-1.5s}
+.ux-ca-b.b2{left:0;top:12.2rem;background:#ff6b1a;color:#fff;border-bottom-left-radius:6px;animation-delay:-3s}
+.ux-ca-b.b3{right:2.2rem;bottom:.4rem;display:flex;gap:.35rem;padding:1rem 1.2rem;background:#fff;border-bottom-right-radius:6px;animation-delay:-4.5s}
+.ux-ca-b.b3 i{width:.55rem;height:.55rem;border-radius:50%;background:var(--b);animation:uxDot 1.2s ease-in-out infinite}
+.ux-ca-b.b3 i:nth-child(2){animation-delay:.18s}.ux-ca-b.b3 i:nth-child(3){animation-delay:.36s}
+.ux-ca-chip{position:absolute;right:5.5rem;top:7.6rem;display:grid;place-items:center;width:3.4rem;height:3.4rem;border-radius:50%;background:#d3eafa;color:var(--bd);border:1px solid #fff;box-shadow:0 14px 28px rgba(11,27,58,.1);animation:uxBob 5s ease-in-out infinite -2s}
+@keyframes uxPing{0%{transform:scale(.92);opacity:.8}100%{transform:scale(1.35);opacity:0}}
+@keyframes uxRing{0%,60%,100%{transform:rotate(0)}10%,30%{transform:rotate(-12deg)}20%,40%{transform:rotate(12deg)}}
+@keyframes uxDot{0%,60%,100%{transform:translateY(0);opacity:.45}30%{transform:translateY(-5px);opacity:1}}
+@media(max-width:900px){.ux-ca{height:17rem;margin:1rem 0 0;max-width:none}.ux-ca-phone{left:1rem;top:1rem;width:7.6rem;height:7.6rem}.ux-ca-b.b2{top:9.4rem}.ux-ca-chip{right:4rem;top:5.6rem}}
+@media(prefers-reduced-motion:reduce){.ux-ca *{animation:none!important}}
+@media(min-width:901px) and (max-height:720px){
+.ux-hero{padding:6.4rem 0 2rem!important}
+.ux-hero h1{font-size:clamp(2.2rem,min(5vw,8.6vh),3.8rem)}
+.ux-hero .ux-sub{margin-top:.8rem;font-size:1rem;line-height:1.5}
+.ux-stickers,.ux-ca{height:17rem}.ux-ty{gap:.6rem}
+}
+.ux-tm{padding:.6rem 0 2.4rem;margin-bottom:-1.2rem}
+
+/* v44: normal cursor everywhere, pointer on anything clickable */
+html,body,body *{cursor:auto}
+a,a *,button,button *,summary,summary *,select,label[for],[role=button],[role=tab],[data-cursor],.ux-btn,.ux-chip,.ux-card[href],.ux-pk,.ux-fx-badge,.fx-badge,.fx-topbtn,.hero-down,.service-slide,.ux-tile,.ux-rowcard,.ux-tc button,details>summary{cursor:pointer}
+input,textarea{cursor:text}
+input[type=submit],input[type=button],input[type=checkbox],input[type=radio]{cursor:pointer}
+button:disabled{cursor:not-allowed}
+.ux-dg.d2{background:#f4f8fc}
+
+/* v46: carousel cards size to their content (width only), height stays fixed; no buttons */
+.ux-tc-card{width:fit-content;min-width:min(20rem,84%);max-width:min(34rem,90%);height:16rem}
+.ux-tc-card blockquote{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+
+/* v47: inner hero spacing clears the breadcrumb and the overlapping next section */
+@media(min-width:901px){
+.ux-hero{min-height:calc(70vh + var(--sh,44px))!important;padding:9rem 0 calc(3rem + var(--sh,44px))!important}
+}
+@media(min-width:901px) and (max-height:720px){
+.ux-hero{padding:8.6rem 0 calc(2rem + var(--sh,44px))!important}
+}
+@media(max-width:900px){.ux-hero{min-height:calc(70vh + var(--sh,30px));padding-top:9rem;padding-bottom:calc(3rem + var(--sh,30px))}}
+/* contact: tall touch card with the India map */
+.ux-info{display:flex;flex-direction:column;gap:1.4rem}
+.ux-info .ux-touch{flex:1;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1fr);gap:1.4rem;align-items:stretch}
+.ux-touch-txt p{overflow-wrap:anywhere}
+.ux-map{position:relative;align-self:center;justify-self:center;width:100%;max-width:15.5rem}
+.ux-map svg{display:block;width:100%;height:auto}
+.ux-map .ind{fill:#d3eafa;stroke:#fff;stroke-width:.6}
+.ux-map .tg{fill:#ffb98a;stroke:#fff;stroke-width:.8}
+.ux-pin{position:absolute;display:flex;align-items:center;gap:.45rem;transform:translate(-.5rem,-50%);white-space:nowrap}
+.ux-pin i{position:relative;flex:none;width:1rem;height:1rem;border-radius:50%;background:#ff6b1a;border:2px solid #fff;box-shadow:0 4px 10px rgba(255,107,26,.5)}
+.ux-pin i::after{content:"";position:absolute;inset:-7px;border-radius:50%;border:2px solid rgba(255,107,26,.55);animation:uxPing 2.2s ease-out infinite}
+.ux-pin b{padding:.28rem .7rem;border-radius:99px;background:#fff;border:1px solid var(--ln);box-shadow:0 8px 18px rgba(11,27,58,.12);font-size:.8rem;font-weight:800;color:var(--n)}
+@media(max-width:640px){.ux-info .ux-touch{grid-template-columns:1fr}.ux-map{max-width:15rem}}
+.ux-info .ux-card+.ux-card{margin-top:0}.ux-split:has(>.contact-form){align-items:stretch}
+@media(min-width:901px){.ux-hero{padding-bottom:calc(4rem + var(--sh,44px))!important}}
+@media(min-width:901px) and (max-height:720px){.ux-hero{padding-bottom:calc(3.4rem + var(--sh,44px))!important}}
+.ux-contact-grid{grid-template-columns:7fr 5fr}
+@media(max-width:900px){.ux-contact-grid{grid-template-columns:1fr}.ux-map{max-width:14rem}}
+
+/* v48: brand pattern on the services pages (Layered Rings in the hero, Corner Ring in the last section) */
+.ux-hero.h-rings{background:linear-gradient(135deg,#f6faff 0%,#e6f3fd 55%,#dcedfb 100%);animation:none}
+.ux-hero.h-rings::before{display:none}
+.ux-hero.h-rings::after{background:url(/brand/pattern-rings-light.svg) right bottom/auto 100% no-repeat;-webkit-mask-image:none;mask-image:none}
+.ux-hero.h-rings .ux-gw{display:none}
+.ux-corner{position:relative;overflow:hidden;isolation:isolate}
+.ux-corner::before{content:"";position:absolute;z-index:-1;left:0;bottom:0;width:min(20rem,55vw);aspect-ratio:1;background:url(/brand/corner-ring-tint.svg) left bottom/contain no-repeat;pointer-events:none}
+/* v49: pattern stays on the right half of the hero only */
+.ux-hero.h-rings::after{inset:0 0 0 50%;background:url(/brand/pattern-rings-light.svg) right center/auto 100% no-repeat;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 30%);mask-image:linear-gradient(90deg,transparent 0,#000 30%)}
+@media(max-width:900px){.ux-hero.h-rings::after{inset:0 0 0 30%}}
+
+/* v50: services pages 75vh, About / Careers / Contact 100vh */
+.ux-hero.h-rings{min-height:calc(75vh + var(--sh,44px))!important}
+.ux-hero:not(.h-rings){min-height:calc(100vh + var(--sh,44px))!important}
+@media(max-width:900px){.ux-hero{display:flex;align-items:center}}
+/* split service heroes: keep the headline to two lines so the hero stays at 75vh */
+@media(min-width:901px){
+.ux-hero.h-split h1{font-size:clamp(2.2rem,min(3.9vw,7.4vh),3.5rem);max-width:none}
+.ux-hero.h-split .ux-hgrid{grid-template-columns:1.45fr 1fr;gap:3rem}
+.ux-hero.h-split .ux-snap{padding:1.6rem 1.8rem}
+.ux-hero.h-split .ux-snap li{padding-top:.65rem;padding-bottom:.65rem}
+}
+@media(min-width:901px){
+.ux-hero.h-rings h1{font-size:clamp(2.2rem,min(4.2vw,8vh),3.9rem);max-width:24ch}
+.ux-hero.h-rings .ux-sub{max-width:56ch;font-size:1.02rem;line-height:1.55;margin-top:1rem}
+.ux-hero.h-rings.h-split h1{max-width:none}
+}
+
+/* v51: 02 band is a clear grey; testimonial carousel keeps a soft fade even with reduced motion on */
+.ux-dg.d2{background:#e8edf3}
+@media(prefers-reduced-motion:reduce){.ux .ux-tc-card{transition:transform .5s,opacity .5s!important}}
+
+/* v52: Who we work with sits fully on grey; wider testimonial cards */
+.ux .ux-wwwsec,.ux-wwwsec{background:#e8edf3}
+.ux-tc-stage{max-width:62rem}
+.ux-tc-card{min-width:min(28rem,88%);max-width:min(40rem,92%)}
+.ux-touch-txt{align-self:center}
+/* v55: contact touch card - larger text, slightly less padding */
+.ux-info .ux-touch{padding:1.5rem 1.6rem}
+.ux-touch-txt h3{font-size:1.45rem}
+.ux-touch-txt p{font-size:1.1rem;line-height:1.7;margin-top:.8rem}
+@media(max-width:640px){.ux-info .ux-touch{padding:1.3rem}}

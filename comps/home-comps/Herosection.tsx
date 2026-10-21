@@ -10,7 +10,7 @@ export default function Herosection() {
     <div className="wrap hero-inner pt-24!">
       {/* <span class="hero-tag">✦ Operations partner · Est. Hyderabad</span> */}
       <h1 id="heroHeading" />
-      <p className="sub">From Business Setup &amp; EOR to dedicated HR Services and IT &amp; SAP solutions — we help organizations operate efficiently, stay compliant, and grow faster. Your success starts here.</p>
+      <p className="sub">Setting up a company. Hiring your first team in India. Running payroll without losing a weekend to it. Getting laptops, logins and servers sorted. We take care of all of it, so you can get back to the work you started the business for.</p>
       <div className="hero-ctas">
         <a href="#services" className="btn-primary magnetic" data-cursor="click">Explore our services</a>
         <a href="#contact" className="btn-ghost-light">Talk to us</a>

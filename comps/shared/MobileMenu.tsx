@@ -34,7 +34,7 @@ export default function MobileMenu({ active }: { active: NavKey }) {
         <div className="md-head">
           <a href="/" onClick={close} aria-label="OpsLogic home">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.png" alt="OpsLogic" width="130" height="35" />
+            <img src="/brand/opslogic-logo-color.png" alt="OpsLogic" width="130" height="35" />
           </a>
           <button type="button" className="md-close" aria-label="Close menu" onClick={close}>
             <span /><span />

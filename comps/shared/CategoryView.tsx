@@ -4,7 +4,7 @@ import SharedHeader from "./SharedHeader";
 import SharedFooter from "./SharedFooter";
 import ScriptRunner from "./ScriptRunner";
 import { SITE_SCRIPT } from "./siteScript";
-import { UxChoose, UxHead, UxHero } from "./Ux";
+import { UxHead, UxHero } from "./Ux";
 import H from "./H";
 import { CATS, SERVICES, svcHref } from "./servicesContent";
 
@@ -27,7 +27,7 @@ export function CategoryView({ slug }: { slug: string }) {
       <SharedHeader active="services" />
       <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: c.title }]} />
       <main className={"ux ly-" + layout}>
-        <UxHero eyebrow={c.title} lines={c.h ? lines(c.h) : [c.title]} sub={c.p} />
+        <UxHero className="h-rings" eyebrow={c.title} lines={c.h ? lines(c.h) : [c.title]} sub={c.p} />
 
         <section className="ux-sec t0">
           <div className="ux-wrap ux-split">
@@ -95,7 +95,7 @@ export function CategoryView({ slug }: { slug: string }) {
           );
         })}
 
-        <section className="ux-sec t0">
+        <section className="ux-sec t0 ux-corner">
           <div className="ux-wrap ux-split">
             <div className="ux-stick"><UxHead eyebrow="FAQ" title="Questions we hear" /></div>
             <div className="ux-faq ux-r">
@@ -103,7 +103,6 @@ export function CategoryView({ slug }: { slug: string }) {
             </div>
           </div>
         </section>
-        <UxChoose title={c.cta} />
       </main>
       <SharedFooter />
       <ScriptRunner script={SITE_SCRIPT} />

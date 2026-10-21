@@ -10,9 +10,9 @@ export default function SharedHeader({ active }: { active: NavKey }) {
     <div className="nav-shell">
       <a className="brand" href="/" aria-label="OpsLogic home">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="brand-logo brand-logo-dark" src="/logo.png" alt="OpsLogic" width="150" height="40" />
+        <img className="brand-logo brand-logo-dark" src="/brand/opslogic-logo-color.png" alt="OpsLogic" width="150" height="40" />
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="brand-logo brand-logo-light" src="/logo-light.png" alt="" aria-hidden="true" width="150" height="40" />
+        <img className="brand-logo brand-logo-light" src="/brand/opslogic-logo-ondark.png" alt="" aria-hidden="true" width="150" height="40" />
       </a>
       <nav className="nav-links">
         <a href="/" className={active === "home" ? "active" : undefined}>Home</a>
