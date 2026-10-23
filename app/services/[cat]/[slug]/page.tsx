@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "../../page.css";
 import { notFound } from "next/navigation";
-import { ServiceView } from "../../../../comps/shared/ServiceView";
-import { SERVICES } from "../../../../comps/shared/servicesContent";
+import ServicePage from "../../../../components/services/ServicePage";
+import { SERVICES } from "../../../../lib/services";
 
 /** Old URLs that now live under the dynamic route (a static folder here would shadow [cat] in dev). */
 const LEGACY: Record<string, string> = {
@@ -36,5 +36,5 @@ export default async function Page({ params }: { params: Promise<{ cat: string; 
     );
   const s = SERVICES[slug];
   if (!s || s.cat !== cat) notFound();
-  return <ServiceView slug={slug} />;
+  return <ServicePage slug={slug} />;
 }

@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
-import SharedHeader from "../comps/shared/SharedHeader";
-import Herosection from "../comps/home-comps/Herosection";
-import Services from "../comps/home-comps/Services";
-import { WhoWeAre, HomeRest } from "../comps/home-comps/HomeSections";
-import SharedFooter from "../comps/shared/SharedFooter";
-import ScriptRunner from "../comps/shared/ScriptRunner";
-import { HOME_SCRIPT } from "./homeScript";
+import SiteHeader from "../components/layout/SiteHeader";
+import SiteFooter from "../components/layout/SiteFooter";
+import ScriptRunner from "../components/layout/ScriptRunner";
+import HeroSection from "../components/home/HeroSection";
+import WhoWeAre from "../components/home/WhoWeAre";
+import CoreServices from "../components/home/CoreServices";
+import Packages from "../components/home/Packages";
+import WhoWeWorkWith from "../components/home/WhoWeWorkWith";
+import Industries from "../components/home/Industries";
+import TestimonialsSection from "../components/home/TestimonialsSection";
+import WhyOpsLogic from "../components/home/WhyOpsLogic";
+import { HOME_SCRIPT } from "../lib/home-script";
 
 export const metadata: Metadata = {
   title: "OpsLogic — Let's Make Business Move",
@@ -15,12 +20,18 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <SharedHeader active="home" />
-      <Herosection />
+      <SiteHeader active="home" />
+      <HeroSection />
       <WhoWeAre />
-      <Services />
-      <HomeRest />
-      <SharedFooter />
+      <CoreServices />
+      <div className="ux">
+        <Packages />
+        <WhoWeWorkWith />
+        <Industries />
+        <TestimonialsSection />
+        <WhyOpsLogic />
+      </div>
+      <SiteFooter />
       <ScriptRunner script={HOME_SCRIPT} />
     </>
   );

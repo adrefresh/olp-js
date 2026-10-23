@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./site.css";
 import "./ux.css";
-import UxMotion from "../comps/shared/UxMotion";
+import CookieBanner from "../components/layout/CookieBanner";
+import ScrollMotion from "../components/ui/ScrollMotion";
 
 export const metadata: Metadata = {
   title: {
@@ -51,9 +52,10 @@ export default function RootLayout({
         />
       </head>
       <body id="top">
-        <UxMotion />
+        <ScrollMotion />
         <noscript><style>{".ux-r{opacity:1!important;transform:none!important}.ux-l>span{transform:none!important}.ux-sub{opacity:1!important}"}</style></noscript>
         {children}
+        <CookieBanner />
       </body>
     </html>
   );

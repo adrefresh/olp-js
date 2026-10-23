@@ -281,7 +281,7 @@
     color: var(--ink)!important;
     font-weight: 400!important;
   }
-  & a:hover {
+  & a:not(.mega-all):hover {
     background: #e8f4fd!important;
     color: #0c7ec4!important;
   }

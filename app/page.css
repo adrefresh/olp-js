@@ -277,7 +277,7 @@ body:has(.internal-hero) .site-nav:not(.scrolled) .nav-drop:hover>button{color:#
 /* Final nav dropdown readability */
 .nav-drop-menu a{color:var(--ink)!important;font-weight:400!important;}
 
-.nav-drop-menu a:hover{color:#0c7ec4!important;background:#e8f4fd!important;}
+.nav-drop-menu a:not(.mega-all):hover{color:#0c7ec4!important;background:#e8f4fd!important;}
 
 .breadcrumbs{pointer-events:auto}
 .breadcrumbs a{pointer-events:auto;cursor:pointer}
@@ -791,7 +791,7 @@ body:has(.internal-hero) .site-nav:not(.scrolled) .nav-drop:hover>button{color:#
 /* Final nav dropdown readability */
 .nav-drop-menu a{color:var(--ink)!important;font-weight:400!important;}
 
-.nav-drop-menu a:hover{color:#0c7ec4!important;background:#e8f4fd!important;}
+.nav-drop-menu a:not(.mega-all):hover{color:#0c7ec4!important;background:#e8f4fd!important;}
 
 header .nav-cta{flex:0 0 auto;white-space:nowrap;font-size:.88rem!important;padding:.82rem 1.3rem!important}
 

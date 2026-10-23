@@ -860,9 +860,9 @@ button:disabled{cursor:not-allowed}
 .ux-hero.h-rings::after{inset:0 0 0 50%;background:url(/brand/pattern-rings-light.svg) right center/auto 100% no-repeat;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 30%);mask-image:linear-gradient(90deg,transparent 0,#000 30%)}
 @media(max-width:900px){.ux-hero.h-rings::after{inset:0 0 0 30%}}
 
-/* v50: services pages 75vh, About / Careers / Contact 100vh */
+/* v50: service category and detail pages 75vh; About / Careers / Contact / Services index 80vh (see v56) */
 .ux-hero.h-rings{min-height:calc(75vh + var(--sh,44px))!important}
-.ux-hero:not(.h-rings){min-height:calc(100vh + var(--sh,44px))!important}
+.ux-hero:not(.h-rings){min-height:calc(80vh + var(--sh,44px))!important}
 @media(max-width:900px){.ux-hero{display:flex;align-items:center}}
 /* split service heroes: keep the headline to two lines so the hero stays at 75vh */
 @media(min-width:901px){
@@ -891,3 +891,56 @@ button:disabled{cursor:not-allowed}
 .ux-touch-txt h3{font-size:1.45rem}
 .ux-touch-txt p{font-size:1.1rem;line-height:1.7;margin-top:.8rem}
 @media(max-width:640px){.ux-info .ux-touch{padding:1.3rem}}
+
+/* v56: Services index, About, Careers and Contact heroes are 80vh; contact form band is grey so it does not blend with the hero */
+.ux-hero.h-rings.h-80{min-height:calc(80vh + var(--sh,44px))!important}
+.ux .ux-contact-sec{background:#e8edf3}
+/* v56: on short desktop screens the Careers hero (3-line headline + typing cards) is tightened so it stays inside 80vh */
+@media(min-width:901px) and (max-height:760px){
+.ux-hero.has-aside h1{font-size:clamp(2.5rem,min(6.3vw,10.5vh),5.5rem)}
+.ux-ty{padding:.6rem 0;gap:.6rem}
+.ux-tyc{min-height:4.2rem;padding:.7rem 1.2rem;gap:.25rem}
+.ux-tyc b{font-size:clamp(1.3rem,2.2vw,1.7rem)}
+}
+
+/* v57: privacy policy page + cookie banner */
+.ux-hero.pp-hero{min-height:calc(44vh + var(--sh,44px))!important}
+.pp-grid{display:grid;grid-template-columns:15rem minmax(0,1fr);gap:3.5rem;align-items:start}
+.pp-toc{position:sticky;top:7rem;padding-top:.4rem}
+.pp-toc ol{list-style:none;margin:1.2rem 0 0;padding:0;display:grid;gap:.15rem;border-left:2px solid #d3e4f3}
+.pp-toc a{display:flex;gap:.7rem;align-items:baseline;padding:.45rem 0 .45rem 1rem;margin-left:-2px;border-left:2px solid transparent;font-size:.92rem;line-height:1.35;color:#46567a;font-weight:500;transition:color .2s,border-color .2s}
+.pp-toc a span{font-size:.7rem;font-weight:800;letter-spacing:.1em;color:#0c7ec4}
+.pp-toc a:hover{color:#0b1b3a;border-left-color:#0c7ec4}
+.pp{display:grid;gap:1rem;min-width:0}
+.pp-intro{margin:0 0 .4rem!important;max-width:none!important;font-size:1.05rem!important;line-height:1.7!important}
+.pp-card{display:grid;grid-template-columns:auto 1fr;gap:1.2rem;padding:1.4rem 1.7rem!important;scroll-margin-top:7rem}
+.pp-n{font-size:2rem;font-weight:800;letter-spacing:-.05em;line-height:1;color:transparent;-webkit-text-stroke:1.5px #1ea7f0;min-width:2.8rem}
+.pp-b h2{margin:0;font-size:1.25rem;letter-spacing:-.025em;color:#0b1b3a}
+.pp-b p{margin:.6rem 0 0;font-size:.97rem;line-height:1.65;color:#46567a}
+.pp-list{list-style:none;margin:.8rem 0 0;padding:0;display:grid;gap:.6rem}
+.pp-list li{display:grid;gap:.1rem;padding:.7rem 1rem;border-radius:14px;background:#f4f8fc;border:1px solid #e1edf8;font-size:.95rem;line-height:1.6;color:#46567a}
+.ux .pp-list b{font-weight:700!important;color:#0b1b3a;font-size:.95rem}
+.pp-last{background:#fff4ec!important;border-color:#ffd9bd!important}
+.pp-last .pp-n{-webkit-text-stroke-color:#ff6b1a}
+.pp-contact{color:#0b1b3a!important;font-weight:600}
+.pp a{color:#0c7ec4;font-weight:600}
+@media(max-width:900px){.pp-grid{grid-template-columns:1fr;gap:1.8rem}.pp-toc{position:static}.pp-toc ol{grid-template-columns:1fr 1fr;border-left:0;gap:0 1rem}.pp-toc a{border-left:0;margin:0;padding:.35rem 0}}
+@media(max-width:640px){.pp-card{grid-template-columns:1fr;gap:.6rem;padding:1.5rem!important}.pp-n{font-size:2rem}.pp-toc ol{grid-template-columns:1fr}}
+.ck{position:fixed;right:1.5rem;bottom:1.5rem;z-index:90;width:min(28rem,calc(100vw - 2rem));padding:1.4rem 1.5rem 1.5rem;border-radius:26px;background:rgba(255,255,255,.95);-webkit-backdrop-filter:blur(22px) saturate(160%);backdrop-filter:blur(22px) saturate(160%);border:1px solid rgba(255,255,255,.9);box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 30px 70px -12px rgba(11,27,58,.3),0 0 0 1px rgba(11,27,58,.06);font-family:"Plus Jakarta Sans",sans-serif;overflow:hidden;animation:ckIn .7s cubic-bezier(.22,1,.36,1) .5s both}
+.ck::before{content:"";position:absolute;right:-3.2rem;top:-3.2rem;width:9rem;height:9rem;border-radius:50%;border:1.5px solid rgba(30,167,240,.22);box-shadow:0 0 0 1.4rem rgba(30,167,240,.06);pointer-events:none}
+.ck>*{position:relative}
+.ck-top{display:flex;align-items:center;gap:.9rem}
+.ck-ico{display:grid;place-items:center;flex:none;width:2.9rem;height:2.9rem;border-radius:16px;background:#fff0e6;color:#ff6b1a;box-shadow:0 8px 18px -6px rgba(255,107,26,.4)}
+.ck h2{margin:0;text-align:left;font-size:1.15rem;font-weight:800;letter-spacing:-.02em;color:#0b1b3a}
+.ck p{margin:1rem 0 0;font-size:.92rem;line-height:1.65;color:#46567a;font-weight:400}
+.ck a{white-space:nowrap;color:#0c7ec4;font-weight:600;text-decoration:underline;text-decoration-color:rgba(12,126,196,.35);text-underline-offset:3px}
+.ck a:hover{text-decoration-color:#0c7ec4}
+.ck-btns{display:grid;grid-template-columns:1fr 1.15fr;gap:.7rem;margin-top:1.3rem}
+.ck-b{cursor:pointer;border-radius:99px;padding:.8rem 1rem;font:700 .88rem "Plus Jakarta Sans",sans-serif;border:1.5px solid rgba(11,27,58,.16);transition:transform .25s,background .25s,border-color .25s,box-shadow .25s}
+.ck-b:active{transform:scale(.97)}
+.ck-no{background:rgba(255,255,255,.7);color:#0b1b3a}.ck-no:hover{background:#fff;border-color:#0b1b3a}
+.ck-yes{background:#ff6b1a;border-color:#ff6b1a;color:#fff;box-shadow:0 12px 24px -8px rgba(255,107,26,.6)}.ck-yes:hover{background:#f25c0b;border-color:#f25c0b;transform:translateY(-1px);box-shadow:0 16px 28px -8px rgba(255,107,26,.7)}
+.ck-b:focus-visible{outline:3px solid rgba(30,167,240,.5);outline-offset:2px}
+@keyframes ckIn{from{opacity:0;transform:translateY(24px) scale(.97)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.ck{animation:none}}
+@media(max-width:640px){.ck{right:.8rem;bottom:.8rem;width:calc(100vw - 1.6rem)}}
