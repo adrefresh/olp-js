@@ -1,12 +1,12 @@
-import { catHref } from "../../lib/services";
+import { catHref, svcHref } from "../../lib/services";
 
-const AREAS = [
+const AREAS: { slug: string; title: string; tone: string; lead: string; items: [string, string][] }[] = [
   {
     slug: "business-operations",
     title: "Business Operations",
     tone: "t0",
     lead: "The foundations: setting up a company properly, keeping it compliant, and giving your team a place to work.",
-    items: ["Company setup", "Administration", "Compliance", "Accounting and tax", "Legal support", "Corporate secretarial", "Managed workspace", "Offshore extension centres"],
+    items: [["Company setup", "business-setup"], ["Administration", "administration"], ["Compliance", "compliance"], ["Accounting and tax", "accounting-tax-and-audit"], ["Legal support", "legal-support"], ["Corporate secretarial", "corporate-secretarial"], ["Managed workspace", "managed-workspace"], ["Offshore extension centres", "offshore-extension-centres"]],
   },
   {
     slug: "hr-payroll",
@@ -14,16 +14,16 @@ const AREAS = [
     tone: "t3",
     lead: "Finding people, employing them, paying them and looking after them.",
     items: [
-      "Hire talent",
-      "Contract staffing",
-      "Employer of Record",
-      "Contractor of Record",
-      "Freelancer payments",
-      "Payroll management",
-      "HR business partner",
-      "Employee engagement",
-      "Training and development",
-      "Onboarding and policies",
+      ["Hire talent", "hire-talent"],
+      ["Contract staffing", "contract-staffing"],
+      ["Employer of Record", "employer-of-record"],
+      ["Contractor of Record", "contractor-of-record"],
+      ["Freelancer payments", "freelancer-payments"],
+      ["Payroll management", "payroll-management"],
+      ["HR business partner", "hr-business-partner"],
+      ["Employee engagement", "employee-engagement"],
+      ["Training and development", "training-and-development"],
+      ["Onboarding and policies", "onboarding-and-offboarding"],
     ],
   },
   {
@@ -32,20 +32,20 @@ const AREAS = [
     tone: "t1",
     lead: "The hardware, systems and software a business runs on, from the laptop on a new hire's desk to the company website.",
     items: [
-      "IT asset procurement",
-      "Inventory management",
-      "Employee device setup",
-      "Office IT setup",
-      "IT helpdesk and managed IT support",
-      "Systems integration",
-      "Server migrations",
-      "Web development",
-      "Application development",
-      "UI/UX design",
-      "Business software",
-      "Certification and compliance readiness",
-      "Branding",
-      "Digital marketing",
+      ["IT asset procurement", "it-asset-procurement"],
+      ["Inventory management", "it-inventory-management"],
+      ["Employee device setup", "employee-device-setup"],
+      ["Office IT setup", "office-it-setup"],
+      ["IT helpdesk and managed IT support", "it-helpdesk-and-managed-it-support"],
+      ["Systems integration", "systems-integration"],
+      ["Server migrations", "server-migrations"],
+      ["Web development", "web-development"],
+      ["Application development", "application-development"],
+      ["UI/UX design", "ui-ux-design"],
+      ["Business software", "business-software"],
+      ["Certification and compliance readiness", "certification-and-compliance-readiness"],
+      ["Branding", "branding"],
+      ["Digital marketing", "digital-marketing"],
     ],
   },
 ];
@@ -67,10 +67,10 @@ export default function ServiceAreas() {
               </a>
             </div>
             <div className="ux-chips ux-r" style={{ ["--i" as string]: 1, marginTop: 0 }}>
-              {a.items.map((x) => (
-                <span className="ux-chip" key={x}>
-                  {x}
-                </span>
+              {a.items.map(([label, slug]) => (
+                <a className="ux-chip" href={svcHref(slug)} key={slug}>
+                  {label}
+                </a>
               ))}
             </div>
           </div>

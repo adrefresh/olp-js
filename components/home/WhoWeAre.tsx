@@ -23,7 +23,7 @@ export default function WhoWeAre() {
             </div>
             <div>
               <dt>Founders</dt>
-              <dd>3</dd>
+              <dd>Three</dd>
             </div>
             <div>
               <dt>Based in</dt>

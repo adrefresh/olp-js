@@ -567,7 +567,7 @@ main.ux{animation:uxPage .7s var(--ez) both}
 .ux-dg-in{display:flex;align-items:center;gap:2.4rem;padding:2.6rem 0}
 .ux-dg-n{font-size:clamp(3.6rem,8vw,7rem);font-weight:800;letter-spacing:-.06em;line-height:1;color:transparent;-webkit-text-stroke:2px #1ea7f0;flex:none;min-width:1.5em}
 .ux-dg.d2 .ux-dg-n{-webkit-text-stroke-color:#ff6b1a}
-.ux-dg h3{margin:0;font-size:clamp(1.3rem,2.4vw,2rem);line-height:1.3;max-width:34ch;transition:transform .5s var(--ez)}
+.ux-dg h3{font-weight:400;margin:0;font-size:clamp(1.3rem,2.4vw,2rem);line-height:1.3;max-width:34ch;transition:transform .5s var(--ez)}
 .ux-dg:hover h3{transform:translateX(10px)}
 .ux-dg.d3{padding-bottom:6rem}
 
