@@ -79,8 +79,58 @@ $email_body .= "Company: $company\n\n";
 $email_body .= "Message:\n$message\n";
 
 // 5. SENDING
-// Using implode for headers is cleaner and more modern
-$sent = mail($to, "[Contact] $subject", $email_body, $headers);
+// If mail-config.php exists (Gmail SMTP), send through SMTP. Otherwise fall back to PHP mail().
+function smtp_send($cfg, $to, $subject, $body, $replyTo) {
+    $secure = $cfg["secure"] ?? "ssl";
+    $host = ($secure === "ssl" ? "ssl://" : "") . $cfg["host"];
+    $fp = @stream_socket_client($host . ":" . $cfg["port"], $en, $es, 15);
+    if (!$fp) throw new Exception("connect failed: $es");
+    stream_set_timeout($fp, 15);
+    $read = function () use ($fp) {
+        $out = "";
+        while (($l = fgets($fp, 515)) !== false) { $out .= $l; if (strlen($l) < 4 || $l[3] === " ") break; }
+        return $out;
+    };
+    $cmd = function ($c, $ok) use ($fp, $read) {
+        if ($c !== null) fwrite($fp, $c . "\r\n");
+        $r = $read();
+        if (strpos($ok, substr($r, 0, 3)) === false) throw new Exception("SMTP said: " . trim($r));
+        return $r;
+    };
+    $cmd(null, "220");
+    $cmd("EHLO opslogic.team", "250");
+    $cmd("AUTH LOGIN", "334");
+    $cmd(base64_encode($cfg["user"]), "334");
+    $cmd(base64_encode($cfg["pass"]), "235");
+    $cmd("MAIL FROM:<" . $cfg["user"] . ">", "250");
+    $cmd("RCPT TO:<" . $to . ">", "250 251");
+    $cmd("DATA", "354");
+    $headers = "From: Website <" . $cfg["user"] . ">\r\n"
+        . "To: <$to>\r\n"
+        . "Reply-To: <$replyTo>\r\n"
+        . "Subject: =?UTF-8?B?" . base64_encode($subject) . "?=\r\n"
+        . "Date: " . date("r") . "\r\n"
+        . "MIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Transfer-Encoding: base64\r\n";
+    $msg = $headers . "\r\n" . chunk_split(base64_encode($body));
+    fwrite($fp, $msg . "\r\n.\r\n");
+    $r = $read();
+    if (substr($r, 0, 3) !== "250") throw new Exception("SMTP said: " . trim($r));
+    fwrite($fp, "QUIT\r\n");
+    fclose($fp);
+}
+
+$sent = false;
+$cfgFile = __DIR__ . "/mail-config.php";
+if (file_exists($cfgFile)) {
+    try {
+        smtp_send(require $cfgFile, $to, "[Contact] $subject", $email_body, $email);
+        $sent = true;
+    } catch (Exception $e) {
+        error_log("SMTP failure for $email: " . $e->getMessage());
+    }
+} else {
+    $sent = mail($to, "[Contact] $subject", $email_body, $headers);
+}
 
 if ($sent) {
     echo json_encode(["success" => true]);

@@ -24,7 +24,7 @@ DirectorySlash On
 ErrorDocument 404 /404.html
 
 # Never serve logs or hidden files
-<FilesMatch "(\.log$|^\.ht)">
+<FilesMatch "(\.log$|^\.ht|^mail-config)">
   Require all denied
 </FilesMatch>
 
