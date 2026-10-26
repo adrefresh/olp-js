@@ -28,7 +28,7 @@ export default function SiteFooter({ showEmail }: { showEmail?: boolean } = {}) 
 
         <div className="fx-mid">
           <div className="fx-contact">
-            <div className="fx-k">Say hello</div>
+            <div className="fx-k">Contact</div>
             <a className="fx-mail" href="mailto:hello@opslogic.team">hello@opslogic.team
               <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7" /><path d="M8 7h9v9" /></svg>
             </a>
@@ -39,7 +39,7 @@ export default function SiteFooter({ showEmail }: { showEmail?: boolean } = {}) 
               <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.75 3h3.07l-6.7 7.66L22 21h-6.17l-4.83-6.32L5.47 21H2.4l7.17-8.2L2 3h6.33l4.37 5.78L17.75 3Zm-1.08 16.17h1.7L7.4 4.74H5.57l11.1 14.43Z" /></svg></a>
               <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-8h2.7l.5-3.2h-3.2V7.9c0-.9.4-1.7 1.8-1.7h1.5V3.4c-.3 0-1.3-.2-2.4-.2-2.5 0-4.1 1.5-4.1 4.2v2.4H7.6V13h2.8v8h3.1Z" /></svg></a>
             </div>
-            <div className="fx-loc"><span className="fx-live" aria-hidden="true" />Hyderabad, India<FooterClock /></div>
+            {/* <div className="fx-loc"><span className="fx-live" aria-hidden="true" />Hyderabad, India<FooterClock /></div> */}
           </div>
           <nav className="fx-col" aria-label="Services">
             <div className="fx-k">Services</div>
