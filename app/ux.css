@@ -1067,3 +1067,36 @@ body:has(#heroSection) .ux-wwwsec .ux-dg.d2 .ux-dg-n{background:none;color:#ffab
 .ux-thanks h3{margin:.8rem 0 0;font-size:1.8rem;letter-spacing:-.03em;color:#0b1b3a}
 .ux-thanks p{margin:0;max-width:26rem;font-size:1.05rem;line-height:1.7;color:#46567a}
 @media(prefers-reduced-motion:reduce){.ux-spin{animation-duration:2s!important}}
+
+/* v85 who we work with: no cards, hover list + spotlight */
+body .ux .ux-ww{background:#eef1f5;padding-top:2rem!important;padding-bottom:4rem!important;overflow:hidden;min-height:0}
+.ux-ww-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center;margin-top:2.4rem;min-height:23rem}
+.ux-ww-list{border-top:1px solid #d3dbe5}
+.ux-ww-it{all:unset;box-sizing:border-box;position:relative;display:flex;width:100%;align-items:center;gap:1.3rem;padding:1.3rem 0;border-bottom:1px solid #d3dbe5;cursor:pointer}
+.ux-ww-it::after{content:"";position:absolute;left:0;bottom:-1px;height:2px;width:0;background:#ff6b1a}
+.ux-ww-it.on::after{width:100%;animation:uxWwFill 5s linear forwards}
+.ux-ww:has(.ux-ww-grid:hover) .ux-ww-it.on::after{animation:none;width:100%}
+@keyframes uxWwFill{from{width:0}to{width:100%}}
+.ux-ww-n{width:2.2rem;font-size:.72rem;font-weight:800;letter-spacing:.14em;color:#8a98ad;transition:color .3s}
+.ux-ww-w{flex:1;font-size:clamp(1.7rem,3.3vw,2.7rem);font-weight:800;letter-spacing:-.04em;line-height:1.05;color:#b8c4d3;transition:color .4s,transform .4s}
+.ux-ww-it:hover .ux-ww-w{color:#5d7699}
+.ux-ww-it.on .ux-ww-w{color:#0b1b3a;transform:translateX(12px)}
+.ux-ww-it.on .ux-ww-n{color:#0f86c8}
+.ux-ww-ar{display:grid;place-items:center;width:2.7rem;height:2.7rem;border-radius:50%;background:#ff6b1a;color:#fff;opacity:0;transform:translateX(-14px) rotate(45deg);transition:.4s}
+.ux-ww-it.on .ux-ww-ar{opacity:1;transform:none}
+.ux-ww-spot{position:relative;min-height:21rem}
+.ux-ww-blob{position:absolute;right:-7.5rem;top:50%;width:21rem;height:21rem;border-radius:50%;background:#bfe0f8;transform:translateY(-50%);transition:background .6s,transform .8s cubic-bezier(.3,.8,.3,1),border-radius .8s;z-index:0}
+.ux-ww-blob.s1{background:#ffd3b5;transform:translateY(-50%) scale(1.12);border-radius:46% 54% 50% 50%}
+.ux-ww-blob.s2{background:#cfd9e7;transform:translateY(-50%) scale(.95);border-radius:50% 50% 38% 62%}
+.ux-ww-pane{position:absolute;left:1rem;right:0;top:50%;z-index:1;opacity:0;transform:translateY(calc(-50% + 24px));transition:opacity .5s,transform .6s;pointer-events:none}
+.ux-ww-pane.on{opacity:1;transform:translateY(-50%);pointer-events:auto}
+.ux-ww-k{display:block;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#0f86c8}
+.ux-ww-pane h3{margin:.7rem 0 1rem;max-width:20ch;font-size:clamp(1.3rem,2.3vw,1.8rem);font-weight:800;letter-spacing:-.025em;line-height:1.25;color:#0b1b3a}
+.ux-ww-pane p{margin:0;max-width:34ch;font-weight:400;line-height:1.6;color:#3d4a63}
+.ux-ww-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}
+.ux-ww-tags span{border:1.5px solid #0b1b3a;border-radius:99px;padding:.35rem .85rem;font-size:.8rem;font-weight:700;color:#0b1b3a}
+.ux-ww-go{display:inline-flex;gap:.5rem;margin-top:1.4rem;padding-bottom:.2rem;border-bottom:2px solid #ff6b1a;font-weight:800;font-size:.92rem;color:#0b1b3a;text-decoration:none;cursor:pointer}
+.ux-ww-go:hover{color:#ff6b1a}
+.ux-ww-it{cursor:pointer}
+@media(max-width:900px){.ux-ww-grid{grid-template-columns:1fr;gap:1.5rem}.ux-ww-spot{min-height:22rem}.ux-ww-blob{width:15rem;height:15rem;right:-4.5rem}.ux-ww-w{font-size:1.8rem}}
+@media(prefers-reduced-motion:reduce){.ux-ww-it.on::after{animation:none}}
