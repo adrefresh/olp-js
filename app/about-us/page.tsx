@@ -11,11 +11,9 @@ import Story from "../../components/about/Story";
 import Founders from "../../components/about/Founders";
 import Beliefs from "../../components/about/Beliefs";
 import Location from "../../components/about/Location";
+import { pageMeta } from "../../lib/seo";
 
-export const metadata: Metadata = {
-  title: "About Us — OpsLogic",
-  description: "We're a team of operations, HR, finance and technology people who like making complicated business problems quietly disappear.",
-};
+export const metadata: Metadata = pageMeta("About Us — OpsLogic", "We're a team of operations, HR, finance and technology people who like making complicated business problems quietly disappear.", "/about-us/");
 
 export default function AboutUsPage() {
   return (

@@ -41,7 +41,7 @@ jobs:
           REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
           SOURCE: "out/"
           TARGET: "/home/u179427984/domains/opslogic.team/public_html/dev"
-          ARGS: "-rlgoDzvc -i --delete"
+          ARGS: "-rlgoDzvc -i --delete --exclude=mail-config.php --exclude=contact-error.log"
 
   # # ── Prod: build WITH GTM → deploy to /public_html ─────────────────────────
   # build-deploy-prod:

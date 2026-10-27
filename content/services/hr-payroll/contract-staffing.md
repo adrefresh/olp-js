@@ -25,7 +25,7 @@ Hire Talent finds permanent employees for your payroll. Employer of Record emplo
 - Payroll, statutory contributions and insurance
 - Compliance that comes with contract labour, where it applies
 - Quick scale-up and scale-down
-- Replacement if someone leaves mid-contract <span class='ph'>confirm</span>
+- Replacement if someone leaves mid-contract
 - The option to convert a contractor to permanent
 
 ## Steps

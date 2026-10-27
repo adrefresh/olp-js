@@ -69,8 +69,6 @@ A short list of changes by the cut-off date. We remind you before it.
 
 ### How do employees get their payslips?
 
-<span class='ph'>Confirm: email, portal or both.</span>
-
 ### What happens if someone is paid wrong?
 
 We correct it in an off-cycle run and tell you exactly what went wrong.

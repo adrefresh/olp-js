@@ -6,9 +6,8 @@ import type { NavCategory } from "../../lib/nav";
 type NavKey = "home" | "about-us" | "careers" | "contact-us" | "services" | "none";
 
 const LINKS: { key: NavKey; label: string; href: string }[] = [
-  { key: "home", label: "Home", href: "/" },
-  { key: "services", label: "Services", href: "/services" },
   { key: "about-us", label: "About Us", href: "/about-us" },
+  { key: "services", label: "Services", href: "/services" },
   { key: "careers", label: "Careers", href: "/careers" },
   { key: "contact-us", label: "Contact", href: "/contact-us" },
 ];

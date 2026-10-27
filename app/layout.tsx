@@ -3,6 +3,8 @@ import "./globals.css";
 import "./site.css";
 import "./ux.css";
 import CookieBanner from "../components/layout/CookieBanner";
+import GoogleTagManager from "../components/layout/GoogleTagManager";
+import FloatingContact from "../components/layout/FloatingContact";
 import ScrollMotion from "../components/ui/ScrollMotion";
 
 export const metadata: Metadata = {
@@ -27,15 +29,31 @@ const schema = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://www.opslogic.team/#org",
       name: "OpsLogic",
+      alternateName: "OpsLogic Private Limited",
       url: "https://www.opslogic.team",
-      logo: "https://www.opslogic.team/favicon.ico",
+      logo: "https://www.opslogic.team/brand/opslogic-logo-color.png",
+      image: "https://www.opslogic.team/og-image.png",
+      email: "hello@opslogic.team",
+      telephone: "+914035009631",
+      foundingDate: "2022",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Manjeera Trinity Corporate, KPHB Colony, Kukatpally",
+        addressLocality: "Hyderabad",
+        addressRegion: "Telangana",
+        postalCode: "500072",
+        addressCountry: "IN",
+      },
+      areaServed: ["IN", "Worldwide"],
     },
     {
       "@type": "WebSite",
       name: "OpsLogic",
       url: "https://www.opslogic.team",
+      publisher: { "@id": "https://www.opslogic.team/#org" },
     },
   ],
 };
@@ -47,6 +65,12 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('consent','default',{ad_storage:'denied',analytics_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});",
+          }}
+        />
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
@@ -55,6 +79,8 @@ export default function RootLayout({
         <ScrollMotion />
         <noscript><style>{".ux-r{opacity:1!important;transform:none!important}.ux-l>span{transform:none!important}.ux-sub{opacity:1!important}"}</style></noscript>
         {children}
+        <GoogleTagManager />
+        <FloatingContact />
         <CookieBanner />
       </body>
     </html>

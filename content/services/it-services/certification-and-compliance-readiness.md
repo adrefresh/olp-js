@@ -21,7 +21,7 @@ Customers abroad increasingly ask Indian suppliers to show they handle data and 
 ## Standards we prepare you for
 
 - **ISO 27001** — information security
-- **SOC 2 Type I and II** — 
+- **SOC 2 Type I and II** — security and availability controls
 - **ISO 27701** — privacy information management
 - **ISO 20000-1** — IT service management
 - **ISO 9001** — quality management

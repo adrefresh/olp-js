@@ -73,8 +73,6 @@ No. Zoho is common among our clients, but we connect other systems too, includin
 
 ### What if a tool changes its API?
 
-<span class='ph'>Confirm: connectors we build are covered by a support plan.</span>
-
 ### Can you connect our old software?
 
 Often, through its database or file exports. We check what it allows first.

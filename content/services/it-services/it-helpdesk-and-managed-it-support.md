@@ -35,8 +35,6 @@ Every request becomes a ticket with a priority and a response time agreed in wri
 
 ## Hours and coverage
 
-<span class='ph'>Add support hours, remote versus on-site, and locations.</span>
-
 ## Steps
 
 ### Audit
@@ -62,8 +60,6 @@ A monthly look at what's recurring and what to fix for good.
 Yes. Remote support is standard. We can ship replacement devices to home addresses.
 
 ### Which systems do you support?
-
-<span class='ph'>Confirm: Windows, macOS, Microsoft 365, Google Workspace and common business apps.</span>
 
 ### Can you take over from our current IT person?
 

@@ -17,11 +17,11 @@ layout:
 ## What we run
 
 - **Manager and leadership programmes** — Giving feedback, one-to-ones, difficult conversations
-- **Onboarding and role-based training** — 
+- **Onboarding and role-based training** — Getting new joiners productive from week one
 - **Soft skills** — Communication, time management, working across time zones
-- **Technical upskilling** — <span class='ph'>confirm topics</span>
+- **Technical upskilling** — Role-specific skills for your teams
 - **Compliance training** — POSH, code of conduct, data privacy and security awareness
-- **Training needs analysis** — , so the plan fits the gaps you have
+- **Training needs analysis** — so the plan fits the gaps you have
 
 ## How it works
 

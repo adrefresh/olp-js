@@ -27,7 +27,7 @@ Most small and mid-sized companies don't need a finance department. They need cl
 - Payroll tax coordination with our payroll team
 - Support through statutory and tax audits
 - Replies to tax notices
-- Reporting packs for an overseas parent <span class='ph'>confirm</span>
+- Reporting packs for an overseas parent
 
 ## Steps
 

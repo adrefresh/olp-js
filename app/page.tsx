@@ -11,11 +11,9 @@ import Industries from "../components/home/Industries";
 import TestimonialsSection from "../components/home/TestimonialsSection";
 import WhyOpsLogic from "../components/home/WhyOpsLogic";
 import { HOME_SCRIPT } from "../lib/home-script";
+import { pageMeta } from "../lib/seo";
 
-export const metadata: Metadata = {
-  title: "OpsLogic — Let's Make Business Move",
-  description: "OpsLogic — Business Operations, IT, Hiring, Payroll, SAP & Shared Workspace solutions.",
-};
+export const metadata: Metadata = pageMeta("OpsLogic — Let's Make Business Move", "OpsLogic is a business operations partner in Hyderabad, India: company setup, compliance, HR, payroll and IT services for growing teams.", "/");
 
 export default function Home() {
   return (

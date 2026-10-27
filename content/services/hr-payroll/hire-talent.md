@@ -66,8 +66,6 @@ It depends on the role. Senior and niche roles take longer. You get an honest ra
 
 ### What if the hire doesn't work out?
 
-<span class='ph'>Add your replacement terms.</span>
-
 ### Can you hire in bulk?
 
 Yes. A dedicated recruiter runs it as a project, with weekly progress updates.

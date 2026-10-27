@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import SectionHead from "../ui/SectionHead";
 
 const ITEMS = [
@@ -28,44 +28,22 @@ const ITEMS = [
   },
 ];
 
-const DELAY = 5000;
-
 export default function WhoWeWorkWith() {
   const [cur, setCur] = useState(0);
-  const [tick, setTick] = useState(0);
-  const paused = useRef(false);
-
-  useEffect(() => {
-    const t = setTimeout(() => {
-      if (paused.current) setTick((n) => n + 1);
-      else setCur((c) => (c + 1) % ITEMS.length);
-    }, DELAY);
-    return () => clearTimeout(t);
-  }, [cur, tick]);
-
-  const pick = (i: number) => {
-    setCur(i);
-    setTick((n) => n + 1);
-  };
 
   return (
     <section className="ux-sec t1 ux-ww" id="who-we-work-with">
+      <span className={"ux-ww-blob s" + cur} aria-hidden="true" />
       <div className="ux-wrap">
         <SectionHead eyebrow="Who we work with" title="Built for lean, growing teams." />
-        <div
-          className="ux-ww-grid ux-r"
-          onMouseEnter={() => (paused.current = true)}
-          onMouseLeave={() => (paused.current = false)}
-        >
+        <div className="ux-ww-grid ux-r">
           <div className="ux-ww-list">
             {ITEMS.map((it, i) => (
               <button
                 type="button"
                 key={it.word}
                 className={"ux-ww-it" + (i === cur ? " on" : "")}
-                onMouseEnter={() => pick(i)}
-                onFocus={() => pick(i)}
-                onClick={() => pick(i)}
+                onClick={() => setCur(i)}
                 aria-pressed={i === cur}
               >
                 <span className="ux-ww-n">0{i + 1}</span>
@@ -75,7 +53,6 @@ export default function WhoWeWorkWith() {
             ))}
           </div>
           <div className="ux-ww-spot">
-            <span className={"ux-ww-blob s" + cur} aria-hidden="true" />
             {ITEMS.map((it, i) => (
               <div className={"ux-ww-pane" + (i === cur ? " on" : "")} key={it.word} aria-hidden={i !== cur}>
                 <span className="ux-ww-k">0{i + 1} / 03 · {it.word}</span>

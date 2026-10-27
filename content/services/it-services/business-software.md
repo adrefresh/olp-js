@@ -2,7 +2,7 @@
 title: Business Software
 category: it-services
 order: 41
-short: "Zoho Books, Zoho CRM and other Zoho apps, Tally, Keka HRMS and Superworks HRMS, plus ticketing tools such as Zoho Desk, Freshdesk and Jira Service Management. Set up, connected to each other and supported. <span class='ph'>Confirm full product list.</span>"
+short: "Zoho Books, Zoho CRM and other Zoho apps, Tally, Keka HRMS and Superworks HRMS, plus ticketing tools such as Zoho Desk, Freshdesk and Jira Service Management. Set up, connected to each other and supported."
 heading: The right software, set up around how you work.
 intro: We choose, set up, connect and support the business tools your company needs.
 cta: Tell us what you want to run your business on.
@@ -26,7 +26,7 @@ Not every company needs a big system. Many need accounts, payroll, customer reco
 - **Ticketing** — Zoho Desk, Freshdesk and Jira Service Management
 - **Projects and stock** — Zoho Projects and Zoho Inventory
 - **Documents and reporting** — Zoho Sign and Zoho Analytics
-- <span class='ph'>Confirm the final product list.</span>
+-
 
 ## Steps
 

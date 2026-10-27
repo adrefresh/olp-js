@@ -1,3 +1,4 @@
+import { pageMeta } from "../../../lib/seo";
 import type { Metadata } from "next";
 import "../page.css";
 import { notFound } from "next/navigation";
@@ -11,7 +12,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ cat: string }> }): Promise<Metadata> {
   const { cat } = await params;
   const c = CATS.find((x) => x.slug === cat);
-  return c ? { title: `${c.title} — OpsLogic`, description: c.p } : {};
+  return c ? pageMeta(`${c.title} — OpsLogic`, c.p, `/services/${c.slug}/`) : {};
 }
 export default async function Page({ params }: { params: Promise<{ cat: string }> }) {
   const { cat } = await params;

@@ -32,3 +32,11 @@ Testimonials: change `name`, `role`, `company` in the front matter and the quote
 3. Submit the form on the live site. Errors are written to `contact-error.log` on the server.
 
 If `mail-config.php` is missing, the form falls back to PHP `mail()`.
+
+## Google Tag Manager
+
+Container `GTM-NS26TN3G` lives in `components/layout/GoogleTagManager.tsx`. It is included only when the build runs with `NEXT_PUBLIC_ENABLE_GTM=true` (the production build; dev builds stay GTM-free, as in `.github/workflows/deploy.yml`) and it loads only after the visitor clicks "Accept all" in the cookie banner. Consent Mode starts as "denied".
+
+## Mail check
+
+Open `https://your-site/mail-test.php` once after deploying. It sends one test mail and prints exactly what works or fails. Delete the file afterwards.

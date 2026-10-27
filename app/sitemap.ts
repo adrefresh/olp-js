@@ -10,5 +10,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...CATS.map((c) => `/services/${c.slug}`),
     ...Object.entries(SERVICES).map(([slug, x]) => `/services/${x.cat}/${slug}`),
   ];
-  return routes.map((r) => ({ url: base + r, lastModified: new Date() }));
+  return routes.map((r) => ({ url: base + r + (r.endsWith("/") ? "" : "/"), lastModified: new Date() }));
 }

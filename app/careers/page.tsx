@@ -10,11 +10,9 @@ import TypeCards from "../../components/careers/TypeCards";
 import WorkingHere from "../../components/careers/WorkingHere";
 import HiringSteps from "../../components/careers/HiringSteps";
 import OpenRoles from "../../components/careers/OpenRoles";
+import { pageMeta } from "../../lib/seo";
 
-export const metadata: Metadata = {
-  title: "Careers — OpsLogic",
-  description: "We're always interested in people who are careful, curious and good with details.",
-};
+export const metadata: Metadata = pageMeta("Careers — OpsLogic", "We're always interested in people who are careful, curious and good with details.", "/careers/");
 
 export default function CareersPage() {
   return (

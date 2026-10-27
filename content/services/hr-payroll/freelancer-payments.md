@@ -51,5 +51,3 @@ On the date agreed.
 Both.
 
 ### Which currencies do you pay in?
-
-<span class='ph'>Confirm.</span>

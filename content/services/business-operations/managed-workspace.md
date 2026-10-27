@@ -2,7 +2,7 @@
 title: Managed Workspace
 category: business-operations
 order: 5
-short: "Furnished seats, meeting rooms, internet, housekeeping and IT support, with flexible terms. Located in <span class='ph'>Hyderabad, add area</span>."
+short: "Furnished seats, meeting rooms, internet, housekeeping and IT support, with flexible terms. Located in."
 heading: A desk, a door and working internet. Ready on day one.
 intro: "Furnished office space for teams that don't want to deal with leases, fit-outs and maintenance."
 cta: Tell us how many seats you need.
@@ -22,7 +22,7 @@ With us you move into space that's already set up and pay for the seats you use.
 
 ## What's included
 
-- Furnished seats, from a small team up to a dedicated floor <span class='ph'>confirm capacity</span>
+- Furnished seats, from a small team up to a dedicated floor
 - Power, high-speed internet and backup
 - Meeting rooms and common areas
 - Housekeeping, security and pantry
@@ -35,8 +35,6 @@ With us you move into space that's already set up and pay for the seats you use.
 Say you're an overseas company hiring five people in India. We can employ them through Employer of Record, run payroll, deliver their laptops and seat them in the same office. One agreement, one point of contact.
 
 ## Location
-
-<span class='ph'>Add area, floor size, nearby transport and parking.</span>
 
 ## Steps
 

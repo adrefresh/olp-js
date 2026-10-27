@@ -15,7 +15,7 @@ export default function SiteHeader({ active }: { active: NavKey }) {
         <img className="brand-logo brand-logo-light" src="/brand/opslogic-logo-ondark.png" alt="" aria-hidden="true" width="150" height="40" />
       </a>
       <nav className="nav-links">
-        <a href="/" className={active === "home" ? "active" : undefined}>Home</a>
+        <a href="/about-us" className={active === "about-us" ? "active" : undefined}>About Us</a>
         <div className="nav-drop">
           <button>Services ↘</button>
           <div className="nav-drop-menu nav-mega">
@@ -32,13 +32,12 @@ export default function SiteHeader({ active }: { active: NavKey }) {
                   {c.items.slice(0, 6).map((s) => (
                     <a href={s.href} key={s.slug} className="mega-item">{s.title}</a>
                   ))}
-                  <a href={c.href} className="mega-count">All {c.total} services <span aria-hidden="true">→</span></a>
+                  <a href={c.href} className="mega-count">All services <span aria-hidden="true">→</span></a>
                 </div>
               ))}
             </div>
           </div>
         </div>
-        <a href="/about-us" className={active === "about-us" ? "active" : undefined}>About Us</a>
         <a href="/careers" className={active === "careers" ? "active" : undefined}>Careers</a>
         <a href="/contact-us" className={active === "contact-us" ? "active" : undefined}>Contact</a>
       </nav>

@@ -48,5 +48,3 @@ Adjust for next time.
 Yes, or support your managers while they run it.
 
 ### Do you use software?
-
-<span class='ph'>Confirm.</span>

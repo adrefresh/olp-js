@@ -10,11 +10,9 @@ import HeroArt from "../../components/contact/HeroArt";
 import ContactForm from "../../components/contact/ContactForm";
 import TouchCard from "../../components/contact/TouchCard";
 import NextSteps from "../../components/contact/NextSteps";
+import { pageMeta } from "../../lib/seo";
 
-export const metadata: Metadata = {
-  title: "Contact — OpsLogic",
-  description: "Tell us what's going on. A real person will reply, usually within one working day.",
-};
+export const metadata: Metadata = pageMeta("Contact — OpsLogic", "Tell us what's going on. A real person will reply, usually within one working day.", "/contact-us/");
 
 export default function ContactUsPage() {
   return (

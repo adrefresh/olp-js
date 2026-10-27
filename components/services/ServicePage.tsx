@@ -9,12 +9,24 @@ import ServiceSection from "./ServiceSection";
 import ServiceSteps from "./ServiceSteps";
 import RelatedServices from "./RelatedServices";
 import ServiceFaq from "./ServiceFaq";
+import JsonLd from "../ui/JsonLd";
+import { SITE, stripHtml } from "../../lib/seo";
 
 /** One service detail page, assembled from content/services/<category>/<slug>.md. */
 export default function ServicePage({ slug }: { slug: string }) {
   const s = SERVICES[slug];
   const cat = CATS.find((c) => c.slug === s.cat)!;
   const v = s.layout;
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: s.title,
+    description: stripHtml(s.p),
+    url: `${SITE}/services/${s.cat}/${slug}/`,
+    serviceType: cat.title,
+    provider: { "@type": "Organization", name: "OpsLogic", url: SITE },
+    areaServed: ["IN", "Worldwide"],
+  };
   return (
     <>
       <SiteHeader active="services" />
@@ -28,6 +40,7 @@ export default function ServicePage({ slug }: { slug: string }) {
         <RelatedServices slug={slug} cat={cat} />
         <ServiceFaq faq={s.faq} side={v.faq === "side"} />
       </main>
+      <JsonLd data={schema} />
       <SiteFooter />
       <ScriptRunner script={SITE_SCRIPT} />
     </>

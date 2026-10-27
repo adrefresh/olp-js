@@ -83,8 +83,6 @@ Yes. We ship to home addresses and confirm the setup with the employee.
 
 ### Do you only sell new equipment?
 
-<span class='ph'>Confirm: new only, or refurbished and rental options too.</span>
-
 ### Can you take over our existing inventory?
 
 Yes. We do a physical audit, build the register and flag anything missing, out of warranty or ready to retire.

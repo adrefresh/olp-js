@@ -54,5 +54,3 @@ Quarterly check on what's working.
 Yes, as the team grows.
 
 ### Do they work on-site?
-
-<span class='ph'>Confirm.</span>

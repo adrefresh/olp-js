@@ -1,7 +1,14 @@
 import SectionHead from "../ui/SectionHead";
+import JsonLd from "../ui/JsonLd";
+import { stripHtml } from "../../lib/seo";
 import type { Cat } from "../../lib/services";
 
 export default function CategoryFaq({ faq }: { faq: Cat["faq"] }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((f) => ({ "@type": "Question", name: stripHtml(f.q), acceptedAnswer: { "@type": "Answer", text: stripHtml(f.a) } })),
+  };
   return (
     <section className="ux-sec t0 ux-corner">
       <div className="ux-wrap ux-split">
@@ -16,6 +23,7 @@ export default function CategoryFaq({ faq }: { faq: Cat["faq"] }) {
             </details>
           ))}
         </div>
+        {faq.length ? <JsonLd data={schema} /> : null}
       </div>
     </section>
   );

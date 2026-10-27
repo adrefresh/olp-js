@@ -2,7 +2,7 @@
 title: Device Rental and Leasing
 category: it-services
 order: 30
-short: "Laptops and desktops on monthly rental, with support and replacement included. <span class='ph'>Confirm offered.</span>"
+short: "Laptops and desktops on monthly rental, with support and replacement included."
 heading: Laptops without the upfront spend.
 intro: Laptops and desktops on monthly rental, with support and replacement included.
 cta: Tell us how many devices and for how long.
@@ -47,5 +47,3 @@ When the project ends.
 We replace it. Support is part of the rental.
 
 ### Can we buy the devices later?
-
-<span class='ph'>Confirm.</span>

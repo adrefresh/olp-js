@@ -128,8 +128,11 @@ if (file_exists($cfgFile)) {
     } catch (Exception $e) {
         error_log("SMTP failure for $email: " . $e->getMessage());
     }
-} else {
-    $sent = mail($to, "[Contact] $subject", $email_body, $headers);
+}
+if (!$sent) {
+    // Fallback (or default when there is no mail-config.php): PHP mail() with the domain as envelope sender
+    $sent = mail($to, "[Contact] $subject", $email_body, $headers, "-fno-reply@opslogic.team");
+    if (!$sent) error_log("mail() failed for $email");
 }
 
 if ($sent) {

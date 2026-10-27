@@ -1100,3 +1100,81 @@ body .ux .ux-ww{background:#eef1f5;padding-top:2rem!important;padding-bottom:4re
 .ux-ww-it{cursor:pointer}
 @media(max-width:900px){.ux-ww-grid{grid-template-columns:1fr;gap:1.5rem}.ux-ww-spot{min-height:22rem}.ux-ww-blob{width:15rem;height:15rem;right:-4.5rem}.ux-ww-w{font-size:1.8rem}}
 @media(prefers-reduced-motion:reduce){.ux-ww-it.on::after{animation:none}}
+
+/* v88 */
+/* nav links bold */
+body .site-nav .nav-links>a,body .site-nav .nav-drop>button{font-weight:800}
+/* services dropdown: "All services" link */
+/* about: map */
+.ux-loc{grid-template-columns:5fr 7fr;align-items:center}
+.ux-loc-addr{margin:1.4rem 0 0;font-style:normal;font-weight:400;line-height:1.7;font-size:1.05rem;color:#46567a}
+.ux-loc-map{overflow:hidden;border-radius:28px;border:1px solid rgba(11,27,58,.1);background:#e8edf3;box-shadow:0 22px 50px -28px rgba(11,27,58,.3)}
+.ux-loc-map iframe{display:block;width:100%;height:24rem;border:0}
+@media(max-width:900px){.ux-loc{grid-template-columns:1fr}.ux-loc-map iframe{height:19rem}}
+/* footer: services links must not clip when the text slides right */
+body .fx-a{overflow:visible}
+/* main services page: chips centred against the section */
+@media(min-width:901px){.ux-svc{align-items:center}}
+/* cookie banner: smaller card */
+.ck{width:min(21.5rem,calc(100vw - 2rem));padding:1rem 1.1rem 1.1rem;border-radius:22px}
+.ck::before{width:6rem;height:6rem;right:-2.2rem;top:-2.2rem;box-shadow:0 0 0 1rem rgba(30,167,240,.06)}
+.ck-top{gap:.7rem}
+.ck-ico{width:2.3rem;height:2.3rem;border-radius:13px}
+.ck-ico svg{width:18px;height:18px}
+.ck h2{font-size:1rem}
+.ck p{margin:.65rem 0 0;font-size:.82rem;line-height:1.55}
+.ck-btns{margin-top:.85rem;gap:.5rem}
+.ck-b{padding:.55rem .8rem;font-size:.8rem}
+/* cards: no hover movement, so the edges cannot flicker under the cursor */
+body .ux-card:hover,body .ux-tile:hover,body .serve-card:hover{transform:none!important;translate:none!important}
+body .service-slide:hover{transform:rotate(0)!important}
+.ux-card,.ux-tile,.serve-card,.service-slide{-webkit-backface-visibility:hidden;backface-visibility:hidden}
+/* breadcrumbs: whole link is clickable, with space below */
+body .crumbs{z-index:60;pointer-events:auto}
+body .crumb a{display:inline-flex;align-items:center;padding:.5rem .35rem;margin:-.5rem -.35rem;cursor:pointer;pointer-events:auto}
+/* who we work with: ring from the logo (no dot) + pause button */
+.ux-ww-blob{background:transparent!important;border:5.3rem solid #bfe0f8;border-radius:50%!important;width:21rem;height:21rem;transition:border-color .6s,transform .8s cubic-bezier(.3,.8,.3,1)}
+.ux-ww-blob.s0{border-color:#bfe0f8;transform:translateY(-50%) rotate(0)}
+.ux-ww-blob.s1{border-color:#ffd3b5;transform:translateY(-50%) rotate(120deg)}
+.ux-ww-blob.s2{border-color:#cfd9e7;transform:translateY(-50%) rotate(240deg)}
+.ux-ww-pp{all:unset;box-sizing:border-box;display:inline-flex;align-items:center;gap:.5rem;margin-top:1.1rem;padding:.5rem 1rem;border-radius:99px;border:1.5px solid #0b1b3a;font-weight:700;font-size:.8rem;color:#0b1b3a;cursor:pointer;transition:background .25s,color .25s}
+.ux-ww-pp:hover{background:#0b1b3a;color:#fff}
+.ux-ww-pp:focus-visible{outline:3px solid rgba(30,167,240,.5);outline-offset:2px}
+.ux-ww-grid.is-stopped .ux-ww-it.on::after{animation:none;width:100%}
+/* floating contact button, bottom right */
+.fab{position:fixed;right:1.5rem;bottom:1.5rem;z-index:80;display:grid;place-items:center;width:3.6rem;height:3.6rem;border-radius:50%;background:#ff6b1a;color:#fff;box-shadow:0 14px 30px -8px rgba(255,107,26,.65);transition:bottom .4s,transform .3s,background .3s}
+.fab:hover{background:#f25c0b;transform:scale(1.07)}
+.fab::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #ff6b1a;animation:fabPulse 2.4s ease-out infinite}
+@keyframes fabPulse{from{transform:scale(1);opacity:.6}to{transform:scale(1.5);opacity:0}}
+.fab svg{width:26px;height:26px}
+.fab span{position:absolute;right:calc(100% + .7rem);white-space:nowrap;padding:.45rem .85rem;border-radius:99px;background:#0b1b3a;color:#fff;font-weight:700;font-size:.8rem;opacity:0;transform:translateX(8px);pointer-events:none;transition:.25s}
+.fab:hover span,.fab:focus-visible span{opacity:1;transform:none}
+body:has(.ck) .fab{bottom:12.8rem}
+@media(max-width:640px){.fab{right:1rem;bottom:1rem;width:3.2rem;height:3.2rem}body:has(.ck) .fab{bottom:13.2rem}}
+@media(prefers-reduced-motion:reduce){.fab::after{animation:none}}
+/* breadcrumbs: a little more space between them and the hero text */
+@media(min-width:901px){body .ux-hero{padding-top:10rem!important}}
+@media(min-width:901px) and (max-height:720px){body .ux-hero{padding-top:9.4rem!important}}
+@media(max-width:900px){body .ux-hero{padding-top:10rem}}
+/* the navbar's empty strip must not cover breadcrumbs or page content underneath */
+body .site-nav{pointer-events:none}
+body .site-nav .nav-shell{pointer-events:auto}
+body .site-nav .nav-drop:hover .nav-drop-menu,body .site-nav .nav-drop:focus-within .nav-drop-menu{pointer-events:auto}
+body .site-nav .nav-drop-menu{pointer-events:none}
+/* v90: floating button is back-to-top; who-we-work-with has no auto-switch */
+.fab{border:0;cursor:pointer;opacity:0;transform:translateY(16px) scale(.9);pointer-events:none}
+.fab.show{opacity:1;transform:none;pointer-events:auto}
+.fab.show:hover{transform:scale(1.07)}
+.fab::after{display:none}
+.ux-ww-it.on::after{width:100%;animation:none}
+/* v91: logo ring sits in the top-right corner of the section, about 40% showing */
+body .ux .ux-ww{position:relative}
+.ux-ww .ux-wrap{position:relative;z-index:1}
+.ux-ww-blob{right:-7.5rem!important;top:-6.5rem!important;z-index:0}
+.ux-ww-blob.s0{transform:rotate(0)!important}
+.ux-ww-blob.s1{transform:rotate(120deg)!important}
+.ux-ww-blob.s2{transform:rotate(240deg)!important}
+@media(max-width:900px){.ux-ww-blob{right:-6rem!important;top:-5.5rem!important;width:16rem;height:16rem;border-width:4rem}}
+/* v92: ring at the middle of the right edge, about 40% showing */
+.ux-ww-blob{top:50%!important;right:-12.5rem!important;translate:0 -50%}
+@media(max-width:900px){.ux-ww-blob{top:50%!important;right:-9.6rem!important}}

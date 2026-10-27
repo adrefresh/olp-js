@@ -8,11 +8,9 @@ import PageHero from "../../components/ui/PageHero";
 import { SITE_SCRIPT } from "../../lib/site-script";
 import StoryPoints from "../../components/success-stories/StoryPoints";
 import PracticalModel from "../../components/success-stories/PracticalModel";
+import { pageMeta } from "../../lib/seo";
 
-export const metadata: Metadata = {
-  title: "Success Stories — OpsLogic",
-  description: "A look at the kinds of operational problems we help teams untangle, strengthen and run with more confidence.",
-};
+export const metadata: Metadata = pageMeta("Success Stories — OpsLogic", "A look at the kinds of operational problems we help teams untangle, strengthen and run with more confidence.", "/success-stories/");
 
 export default function SuccessStoriesPage() {
   return (

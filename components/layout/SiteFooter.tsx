@@ -1,5 +1,3 @@
-import FooterClock from "./FooterClock";
-
 /** Site-wide footer: big call-to-action statement + contact + company links. Styles: app/site.css (.fx-*). */
 export default function SiteFooter({ showEmail }: { showEmail?: boolean } = {}) {
   void showEmail;
@@ -39,7 +37,6 @@ export default function SiteFooter({ showEmail }: { showEmail?: boolean } = {}) 
               <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.75 3h3.07l-6.7 7.66L22 21h-6.17l-4.83-6.32L5.47 21H2.4l7.17-8.2L2 3h6.33l4.37 5.78L17.75 3Zm-1.08 16.17h1.7L7.4 4.74H5.57l11.1 14.43Z" /></svg></a>
               <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-8h2.7l.5-3.2h-3.2V7.9c0-.9.4-1.7 1.8-1.7h1.5V3.4c-.3 0-1.3-.2-2.4-.2-2.5 0-4.1 1.5-4.1 4.2v2.4H7.6V13h2.8v8h3.1Z" /></svg></a>
             </div>
-            {/* <div className="fx-loc"><span className="fx-live" aria-hidden="true" />Hyderabad, India<FooterClock /></div> */}
           </div>
           <nav className="fx-col" aria-label="Services">
             <div className="fx-k">Services</div>
@@ -59,8 +56,8 @@ export default function SiteFooter({ showEmail }: { showEmail?: boolean } = {}) 
         <div className="fx-bot">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/brand/opslogic-logo-ondark.png" alt="OpsLogic" />
-          <span>© 2025–2026 OpsLogic Private Limited. All rights reserved.</span>
-          <span className="fx-links"><a href="/privacy-policy">Privacy Policy</a><a className="fx-topbtn" href="#">Back to top <span className="fx-up" aria-hidden="true">↑</span></a></span>
+          <span>© 2026 OpsLogic Private Limited. All rights reserved.</span>
+          <span className="fx-links"><a href="/privacy-policy">Privacy Policy</a></span>
         </div>
       </div>
     </footer>

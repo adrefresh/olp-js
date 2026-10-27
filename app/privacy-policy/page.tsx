@@ -7,11 +7,9 @@ import ScriptRunner from "../../components/layout/ScriptRunner";
 import PageHero from "../../components/ui/PageHero";
 import PolicyBody from "../../components/privacy/PolicyBody";
 import { SITE_SCRIPT } from "../../lib/site-script";
+import { pageMeta } from "../../lib/seo";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy — OpsLogic",
-  description: "How OpsLogic gathers, uses and safeguards your personal information when you use our website.",
-};
+export const metadata: Metadata = pageMeta("Privacy Policy — OpsLogic", "How OpsLogic gathers, uses and safeguards your personal information when you use our website.", "/privacy-policy/");
 
 export default function PrivacyPolicyPage() {
   return (

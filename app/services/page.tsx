@@ -7,11 +7,9 @@ import ScriptRunner from "../../components/layout/ScriptRunner";
 import PageHero from "../../components/ui/PageHero";
 import { SITE_SCRIPT } from "../../lib/site-script";
 import ServiceAreas from "../../components/services/ServiceAreas";
+import { pageMeta } from "../../lib/seo";
 
-export const metadata: Metadata = {
-  title: "Services — OpsLogic",
-  description: "Business Operations, HR & Payroll and IT Services — one team behind all three.",
-};
+export const metadata: Metadata = pageMeta("Services — OpsLogic", "Business Operations, HR & Payroll and IT Services — one team behind all three.", "/services/");
 
 export default function ServicesPage() {
   return (
