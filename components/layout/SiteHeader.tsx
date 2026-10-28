@@ -15,7 +15,7 @@ export default function SiteHeader({ active }: { active: NavKey }) {
         <img className="brand-logo brand-logo-light" src="/brand/opslogic-logo-ondark.png" alt="" aria-hidden="true" width="150" height="40" />
       </a>
       <nav className="nav-links">
-        <a href="/about-us" className={active === "about-us" ? "active" : undefined}>About Us</a>
+        {/* <a href="/about-us" className={active === "about-us" ? "active" : undefined}>About Us</a> */}
         <div className="nav-drop">
           <button>Services <i className="nav-chev" aria-hidden="true" /></button>
           <div className="nav-drop-menu nav-mega">
@@ -38,6 +38,7 @@ export default function SiteHeader({ active }: { active: NavKey }) {
             </div>
           </div>
         </div>
+        <a href="/about-us" className={active === "about-us" ? "active" : undefined}>About Us</a>
         <a href="/careers" className={active === "careers" ? "active" : undefined}>Careers</a>
         <a href="/contact-us" className={active === "contact-us" ? "active" : undefined}>Contact</a>
       </nav>
