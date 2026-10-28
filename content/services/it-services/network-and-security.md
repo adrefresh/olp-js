@@ -43,6 +43,10 @@ And repeat the review each year.
 
 ## FAQ
 
+### Where do you start?
+
+With a review of where the gaps are, then a ranked list of fixes.
+
 ### Do you test our backups?
 
 Yes. A backup you haven't restored isn't a backup.
@@ -50,3 +54,11 @@ Yes. A backup you haven't restored isn't a backup.
 ### Is this the same as certification?
 
 No. See Certification and Compliance Readiness for that.
+
+### Can you secure our remote workers?
+
+Yes, through device security, VPN and sensible access rules.
+
+### Do you write security policies?
+
+Yes, practical ones people can follow.

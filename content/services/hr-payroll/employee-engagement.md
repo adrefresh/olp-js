@@ -68,16 +68,20 @@ We change the plan based on what the numbers and the conversations tell us.
 
 ### Do you run the activities yourselves?
 
-Yes. Our own team plans and runs them. You don't need to coordinate vendors.
+Yes. Our own team plans and runs them. You don't coordinate vendors.
 
-### Can we start with just surveys?
+### Can we start with just a survey?
 
 Yes. Many clients start there and add events and recognition later.
 
-### Are survey responses confidential?
+### Are survey results confidential?
 
-Results are reported in groups and never traced back to individuals.
+Yes. Results are reported in groups and never traced back to individuals.
 
-### Does it work for EOR employees?
+### Does it include Employer of Record employees?
 
-Yes. We include them in the same programmes as your other India team members.
+Yes. They join the same programmes as the rest of your India team.
+
+### How do we know it's working?
+
+You get a quarterly report on participation, scores, retention and exit reasons.

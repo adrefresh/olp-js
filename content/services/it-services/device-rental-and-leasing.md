@@ -42,8 +42,22 @@ When the project ends.
 
 ## FAQ
 
-### What if a device breaks?
+### Who is rental best for?
 
-We replace it. Support is part of the rental.
+Project teams, short engagements and companies that would rather not spend on equipment upfront.
+
+### What if a rented device breaks?
+
+We replace it. Support and replacement are part of the rental.
 
 ### Can we buy the devices later?
+
+Possibly. Ask us and we'll explain the options.
+
+### What happens at the end of the rental?
+
+We collect the devices and wipe the data securely.
+
+### Can we add or return devices during the rental?
+
+Yes. The rental flexes as your team changes.

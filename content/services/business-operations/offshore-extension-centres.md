@@ -48,9 +48,25 @@ Transfer the team to your entity without a gap.
 
 ## FAQ
 
-### Do we need our own entity?
+### Is this the same as outsourcing?
 
-Not at the start. Employer of Record works well for the first hires.
+No. These are your people, doing your work, under your direction. We handle the legal, payroll and operating setup around them.
+
+### Do we need our own company from the start?
+
+Not necessarily. Many clients begin on Employer of Record and move to their own subsidiary once the team has grown.
+
+### How quickly can a team be set up?
+
+It depends on the size and the roles. We give you a realistic plan, including hiring time, before you commit.
+
+### Who manages the team day to day?
+
+You do, or the leaders you appoint. Our HR Business Partner service can support them if you'd like.
+
+### How is our confidential information protected?
+
+Employment agreements include confidentiality and IP assignment from day one, and our IT team can set up secure access to your systems.
 
 ### How many people before an entity makes sense?
 

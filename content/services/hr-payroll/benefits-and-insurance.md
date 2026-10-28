@@ -43,9 +43,25 @@ Enrolment, claims and renewals.
 
 ## FAQ
 
+### What benefits can we offer?
+
+Group health insurance, accident cover, and allowances for wellness, meals and travel, depending on your budget.
+
+### Do you help with insurance claims?
+
+Yes. We support employees through the claims process.
+
 ### Can we start with insurance only?
 
-Yes.
+Yes. Add other benefits when you're ready.
+
+### What happens when someone joins or leaves?
+
+We handle enrolment and removal, so cover starts and stops on the right dates.
+
+### Who handles renewals?
+
+We do. We review the cover each year and tell you if something should change.
 
 ### Does it work for Employer of Record employees?
 

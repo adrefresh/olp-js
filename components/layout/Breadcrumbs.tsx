@@ -23,7 +23,7 @@ export default function Breadcrumbs({ items, tone = "dark" }: { items: Crumb[]; 
       {all.map((item, i) => (
         <span className="crumb" key={`${item.label}-${i}`}>
           {item.href ? <a href={item.href}>{item.label}</a> : <b aria-current="page">{item.label}</b>}
-          {i < all.length - 1 && <i aria-hidden="true">/</i>}
+          {i < all.length - 1 && <i aria-hidden="true" className="chev" />}
         </span>
       ))}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />

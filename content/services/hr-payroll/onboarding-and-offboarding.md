@@ -48,10 +48,22 @@ Everything done and recorded.
 
 ## FAQ
 
-### Does it work with Employer of Record hires?
+### What does onboarding include?
 
-Yes, it's built in.
+Offer letters, documents, background checks, equipment, accounts, orientation, and check-ins at 30, 60 and 90 days.
+
+### What does offboarding include?
+
+Notice handling, handover, access removal, device return, final settlement, letters and an exit interview.
 
 ### Can you do offboarding only?
 
 Yes.
+
+### Does it work with Employer of Record hires?
+
+Yes. It's built into that service.
+
+### Who does the paperwork?
+
+We do. You approve, and we handle the rest.

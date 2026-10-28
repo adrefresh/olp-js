@@ -48,6 +48,22 @@ Joiners, leavers and repairs update the register.
 
 Yes. We check them against a physical audit and fix the gaps.
 
+### What does the register include?
+
+Every device and licence: who has it, where it is, cost, warranty dates and condition.
+
+### Do you track software licences too?
+
+Yes. We record what you've bought, who's using it and when it renews.
+
+### Can finance use the reports?
+
+Yes. We provide reports for depreciation and audits.
+
+### How often do you audit?
+
+We agree a schedule with you, usually once or twice a year, plus spot checks.
+
 ### Do you track remote employees' devices?
 
 Yes, including where they are and who has them.

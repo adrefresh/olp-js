@@ -58,14 +58,26 @@ A short summary of what was filed and what's coming.
 
 ## FAQ
 
-### What if we're already behind?
+### What if we've missed filings?
 
-Common, and fixable. We clear the backlog in order of risk and tell you what each item will cost.
+Common, and fixable. We list what's overdue, rank it by risk and clear it in order.
+
+### Who signs the filings?
+
+Directors and authorised signatories still sign what the law requires. We prepare everything and chase signatures.
+
+### How do we know what's due?
+
+You get one dated calendar and a short monthly note on what was filed and what's next.
+
+### Do you cover foreign-owned companies?
+
+Yes, including the reporting that comes with foreign investment under FEMA and RBI rules.
+
+### Can you work with our existing accountant?
+
+Yes. We coordinate with them so nothing is filed twice or missed.
 
 ### Do you handle GST and income tax?
 
 GST returns are part of compliance. Bookkeeping and income tax sit under Accounting, Tax and Audit.
-
-### Who signs the filings?
-
-Directors and authorised signatories still sign what the law says they must. We do the preparation and the chasing.

@@ -9,8 +9,11 @@ import { SITE_SCRIPT } from "../../lib/site-script";
 import StoryPoints from "../../components/success-stories/StoryPoints";
 import PracticalModel from "../../components/success-stories/PracticalModel";
 import { pageMeta } from "../../lib/seo";
+import PageSchema from "../../components/ui/PageSchema";
 
-export const metadata: Metadata = pageMeta("Success Stories — OpsLogic", "A look at the kinds of operational problems we help teams untangle, strengthen and run with more confidence.", "/success-stories/");
+const TITLE = "Success Stories — OpsLogic";
+const DESC = "A look at the kinds of operational problems we help teams untangle, strengthen and run with more confidence.";
+export const metadata: Metadata = pageMeta(TITLE, DESC, "/success-stories/", ["client success stories", "operations case studies", "OpsLogic results"]);
 
 export default function SuccessStoriesPage() {
   return (
@@ -26,6 +29,7 @@ export default function SuccessStoriesPage() {
         <StoryPoints />
         <PracticalModel />
       </main>
+      <PageSchema type="CollectionPage" title={TITLE} description={DESC} path="/success-stories/" />
       <SiteFooter />
       <ScriptRunner script={SITE_SCRIPT} />
     </>

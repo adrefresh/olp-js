@@ -54,6 +54,18 @@ Through yearly reviews.
 
 No. An independent certifying body does. We prepare you and manage the process.
 
+### Which standards do you prepare us for?
+
+ISO 27001, SOC 2 Type I and II, ISO 27701, ISO 20000-1 and ISO 9001.
+
 ### How long does it take?
 
-It depends on the standard and where you start. We give a realistic range after the gap assessment.
+It depends on the standard and where you start. We give a realistic range after a gap assessment.
+
+### What happens after certification?
+
+We help you keep up with the surveillance audits and yearly reviews.
+
+### Do our staff need training?
+
+Yes. Awareness training is part of every standard, and we deliver it.

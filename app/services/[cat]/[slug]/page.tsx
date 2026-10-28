@@ -23,7 +23,15 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ cat: string; slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const s = SERVICES[slug];
-  return s ? pageMeta(`${s.title} — OpsLogic`, s.p, `/services/${s.cat}/${slug}/`) : {};
+  return s
+    ? pageMeta(`${s.title} — OpsLogic`, s.p, `/services/${s.cat}/${slug}/`, [
+        s.title,
+        `${s.title} India`,
+        `${s.title} services Hyderabad`,
+        `${s.title} for startups`,
+        s.cat === "hr-payroll" ? "HR and payroll" : s.cat === "it-services" ? "IT services" : "business operations",
+      ])
+    : {};
 }
 export default async function Page({ params }: { params: Promise<{ cat: string; slug: string }> }) {
   const { cat, slug } = await params;

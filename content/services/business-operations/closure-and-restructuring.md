@@ -43,10 +43,22 @@ Filings and confirmations.
 
 ## FAQ
 
-### How long does closing a company take?
+### What options do we have if we want to stop operating?
 
-It depends on the route and whether past filings are up to date. We'll give you a realistic range after reviewing your position.
+The main routes are striking off or winding up. We explain which fits your situation.
 
-### What happens to our employees?
+### Can we merge two companies?
 
-We coordinate exits properly with our HR team.
+Yes. We guide you through the process and the filings involved.
+
+### What happens to our staff?
+
+We coordinate proper exits with our HR team, including notice and settlements.
+
+### Do past filings need to be up to date first?
+
+Usually, yes. We review your position and bring everything current before closing.
+
+### How long does it take?
+
+It depends on the route and the state of your records. We give a realistic range after the review.

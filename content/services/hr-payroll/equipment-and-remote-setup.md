@@ -42,10 +42,22 @@ Before day one.
 
 ## FAQ
 
+### Can you deliver to home addresses?
+
+Yes, across India, with tracking.
+
 ### Is this part of Employer of Record?
 
-It works with it, and can be added to any hire.
+It works with it, and it can be added to any hire.
 
-### Can you also rent devices?
+### Can you rent devices instead of buying?
 
-Yes. See Device Rental and Leasing.
+Yes. See Device Rental and Leasing in IT Services.
+
+### What happens when someone leaves?
+
+We collect the device, wipe it and return it to stock.
+
+### Can you set up accounts and software too?
+
+Yes. Devices arrive configured with software, security settings and user accounts.

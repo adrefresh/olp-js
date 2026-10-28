@@ -53,3 +53,15 @@ Yes, or we work with your existing host.
 ### Can we update the site ourselves?
 
 Yes. We build it that way and show your team how.
+
+### Do you build online stores?
+
+Yes, on Shopify, WooCommerce or custom.
+
+### Who owns the website?
+
+You do, including the code.
+
+### Do you look after the site after launch?
+
+Yes. Monthly maintenance covers updates, security, backups and small changes.

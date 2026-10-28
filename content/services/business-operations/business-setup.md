@@ -82,13 +82,29 @@ A complete pack, plus a compliance calendar. Many clients stay with us for ongoi
 
 ## FAQ
 
+### Which structure is best for a foreign company?
+
+Usually a wholly owned subsidiary, if you want full control and plan to hire. If you're only testing the market, an Employer of Record can come first. We compare the options for you in writing.
+
+### Do we need an office before we register?
+
+You need a registered office address on record. We can help you arrange one, including through our Managed Workspace.
+
+### Will anyone need to travel to India?
+
+Most of the process runs remotely. Banks sometimes have their own verification steps, and we tell you what to expect before you start.
+
+### What documents do overseas directors need to provide?
+
+Identity and address proof, usually notarised and apostilled in your home country. We give you one checklist so you only do it once.
+
+### What do we receive when it's done?
+
+Your incorporation documents, registrations, bank account details, and a handover pack with a compliance calendar for the first year.
+
 ### How long does it take?
 
 Usually a few weeks from the point we have all your documents. Foreign-owned companies tend to take longer, mostly because of bank account opening and KYC on overseas directors. You'll get a realistic timeline in the proposal.
-
-### Do I need to be in India?
-
-No. We handle the process remotely. Some documents need notarising in your home country.
 
 ### How many directors do I need?
 

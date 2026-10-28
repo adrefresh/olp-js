@@ -2,13 +2,13 @@ import type { ReactNode } from "react";
 import Breadcrumbs from "../layout/Breadcrumbs";
 import SiteHeader from "../layout/SiteHeader";
 import SiteFooter from "../layout/SiteFooter";
+import PageSchema from "../ui/PageSchema";
 import ScriptRunner from "../layout/ScriptRunner";
 import PageHero from "../ui/PageHero";
 import SectionHead from "../ui/SectionHead";
 import { SITE_SCRIPT } from "../../lib/site-script";
 import { CATS } from "../../lib/services";
 import CategoryGroup, { type CategoryLayout } from "./CategoryGroup";
-import CategoryFaq from "./CategoryFaq";
 
 const LAYOUT: Record<string, CategoryLayout> = {
   "business-operations": "journey",
@@ -45,8 +45,8 @@ export default function CategoryPage({ slug }: { slug: string }) {
           <CategoryGroup key={g.t} group={g} gi={gi} layout={layout} />
         ))}
 
-        <CategoryFaq faq={c.faq} />
       </main>
+      <PageSchema type="CollectionPage" title={`${c.title} — OpsLogic`} description={c.p} path={`/services/${c.slug}/`} />
       <SiteFooter />
       <ScriptRunner script={SITE_SCRIPT} />
     </>

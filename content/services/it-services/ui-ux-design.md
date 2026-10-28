@@ -49,3 +49,15 @@ Both.
 ### Can you work with our developers?
 
 Yes. We hand over in the format they need.
+
+### Do you test designs with real users?
+
+Yes. We test clickable prototypes before development begins.
+
+### Can you create a design system?
+
+Yes. A design system keeps screens consistent as the product grows.
+
+### Can you redesign an existing product?
+
+Yes. We start by finding what's working and what isn't.

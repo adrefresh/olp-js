@@ -49,8 +49,20 @@ What changed.
 
 ### Can we book a single workshop?
 
-Yes.
+Yes. Or a full annual calendar, if you prefer.
 
-### Do you run it online?
+### Do you run training online?
 
-Yes, or in person.
+Yes, in person or online, depending on the team.
+
+### How do you choose topics?
+
+We start with a needs analysis, so the plan fits the gaps you actually have.
+
+### Can you cover technical subjects?
+
+We can arrange technical upskilling.
+
+### How do you measure results?
+
+Attendance, feedback after each session, and follow-up with managers on what changed.

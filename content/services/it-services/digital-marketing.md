@@ -50,10 +50,22 @@ Put effort where it's working.
 
 ## FAQ
 
-### Will you tell us what's not working?
+### Will you tell us what isn't working?
 
-Yes. That's part of the report.
+Yes. That's part of the monthly report.
+
+### Which channels do you cover?
+
+Search, content, social media, paid advertising on Google, Meta and LinkedIn, and email.
 
 ### Can you work with our sales team?
 
-Yes. Leads go straight into the CRM.
+Yes. Leads go straight into your CRM, such as Zoho CRM.
+
+### How soon will we see results?
+
+Paid campaigns can bring traffic quickly. Search and content take longer. We'll set honest expectations at the start.
+
+### Do you create the content?
+
+Yes. Articles, guides, case studies, video and social posts.

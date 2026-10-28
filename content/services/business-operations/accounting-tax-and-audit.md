@@ -49,14 +49,22 @@ Audit preparation and queries handled with your auditor.
 
 ## FAQ
 
-### Can you work with our own accountant?
+### Do you replace our accountant?
 
-Yes. We can do the monthly work and leave planning to them, or the other way round.
+Only if you want us to. We can be your finance back office, or work alongside your accountant.
 
-### Which software do you use?
+### Which accounting software do you use?
 
 Zoho Books, Tally, or whatever you already run.
 
-### Do you carry out the audit?
+### Do you file GST and income tax?
 
-No. The statutory audit is done by an independent chartered accountant. We prepare the records and handle their queries.
+Yes, we prepare and file returns, with your approval before anything goes in.
+
+### Can you help with the audit?
+
+Yes. An independent chartered accountant carries out the statutory audit. We prepare the records and handle their queries.
+
+### Can you send reports to our overseas head office?
+
+Yes. We can prepare reporting packs in the format your parent company needs.

@@ -56,13 +56,25 @@ Add or release seats as the team changes.
 
 ## FAQ
 
+### What does a seat include?
+
+A furnished desk, power, internet, access to meeting rooms and common areas, housekeeping and security.
+
 ### Can we add seats later?
 
-Yes. That's the point of flexible terms. We'll agree notice periods upfront.
+Yes. Flexible terms are part of the service, and we agree notice periods upfront.
 
 ### Can we use the address to register our company?
 
 Often, depending on the agreement and your entity type. We confirm before you sign.
+
+### Is IT support included?
+
+IT support and equipment come from our IT team, as part of the arrangement or as an add-on.
+
+### Can we have a private room for our team?
+
+Yes. Private cabins and dedicated floors are available.
 
 ### Do you manage offices we already lease?
 

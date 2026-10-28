@@ -43,10 +43,22 @@ Before they start.
 
 ## FAQ
 
+### How early do you need to know about a new hire?
+
+The earlier, the better. We agree a lead time that suits the devices you use.
+
+### Can you ship to home addresses?
+
+Yes, across India, with tracking.
+
+### What about devices from people who leave?
+
+We collect them, wipe them securely and put them back into stock.
+
+### Can you pre-install our software?
+
+Yes. We set up devices to your standard image.
+
 ### Does it work with Employer of Record hires?
 
 Yes. The laptop is ordered with the offer, so it arrives before the start date.
-
-### Can you ship across India?
-
-Yes, to home addresses with tracking.

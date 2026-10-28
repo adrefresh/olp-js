@@ -53,3 +53,15 @@ Yes.
 ### Can you take over an existing application?
 
 Yes. We review it first and tell you what we find.
+
+### Do you build mobile apps?
+
+Yes, iOS and Android, native or cross-platform.
+
+### How do you work?
+
+In short cycles with regular demos, so you can steer.
+
+### What happens after launch?
+
+We provide support, fixes, upgrades and new features.

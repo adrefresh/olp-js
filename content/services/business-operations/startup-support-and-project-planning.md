@@ -42,9 +42,25 @@ We carry out the parts you want help with.
 
 ## FAQ
 
-### Do you help us raise money?
+### We're very early. Is this too soon?
 
-No. We make sure your records, structure and compliance are in order, so due diligence goes smoothly.
+Not at all. The first year's decisions about ownership, hiring and records are the costliest to change later.
+
+### Can you clean up our cap table?
+
+Yes. We review the share records, fix gaps in the paperwork and keep them updated.
+
+### Will this help us in a funding round?
+
+It helps with the due diligence part. Investors ask for tidy records, and we make sure you have them. We don't raise money for you.
+
+### What does the first-year plan include?
+
+Structure, hiring steps, registrations, compliance dates and a simple operating calendar.
+
+### Can we take only part of the service?
+
+Yes. Many founders start with the plan and hand us parts of it as they grow.
 
 ### Is this only for startups?
 

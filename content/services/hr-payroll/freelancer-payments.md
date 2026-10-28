@@ -46,8 +46,26 @@ On the date agreed.
 
 ## FAQ
 
+### How does onboarding work?
+
+The freelancer is invited, verified and signs the agreement. We collect their tax and bank details once and keep them current.
+
+### How do invoices get approved?
+
+Freelancers submit invoices in a standard format. They reach you for approval before anything is paid.
+
+### Do we pay each freelancer separately?
+
+No. You make one payment to us, and we pay each freelancer.
+
+### Which currencies do you pay in?
+
+Indian rupees for freelancers in India.
+
+### What records do we get?
+
+A monthly summary of payments, plus the records you need at year end.
+
 ### Does it work for a handful or hundreds?
 
 Both.
-
-### Which currencies do you pay in?

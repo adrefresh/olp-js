@@ -44,10 +44,22 @@ Short, in plain language.
 
 ## FAQ
 
-### Do we get a portal to learn?
+### What counts as administration?
 
-No. You get a named coordinator and a simple weekly update.
+Records, vendors, supplies, couriers, travel, insurance renewals and similar operational jobs.
 
-### Can we start small?
+### Do we get a portal?
 
-Yes. Most clients do, then hand over more once it's working.
+No. You get a named coordinator and a short weekly update.
+
+### Can you source office supplies and furniture?
+
+Yes. We find suppliers, compare options and manage orders.
+
+### Can we start with just a few tasks?
+
+Yes, and most clients do. Add more once it's working.
+
+### Who is our point of contact?
+
+One named coordinator who knows your account.

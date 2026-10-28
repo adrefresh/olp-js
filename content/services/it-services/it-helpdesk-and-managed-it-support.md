@@ -55,12 +55,26 @@ A monthly look at what's recurring and what to fix for good.
 
 ## FAQ
 
+### How do we raise a request?
+
+By phone, email, chat or portal. Every request becomes a ticket.
+
+### What are the support hours?
+
+Support hours are agreed with you and set out in your support plan.
+
 ### Do you support remote employees?
 
-Yes. Remote support is standard. We can ship replacement devices to home addresses.
-
-### Which systems do you support?
+Yes. Remote support is standard, and we can ship replacement devices.
 
 ### Can you take over from our current IT person?
 
 Yes. We can work with them or take over, and document everything either way.
+
+### What will we see each month?
+
+A short report on tickets, response times and anything that keeps coming back.
+
+### Which systems do you support?
+
+Windows, macOS, Microsoft 365, Google Workspace and the common business apps your team uses.

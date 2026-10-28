@@ -63,16 +63,26 @@ Payment, filings, payslips and a short report.
 
 ## FAQ
 
-### What do you need from us each month?
+### What do you need from us every month?
 
-A short list of changes by the cut-off date. We remind you before it.
+A short list of changes by the cut-off date: joiners, exits, leave, bonuses and reimbursements. We remind you beforehand.
+
+### Can you take over payroll mid-year?
+
+Yes. We collect year-to-date figures so tax and statutory records continue correctly.
+
+### What if someone is paid incorrectly?
+
+We correct it in an off-cycle run and explain exactly what went wrong.
+
+### Do you handle PF, ESI and TDS?
+
+Yes. We calculate, deposit and file the statutory contributions and tax deductions.
+
+### Do you run payroll for Employer of Record employees too?
+
+Yes. Same team and same process.
 
 ### How do employees get their payslips?
 
-### What happens if someone is paid wrong?
-
-We correct it in an off-cycle run and tell you exactly what went wrong.
-
-### Do you run payroll for EOR employees?
-
-Yes. Same team, same process.
+Employees receive their payslips every month. We agree the delivery method with you during onboarding.

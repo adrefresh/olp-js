@@ -12,8 +12,11 @@ import Founders from "../../components/about/Founders";
 import Beliefs from "../../components/about/Beliefs";
 import Location from "../../components/about/Location";
 import { pageMeta } from "../../lib/seo";
+import PageSchema from "../../components/ui/PageSchema";
 
-export const metadata: Metadata = pageMeta("About Us — OpsLogic", "We're a team of operations, HR, finance and technology people who like making complicated business problems quietly disappear.", "/about-us/");
+const TITLE = "About Us — OpsLogic";
+const DESC = "We're a team of operations, HR, finance and technology people who like making complicated business problems quietly disappear.";
+export const metadata: Metadata = pageMeta(TITLE, DESC, "/about-us/", ["about OpsLogic", "business operations company Hyderabad", "OpsLogic founders", "outsourcing partner India"]);
 
 export default function AboutUsPage() {
   return (
@@ -32,6 +35,7 @@ export default function AboutUsPage() {
         <Beliefs />
         <Location />
       </main>
+      <PageSchema type="AboutPage" title={TITLE} description={DESC} path="/about-us/" />
       <SiteFooter />
       <ScriptRunner script={SITE_SCRIPT} />
     </>

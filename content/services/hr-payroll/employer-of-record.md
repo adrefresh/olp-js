@@ -74,13 +74,25 @@ Leave, queries, appraisals and eventually exits, all through one contact.
 
 ## FAQ
 
-### Do I need an Indian company?
+### Do we need an Indian company to hire someone?
 
-No. We employ them as the legal employer, and you direct the work.
+No. We act as the legal employer and you direct the work. That's the point of the service.
 
-### Who owns the work they produce?
+### Who owns the work the employee produces?
 
 You do. Employment agreements assign intellectual property to your company, and confidentiality applies from day one.
+
+### What benefits do employees receive?
+
+Statutory benefits and group health insurance are included. Extras such as wellness allowances can be added.
+
+### Can we move employees to our own entity later?
+
+Yes, and we'd suggest planning for it from the start. We can set up the entity and move your team across, keeping their service history.
+
+### What happens if we need to end someone's employment?
+
+We follow the notice and settlement rules that apply and advise you before any step is taken.
 
 ### How fast can someone start?
 
@@ -89,14 +101,6 @@ Faster than setting up an entity, which takes weeks to months. We'll give you a 
 ### Can I convert an existing contractor?
 
 Yes. We review the arrangement and move them onto payroll without losing continuity.
-
-### What about benefits?
-
-Group health insurance and statutory benefits are included. Extras such as wellness allowances can be added.
-
-### What if it doesn't work out?
-
-We follow the notice and settlement rules that apply, and advise you before any step is taken.
 
 ### Do you cover other countries?
 

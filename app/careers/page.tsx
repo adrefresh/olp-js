@@ -11,8 +11,11 @@ import WorkingHere from "../../components/careers/WorkingHere";
 import HiringSteps from "../../components/careers/HiringSteps";
 import OpenRoles from "../../components/careers/OpenRoles";
 import { pageMeta } from "../../lib/seo";
+import PageSchema from "../../components/ui/PageSchema";
 
-export const metadata: Metadata = pageMeta("Careers — OpsLogic", "We're always interested in people who are careful, curious and good with details.", "/careers/");
+const TITLE = "Careers — OpsLogic";
+const DESC = "We're always interested in people who are careful, curious and good with details.";
+export const metadata: Metadata = pageMeta(TITLE, DESC, "/careers/", ["careers at OpsLogic", "jobs in Hyderabad", "operations jobs", "HR and payroll jobs Hyderabad"]);
 
 export default function CareersPage() {
   return (
@@ -30,6 +33,7 @@ export default function CareersPage() {
         <HiringSteps />
         <OpenRoles />
       </main>
+      <PageSchema type="WebPage" title={TITLE} description={DESC} path="/careers/" />
       <SiteFooter />
       <ScriptRunner script={SITE_SCRIPT} />
     </>

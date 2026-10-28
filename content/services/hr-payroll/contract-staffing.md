@@ -48,10 +48,26 @@ Extend, end or convert.
 
 ## FAQ
 
+### How is this different from hiring permanently?
+
+Contract staff are employed and paid by us for a fixed period or project. Your team directs their work, but they aren't on your payroll.
+
+### How long can a contract run?
+
+From a few weeks to a year or more, depending on the project. We agree the dates in the contract.
+
+### Can we keep someone we like?
+
+Yes. We can convert a contractor to a permanent employee, and we'll explain the process upfront.
+
+### Who handles payroll and compliance?
+
+We do, including statutory contributions, insurance and the compliance that comes with contract labour.
+
+### Can we scale the team up or down?
+
+Yes. That's one of the main reasons companies use contract staffing.
+
 ### Who manages the contract staff?
 
 Your team manages the work. We manage employment, payroll and compliance.
-
-### Can we hire them permanently later?
-
-Yes. We'll explain the process and any conditions upfront.

@@ -50,12 +50,20 @@ Until it's signed, filed or settled.
 
 ### Are you a law firm?
 
-No. The legal work is done by our partner lawyers, and we coordinate it.
+No. The legal work is done by our partner lawyers, and we coordinate it so you have one contact.
 
 ### Can you review a contract we've been sent?
 
-Yes. Tell us how soon you need it back and we'll prioritise it.
+Yes. Tell us when you need it back, and we'll flag the risks in plain language.
 
-### Do you only help with India?
+### Can you draft employment agreements?
 
-Yes, Indian law and Indian businesses.
+Yes, along with offer letters and HR policies, checked against Indian law.
+
+### Do you handle disputes?
+
+Our partner lawyers do, and we manage the process for you.
+
+### Do you cover legal matters outside India?
+
+No. Our legal support is for Indian law and Indian businesses.

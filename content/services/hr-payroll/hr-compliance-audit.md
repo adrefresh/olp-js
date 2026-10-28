@@ -43,10 +43,22 @@ Gaps ranked, with a plan.
 
 ## FAQ
 
-### Is it a one-off?
+### What do you check?
 
-It can be. Many clients repeat it each year.
+Contracts, policies, statutory registrations, payroll practices, records and leave practices.
+
+### What do we receive?
+
+A written report that ranks each gap by risk, with a plan to close them.
+
+### How long does it take?
+
+That depends on your size and how organised your records are. We give you an estimate after a short scoping call.
 
 ### Will you fix the gaps too?
 
-If you'd like. Many of them fall under our other HR services.
+If you'd like. Many of them fall under our other HR and payroll services.
+
+### Should we repeat it every year?
+
+Many clients do. Rules change, and so do teams.

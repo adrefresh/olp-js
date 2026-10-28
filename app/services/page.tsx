@@ -8,8 +8,11 @@ import PageHero from "../../components/ui/PageHero";
 import { SITE_SCRIPT } from "../../lib/site-script";
 import ServiceAreas from "../../components/services/ServiceAreas";
 import { pageMeta } from "../../lib/seo";
+import PageSchema from "../../components/ui/PageSchema";
 
-export const metadata: Metadata = pageMeta("Services — OpsLogic", "Business Operations, HR & Payroll and IT Services — one team behind all three.", "/services/");
+const TITLE = "Services — OpsLogic";
+const DESC = "Business Operations, HR & Payroll and IT Services — one team behind all three.";
+export const metadata: Metadata = pageMeta(TITLE, DESC, "/services/", ["business operations services", "HR and payroll services", "IT services", "company setup services India"]);
 
 export default function ServicesPage() {
   return (
@@ -25,6 +28,7 @@ export default function ServicesPage() {
         />
         <ServiceAreas />
       </main>
+      <PageSchema type="CollectionPage" title={TITLE} description={DESC} path="/services/" />
       <SiteFooter />
       <ScriptRunner script={SITE_SCRIPT} />
     </>

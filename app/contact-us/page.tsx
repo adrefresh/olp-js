@@ -11,8 +11,11 @@ import ContactForm from "../../components/contact/ContactForm";
 import TouchCard from "../../components/contact/TouchCard";
 import NextSteps from "../../components/contact/NextSteps";
 import { pageMeta } from "../../lib/seo";
+import PageSchema from "../../components/ui/PageSchema";
 
-export const metadata: Metadata = pageMeta("Contact — OpsLogic", "Tell us what's going on. A real person will reply, usually within one working day.", "/contact-us/");
+const TITLE = "Contact — OpsLogic";
+const DESC = "Tell us what's going on. A real person will reply, usually within one working day.";
+export const metadata: Metadata = pageMeta(TITLE, DESC, "/contact-us/", ["contact OpsLogic", "free consultation", "business operations enquiry Hyderabad"]);
 
 export default function ContactUsPage() {
   return (
@@ -36,6 +39,7 @@ export default function ContactUsPage() {
           </div>
         </section>
       </main>
+      <PageSchema type="ContactPage" title={TITLE} description={DESC} path="/contact-us/" />
       <SiteFooter />
       <ScriptRunner script={SITE_SCRIPT} />
     </>

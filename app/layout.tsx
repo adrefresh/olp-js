@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import "./site.css";
 import "./ux.css";
@@ -15,6 +15,25 @@ export const metadata: Metadata = {
   description:
     "OpsLogic — Business Operations, IT, Hiring, Payroll, SAP & Shared Workspace solutions.",
   metadataBase: new URL("https://www.opslogic.team"),
+  applicationName: "OpsLogic",
+  authors: [{ name: "OpsLogic Private Limited", url: "https://www.opslogic.team" }],
+  creator: "OpsLogic Private Limited",
+  publisher: "OpsLogic Private Limited",
+  category: "Business services",
+  referrer: "strict-origin-when-cross-origin",
+  formatDetection: { telephone: true, email: true, address: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
+  },
+  other: {
+    "geo.region": "IN-TG",
+    "geo.placename": "Hyderabad",
+    "geo.position": "17.4948;78.3996",
+    ICBM: "17.4948, 78.3996",
+    rating: "general",
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -23,6 +42,12 @@ export const metadata: Metadata = {
     ],
     apple: [{ url: "/brand/favicon-180.png", sizes: "180x180", type: "image/png" }],
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0b1b3a",
 };
 
 const schema = {
@@ -51,6 +76,8 @@ const schema = {
     },
     {
       "@type": "WebSite",
+      "@id": "https://www.opslogic.team/#website",
+      inLanguage: "en-IN",
       name: "OpsLogic",
       url: "https://www.opslogic.team",
       publisher: { "@id": "https://www.opslogic.team/#org" },

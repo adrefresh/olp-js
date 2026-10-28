@@ -77,19 +77,37 @@ Every item goes into your asset register, with warranty dates and reminders.
 
 ## FAQ
 
+### Do you buy from authorised suppliers?
+
+Yes. We buy from authorised suppliers, so warranties and support are valid.
+
+### Can you compare options for us?
+
+Yes. We quote a few options and tell you when a cheaper choice will cost you more later.
+
+### Will equipment arrive configured?
+
+Yes. We install the operating system, software and security settings before delivery.
+
+### Can you deliver to several locations?
+
+Yes. We deliver to offices and to individual employees, wherever they are.
+
+### Do you handle repairs and warranty claims?
+
+Yes. We raise the claim with the supplier and arrange a replacement when needed.
+
 ### Can you deliver to employees working from home?
 
 Yes. We ship to home addresses and confirm the setup with the employee.
 
 ### Do you only sell new equipment?
 
+We mainly supply new equipment. If you need refurbished or rental options, tell us and we'll advise what suits your budget.
+
 ### Can you take over our existing inventory?
 
 Yes. We do a physical audit, build the register and flag anything missing, out of warranty or ready to retire.
-
-### What about warranty claims and repairs?
-
-We handle the claim with the supplier and arrange a replacement when needed.
 
 ### Can you track software licences too?
 

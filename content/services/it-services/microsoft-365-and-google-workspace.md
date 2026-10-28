@@ -43,10 +43,22 @@ Changes and support afterwards.
 
 ## FAQ
 
+### Which one is better for us?
+
+It depends on how your team works and what you already use. We'll tell you honestly.
+
 ### Can you migrate us from another platform?
 
 Yes. We plan the move so mail and files carry across.
 
-### Which is better for us?
+### Will you set up security?
 
-Depends on how you work. We'll tell you honestly.
+Yes, including multi-factor sign-in and sensible sharing settings.
+
+### Can you train our team?
+
+Yes, with short sessions on the tools they'll use every day.
+
+### What happens when people join or leave?
+
+We add or remove accounts and access as part of onboarding and offboarding.

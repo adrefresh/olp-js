@@ -12,8 +12,11 @@ import TestimonialsSection from "../components/home/TestimonialsSection";
 import WhyOpsLogic from "../components/home/WhyOpsLogic";
 import { HOME_SCRIPT } from "../lib/home-script";
 import { pageMeta } from "../lib/seo";
+import PageSchema from "../components/ui/PageSchema";
 
-export const metadata: Metadata = pageMeta("OpsLogic — Let's Make Business Move", "OpsLogic is a business operations partner in Hyderabad, India: company setup, compliance, HR, payroll and IT services for growing teams.", "/");
+const TITLE = "OpsLogic — Let's Make Business Move";
+const DESC = "OpsLogic is a business operations partner in Hyderabad, India: company setup, compliance, HR, payroll and IT services for growing teams.";
+export const metadata: Metadata = pageMeta(TITLE, DESC, "/", ["business operations Hyderabad", "company setup India", "employer of record India", "payroll outsourcing India", "back office outsourcing", "managed IT support"]);
 
 export default function Home() {
   return (
@@ -29,6 +32,7 @@ export default function Home() {
         <TestimonialsSection />
         <WhyOpsLogic />
       </div>
+      <PageSchema type="WebPage" title={TITLE} description={DESC} path="/" />
       <SiteFooter />
       <ScriptRunner script={HOME_SCRIPT} />
     </>

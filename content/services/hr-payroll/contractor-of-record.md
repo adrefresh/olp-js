@@ -47,10 +47,22 @@ One payment from you, one to them.
 
 ## FAQ
 
+### What does a Contractor of Record do?
+
+We contract with the individual, verify their documents, handle invoices and pay them. You deal with one point of contact.
+
+### How do we know the person is really a contractor?
+
+We review the arrangement, looking at how they work, who directs them and how much of their time is yours, and tell you if it looks like employment.
+
 ### What if they should be an employee?
 
-We'll tell you, and move them to Employer of Record without a break.
+We can move them onto Employer of Record without a break in the work.
 
-### Who owns the work?
+### Who owns the work they produce?
 
-You do. The agreement assigns it to your company.
+You do. The contractor agreement assigns the work to your company.
+
+### What records do you keep?
+
+Agreements, verified documents, invoices and payments, in a form you can hand to an auditor.

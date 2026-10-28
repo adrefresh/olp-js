@@ -12,7 +12,13 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ cat: string }> }): Promise<Metadata> {
   const { cat } = await params;
   const c = CATS.find((x) => x.slug === cat);
-  return c ? pageMeta(`${c.title} — OpsLogic`, c.p, `/services/${c.slug}/`) : {};
+  return c
+    ? pageMeta(`${c.title} — OpsLogic`, c.p, `/services/${c.slug}/`, [
+        `${c.title} India`,
+        `${c.title} services Hyderabad`,
+        ...c.groups.flatMap((g) => g.items.slice(0, 4)),
+      ])
+    : {};
 }
 export default async function Page({ params }: { params: Promise<{ cat: string }> }) {
   const { cat } = await params;

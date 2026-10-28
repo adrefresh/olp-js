@@ -47,6 +47,18 @@ Findings ranked by seriousness.
 
 Yes.
 
+### What kinds of testing do you do?
+
+Functional, regression and performance testing, on web, mobile and business applications.
+
 ### Can you test before a launch date?
 
 Yes. Tell us the date and we'll plan around it.
+
+### What do the bug reports look like?
+
+Clear and specific, so your developers can act on them straight away.
+
+### Do you re-test after fixes?
+
+Yes. Re-testing is part of the service.

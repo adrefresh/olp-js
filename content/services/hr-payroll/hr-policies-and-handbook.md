@@ -44,10 +44,22 @@ Short briefings and acknowledgements.
 
 ## FAQ
 
-### Can you update our existing handbook?
+### Can you update our existing policies?
 
-Yes. We keep what works.
+Yes. We keep what works and fix what doesn't.
 
-### Who owns the policies afterwards?
+### Do you cover POSH?
 
-You do. We update them when the rules change, if you'd like.
+Yes, the policy and the related training.
+
+### Are the policies legally checked?
+
+Yes. We check them against the rules that apply in your location.
+
+### How do we make sure people read them?
+
+We roll them out with short briefings and acknowledgements.
+
+### Who updates them when the law changes?
+
+We can, if you'd like. Otherwise you own them and update them yourselves.

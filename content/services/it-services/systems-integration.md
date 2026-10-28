@@ -71,8 +71,18 @@ We monitor the first weeks and fix what we find.
 
 No. Zoho is common among our clients, but we connect other systems too, including older software.
 
-### What if a tool changes its API?
-
 ### Can you connect our old software?
 
 Often, through its database or file exports. We check what it allows first.
+
+### What if a tool changes its API?
+
+Connectors we build are monitored and maintained under a support plan.
+
+### Do you build custom connectors?
+
+Yes, when no ready-made integration exists, and we document them.
+
+### Do you work with manufacturing systems?
+
+Yes, such as ERP, inventory, barcode scanning, attendance and GST e-invoicing.

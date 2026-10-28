@@ -47,9 +47,25 @@ Registers updated and a copy for your files.
 
 ## FAQ
 
-### How many board meetings do we need?
+### Do we need to hold board meetings?
 
-The law sets minimums that vary by type of company. We'll tell you what applies to yours and plan the year.
+The law sets minimums that depend on your type of company. We tell you what applies and plan the year.
+
+### Can you prepare minutes and resolutions?
+
+Yes, for board and shareholder meetings and for decisions taken in writing.
+
+### What if we need to add a director?
+
+We prepare the paperwork, handle the filings and update the registers.
+
+### Do you help with share allotments?
+
+Yes. We prepare the resolutions and filings so the records are right.
+
+### Can you keep our registers up to date?
+
+Yes. We maintain the statutory registers on an ongoing basis.
 
 ### Can you help before a funding round?
 

@@ -48,10 +48,22 @@ Your team and afterwards.
 
 ## FAQ
 
-### Can you connect these tools to each other?
+### Can you move our data across?
+
+Yes, from spreadsheets or older systems, with checks to confirm nothing is lost.
+
+### Which systems do you work with?
+
+Zoho apps such as Zoho Books, CRM and Desk, Tally, Keka HRMS, Superworks HRMS, and ticketing tools like Freshdesk and Jira Service Management.
+
+### Can these tools talk to each other?
 
 Yes. That's our Systems Integration service.
 
-### Can you move our data across?
+### Will you train our team?
 
-Yes, from spreadsheets or older systems, with checks.
+Yes. We train your users and stay on for support.
+
+### Can you help us choose between tools?
+
+Yes. We compare the options against how you actually work.

@@ -1178,3 +1178,93 @@ body .ux .ux-ww{position:relative}
 /* v92: ring at the middle of the right edge, about 40% showing */
 .ux-ww-blob{top:50%!important;right:-12.5rem!important;translate:0 -50%}
 @media(max-width:900px){.ux-ww-blob{top:50%!important;right:-9.6rem!important}}
+
+/* v95 */
+/* nav links: lighter weight */
+body .site-nav .nav-links>a,body .site-nav .nav-drop>button{font-weight:600}
+/* back-to-top: same size as the hero down arrow */
+.fab{width:3.4rem;height:3.4rem}
+.fab svg{width:22px;height:22px}
+@media(max-height:760px){.fab{width:3rem;height:3rem}}
+@media(max-width:640px){.fab{width:3.4rem;height:3.4rem}}
+@media(max-width:640px) and (max-height:760px){.fab{width:3rem;height:3rem}}
+/* testimonial cards: tag, quote, line, then person */
+.ux-tc-stage{height:21.5rem}
+.ux-tc-card{width:min(34rem,86%)!important;min-width:0!important;max-width:none!important;height:20.5rem;padding:1.6rem 2rem 1.5rem;gap:1rem}
+.ux-tc-tag{align-self:flex-start;padding:.38rem .9rem;border-radius:99px;background:#e3f2fc;color:#0c7ec4;font-size:.8rem;font-weight:700;letter-spacing:.01em}
+.ux-tc-card.o .ux-tc-tag{background:#fff;color:#d4520c}
+.ux-tc-card blockquote{display:block;overflow:visible;-webkit-line-clamp:unset;font-size:1.1rem;font-weight:400;line-height:1.6;letter-spacing:0;color:#0b1b3a}
+.ux-tc-card figcaption{margin-top:auto;padding-top:1rem;border-top:1px solid rgba(11,27,58,.14);align-items:center;gap:.9rem;font-weight:400}
+.ux-tc-card figcaption i{display:grid;place-items:center;flex:none;width:2.9rem;height:2.9rem;border-radius:50%;background:#0b1b3a;color:#fff;font-style:normal;font-size:1rem;font-weight:700}
+.ux-tc-card figcaption b{display:block;font-size:1rem;font-weight:700;color:#0b1b3a}
+.ux-tc-card figcaption span span{display:block;font-size:.88rem;color:#56657a;font-weight:400}
+.ux-tc-card figcaption em{display:block;font-style:normal;font-size:.88rem;font-weight:700;color:#0c7ec4}
+@media(max-width:700px){.ux-tc-stage{height:26.5rem}.ux-tc-card{height:25.5rem;padding:1.4rem 1.4rem 1.3rem}}
+/* v95: every inner hero starts its content the same distance below the breadcrumbs */
+body .ux-hero{align-items:flex-start!important;padding-top:11.4rem!important}
+@media(min-width:901px) and (max-height:720px){body .ux-hero{padding-top:11.4rem!important}}
+@media(max-width:900px){body .ux-hero{padding-top:11.2rem!important}}
+body .ux-hero .ux-hgrid>:first-child{align-self:start!important}
+/* more than three testimonials: the ones further away wait out of sight */
+.ux-tc-card.p2,.ux-tc-card.p3,.ux-tc-card.p4{opacity:0!important;pointer-events:none;z-index:1}
+.ux-tc-card.p2{transform:translateX(-4%) rotate(6deg) scale(.88)}
+.ux-tc-card.p3,.ux-tc-card.p4{transform:translateX(-96%) rotate(-6deg) scale(.88)}
+@media(max-width:700px){.ux-tc-card.p2{transform:translateX(-8%) rotate(5deg) scale(.86)}.ux-tc-card.p3,.ux-tc-card.p4{transform:translateX(-92%) rotate(-5deg) scale(.86)}}
+.ux-tc-stage{height:19.6rem}
+.ux-tc-card{height:18.8rem}
+/* testimonials: a card that leaves disappears quickly, so only three are ever on screen */
+.ux-tc-card.p2,.ux-tc-card.p3,.ux-tc-card.p4{transition:transform .5s,opacity .12s!important}
+/* v97: testimonial side cards fully opaque so cards behind never show through */
+body .ux-tc-card.p-1,body .ux-tc-card.p1{opacity:1!important;filter:none}
+body .ux-tc-card.p0{z-index:4}
+body .ux-tc-card.p-1,body .ux-tc-card.p1{z-index:3}
+body .ux-tc-card.p2,body .ux-tc-card.p3,body .ux-tc-card.p4{z-index:1;transition:transform .5s,opacity .3s!important}
+/* v98: breadcrumb separators use the supplied icons (chevron between links, return arrow before the current page) */
+body .crumb i{display:inline-block;opacity:.55;background:currentColor;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat;font-size:0}
+body .crumb i.chev{--m:url(/brand/crumb-chevron.png);width:.55rem;height:.9rem}
+body .crumb i.ret{--m:url(/brand/crumb-return.png);width:1rem;height:.8rem;opacity:.7;margin-top:.15rem}
+.crumbs-light .crumb i{background:#fff}
+/* v99: chevron icon only; also used on the Services nav button (points down) */
+body .nav-drop>button .nav-chev{display:inline-block;width:.46rem;height:.8rem;margin-left:.35rem;vertical-align:-.1rem;background:currentColor;-webkit-mask:url(/brand/crumb-chevron.png) center/contain no-repeat;mask:url(/brand/crumb-chevron.png) center/contain no-repeat;transform:rotate(90deg);transition:transform .3s}
+body .nav-drop:hover>button .nav-chev,body .nav-drop:focus-within>button .nav-chev{transform:rotate(-90deg)}
+/* v103: Keka job board blends with the Careers page */
+#open-roles .kh-jobs{margin:1.6rem 0 2rem}
+#open-roles .kh-jobs *{font-family:"Plus Jakarta Sans",sans-serif!important;box-sizing:border-box}
+#open-roles .kh-jobs #kh-main-container,#open-roles .kh-jobs #kh-embed-job-container{background:transparent!important;box-shadow:none!important;border:0!important;padding:0!important;margin:0!important;max-width:none!important;width:100%!important}
+#open-roles .kh-jobs #kh-embed-jobs-filters,#open-roles .kh-jobs #kh-job-widget{background:transparent!important}
+#open-roles .kh-jobs h1,#open-roles .kh-jobs h2,#open-roles .kh-jobs h3,#open-roles .kh-jobs h4{color:#0b1b3a!important;font-weight:700!important;letter-spacing:-.01em}
+#open-roles .kh-jobs p,#open-roles .kh-jobs span,#open-roles .kh-jobs label,#open-roles .kh-jobs li{font-weight:400!important}
+#open-roles .kh-jobs a{color:#0b1b3a;text-decoration:none}
+#open-roles .kh-jobs a:hover{color:#1ea7f0}
+#open-roles .kh-jobs [class*="job-card"],#open-roles .kh-jobs [class*="job-item"],#open-roles .kh-jobs [class*="jobs-list"]>*{background:#fff!important;border:1px solid rgba(11,27,58,.1)!important;border-radius:20px!important;box-shadow:none!important}
+#open-roles .kh-jobs button,#open-roles .kh-jobs [class*="btn"]{border-radius:99px!important;font-weight:700!important}
+#open-roles .kh-jobs input,#open-roles .kh-jobs select{border-radius:12px!important;border:1px solid rgba(11,27,58,.18)!important;background:#fff!important;color:#0b1b3a!important}
+#open-roles .kh-jobs #kh-companyShortName,#open-roles .kh-jobs a[href*="keka.com"][class*="logo"]{display:none!important}
+/* v104: keep Keka's "powered by" line in the flow so it never overlaps the text below */
+#open-roles .kh-jobs{position:relative;overflow:hidden}
+#open-roles .kh-jobs [class*="footer"],#open-roles .kh-jobs [class*="powered"]{position:static!important;float:none!important;margin:1rem 0 0!important;padding:.6rem 0 0!important;text-align:left!important;font-size:.8rem!important}
+#open-roles .ux-lead{margin-top:2rem}
+/* v105: openings drawn in the site's own style */
+.kj{margin:1.6rem 0 2rem}
+.kj-bar{display:flex;flex-wrap:wrap;gap:.8rem 1rem;align-items:center;margin-bottom:1.2rem}
+.kj-bar input{flex:1 1 14rem;max-width:22rem;padding:.8rem 1.1rem;border-radius:99px;border:1px solid rgba(11,27,58,.18);background:#fff;font:400 .95rem "Plus Jakarta Sans",sans-serif;color:#0b1b3a;outline:0}
+.kj-bar input:focus{border-color:#1ea7f0}
+.kj-chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.kj-chips button{padding:.55rem 1rem;border-radius:99px;border:1px solid rgba(11,27,58,.18);background:#fff;font:600 .85rem "Plus Jakarta Sans",sans-serif;color:#0b1b3a;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.kj-chips button:hover{border-color:#1ea7f0}
+.kj-chips button.on{background:#0b1b3a;border-color:#0b1b3a;color:#fff}
+.kj-list{list-style:none;margin:0;padding:0;display:grid;gap:.8rem}
+.kj-list a{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.2rem 1.5rem;border-radius:20px;background:#fff;border:1px solid rgba(11,27,58,.1);color:#0b1b3a;text-decoration:none;transition:border-color .25s}
+.kj-list a:hover{border-color:#1ea7f0}
+.kj-main{display:grid;gap:.35rem}
+.kj-main b{font-size:1.05rem;font-weight:700}
+.kj-meta{display:flex;flex-wrap:wrap;gap:.3rem 1rem;font-size:.88rem;color:#56657a;font-weight:400}
+.kj-meta em{font-style:normal;font-weight:700;color:#0c7ec4}
+.kj-go{flex:none;font-weight:700;font-size:.9rem;color:#ff6b1a}
+.kj-none{padding:1rem .4rem;color:#56657a}
+/* v105: mobile — breadcrumbs a little lower, smaller "Let's talk" button */
+@media(max-width:700px){
+body .crumbs{top:104px}
+body .ux-hero{padding-top:12.2rem!important}
+body .site-nav .nav-cta{padding:.5rem .8rem!important;font-size:.7rem!important}
+}

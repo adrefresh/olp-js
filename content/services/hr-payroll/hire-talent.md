@@ -62,9 +62,23 @@ Onboarding, equipment and, if you want it, payroll.
 
 ### How long does a search take?
 
-It depends on the role. Senior and niche roles take longer. You get an honest range at the start.
+It depends on the role. Senior and niche roles take longer. You get an honest range at the start, not a promise we can't keep.
+
+### What do we receive at the end of a search?
+
+A short list of people we'd be comfortable putting in front of you, with our notes on each, instead of a stack of CVs.
+
+### Do you check references and backgrounds?
+
+Yes. Reference and background checks are part of the process before an offer is finalised.
 
 ### What if the hire doesn't work out?
+
+We have replacement terms for this. We'll explain them in the proposal.
+
+### Can you hire people and also employ them for us?
+
+Yes. They can move straight onto our Employer of Record service, so one provider handles everything from search to first payslip.
 
 ### Can you hire in bulk?
 

@@ -49,8 +49,22 @@ Quarterly check on what's working.
 
 ## FAQ
 
-### Can we move from shared to dedicated?
+### What's the difference between shared and dedicated?
+
+A shared HRBP supports a few companies with set hours each week. A dedicated one works only for you, inside your team.
+
+### Which is right for us?
+
+Shared suits smaller teams that need senior advice, and dedicated suits teams that need someone present day to day.
+
+### Can we move from shared to dedicated later?
 
 Yes, as the team grows.
 
 ### Do they work on-site?
+
+A dedicated HRBP can work from your office or ours. Shared HRBPs usually work remotely, with visits when needed.
+
+### What will they actually do?
+
+Policies, employee lifecycle, appraisals, manager coaching, employee relations and keeping you aligned with labour law.

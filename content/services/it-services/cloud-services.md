@@ -43,10 +43,22 @@ Monthly check on cost and health.
 
 ## FAQ
 
-### Can you manage our existing cloud account?
+### AWS or Azure?
+
+We recommend based on what you already use and what you're building.
+
+### Can you manage our existing account?
 
 Yes. We start with a review.
 
-### AWS or Azure?
+### How do you keep costs under control?
 
-We'll recommend based on what you already use.
+We monitor usage, right-size resources and review costs each month.
+
+### Is our data secure?
+
+We set up access control, encryption and backups as standard.
+
+### Can you help us move off the cloud?
+
+Yes, if that suits you better.

@@ -42,10 +42,22 @@ Renewals added to the calendar.
 
 ## FAQ
 
-### How do I know which licences I need?
+### How do we know which licences we need?
 
-We review your activities and tell you, in writing.
+We review what you do, where and with how many people, then give you a written list.
 
-### What if you don't hold the licence yourselves?
+### Do you handle sector-specific approvals?
 
-We tell you who does, and manage the process around it.
+Where we can, yes. Where a licence needs a specialist, we say so and manage the process around it.
+
+### What about import and export registrations?
+
+We handle the import-export code and the related paperwork, if your business trades across borders.
+
+### Do licences need renewing?
+
+Many do. We add every renewal to your compliance calendar so none are missed.
+
+### Can you check licences we already hold?
+
+Yes. We look for ones that have lapsed or no longer match what the business does.

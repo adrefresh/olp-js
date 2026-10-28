@@ -43,8 +43,22 @@ Adjust for next time.
 
 ## FAQ
 
-### Can you run the whole cycle?
+### Can you run the whole appraisal cycle?
 
 Yes, or support your managers while they run it.
 
+### How long does an appraisal cycle take?
+
+Most cycles run a few weeks from goal review to final conversations. We plan it around your calendar.
+
 ### Do you use software?
+
+We can run cycles in your HRMS, such as Keka or Superworks, or in simple templates.
+
+### Will managers get training?
+
+Yes. We give them short guidance on giving feedback, so reviews are fair and consistent.
+
+### What records do we keep?
+
+Reviews, ratings and goals, stored tidily for promotions and exits.

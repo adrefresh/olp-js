@@ -43,10 +43,22 @@ Everything working before day one.
 
 ## FAQ
 
-### Does it work with your Managed Workspace?
+### What's included in an office IT setup?
 
-Yes. They're designed to go together.
+Cabling, network, Wi-Fi, workstations, printing, meeting-room equipment, user accounts and basic backup.
 
 ### Can you set up a second site?
 
-Yes. Same process, with your standards copied across.
+Yes. We copy your standards across and run it as one job.
+
+### Does it work with your Managed Workspace?
+
+Yes. The two are designed to go together.
+
+### Who do we call if something fails after opening?
+
+One contact. We stay close during the first weeks, and then you can move to our helpdesk service.
+
+### How early should we start?
+
+As soon as you have a location. Equipment lead times are the usual cause of delay.

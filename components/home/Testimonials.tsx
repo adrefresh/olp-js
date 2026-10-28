@@ -22,13 +22,15 @@ export default function Testimonials({ items: ITEMS }: { items: Testimonial[] })
           const d = ((i - cur + n + 1) % n) - 1; // -1 prev, 0 active, 1 next
           return (
             <figure className={"ux-tc-card " + t.tone + " p" + d} key={i} aria-hidden={d !== 0} style={{ margin: 0 }}>
-              <span className="ux-tc-q" aria-hidden="true">
-                “
-              </span>
-              <blockquote>{t.quote}</blockquote>
+              {t.tag ? <span className="ux-tc-tag">{t.tag}</span> : null}
+              <blockquote>{"\u201C" + t.quote + "\u201D"}</blockquote>
               <figcaption>
-                <i aria-hidden="true" />
-                {t.who}
+                <i aria-hidden="true">{t.name.trim().charAt(0).toUpperCase()}</i>
+                <span>
+                  <b>{t.name}</b>
+                  <span>{t.role}</span>
+                  <em>{t.company}</em>
+                </span>
               </figcaption>
             </figure>
           );

@@ -17,7 +17,7 @@ export default function SiteHeader({ active }: { active: NavKey }) {
       <nav className="nav-links">
         <a href="/about-us" className={active === "about-us" ? "active" : undefined}>About Us</a>
         <div className="nav-drop">
-          <button>Services ↘</button>
+          <button>Services <i className="nav-chev" aria-hidden="true" /></button>
           <div className="nav-drop-menu nav-mega">
             <div className="mega-grid">
               <div className="mega-intro">

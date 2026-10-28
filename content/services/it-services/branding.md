@@ -53,6 +53,18 @@ Rolled out everywhere at once.
 
 Yes. We start by deciding what to keep.
 
+### Do you also name companies?
+
+Yes. Naming and tagline development are part of the service.
+
+### What do we receive at the end?
+
+Your logo, visual identity, brand guidelines, messaging and templates.
+
 ### Do you build the website too?
 
 Yes. See Web Development.
+
+### Do you help launch the brand?
+
+Yes. We prepare a launch plan for inside and outside the company.

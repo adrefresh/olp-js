@@ -49,8 +49,20 @@ Close watching while things settle.
 
 ### How much downtime should we expect?
 
-We plan for as little as possible, and agree the window with you beforehand.
+We plan for as little as possible and agree the window with you beforehand.
 
 ### What if something goes wrong?
 
-That's what the rollback plan is for.
+That's what the rollback plan is for. We agree it before we start.
+
+### Can you move us from on-premises to the cloud?
+
+Yes, and the other way, or between data centres.
+
+### Do you migrate email and file servers too?
+
+Yes, along with databases and application servers.
+
+### What happens to the old servers?
+
+We agree how long to keep them, then retire them securely.
