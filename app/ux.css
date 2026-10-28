@@ -1281,3 +1281,41 @@ body .site-nav .brand-logo{height:34px;width:auto}
 body .ux-faq summary{font-weight:600!important}
 body .site-nav{z-index:90}
 button.ux-btn{font-family:inherit;border:0;cursor:pointer}
+/* v112 */
+.md-sub .md-cat{padding:.2rem 0}
+.md-sub .md-cat-btn{display:flex;width:100%;align-items:center;justify-content:space-between;padding:.8rem .4rem .8rem .9rem;background:none;border:0;border-bottom:1px solid rgba(11,27,58,.08);font:700 1rem "Plus Jakarta Sans",sans-serif;color:#0b1b3a;text-align:left;cursor:pointer}
+.md-sub .md-cat-btn i{width:.6rem;height:.6rem;border-right:2px solid #0b1b3a;border-bottom:2px solid #0b1b3a;transform:rotate(45deg);transition:transform .3s;margin-right:.5rem}
+.md-sub .md-cat.open .md-cat-btn i{transform:rotate(-135deg)}
+.md-sub .md-cat-list{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s}
+.md-sub .md-cat.open .md-cat-list{grid-template-rows:1fr}
+.md-sub .md-cat-list>div{overflow:hidden;min-height:0}
+.md-sub .md-cat-list a{padding-left:1.6rem}
+.md-sub .md-cat-list .md-cat-all{color:#0c7ec4;font-weight:700}
+@media(max-width:700px){.fx-company{display:none!important}}
+/* v112: footer overlaps the section above (no light strip), lighter 'Meet the team', calm contact form, testimonial layout */
+body .fx{margin-top:-40px!important;position:relative;z-index:2}
+.ux-btn.ux-btn-light{font-weight:500}
+.ux-contact-sec .ux-r,.ux-contact-sec .ux-r.in{opacity:1!important;transform:none!important;filter:none!important;transition:none!important}
+.ux-tc-card figcaption{justify-content:space-between;gap:1rem}
+.ux-tc-who{display:grid;gap:.15rem;min-width:0}
+.ux-tc-who b{font-size:1rem;font-weight:700;color:#0b1b3a}
+.ux-tc-who span{font-size:.88rem;color:#56657a;font-weight:400}
+.ux-tc-logo{height:2rem;width:auto;max-width:7.5rem;object-fit:contain;flex:none}
+.ux-tc-mark{flex:none;max-width:9rem;font-style:normal;font-weight:800;font-size:.95rem;letter-spacing:-.01em;color:#0c7ec4;text-align:right;line-height:1.2}
+.ux-tc-card.o .ux-tc-mark{color:#d4520c}
+@media(max-width:700px){
+  #heroSection.hero{min-height:70vh!important;height:70vh}
+  .ux-tc-stage{height:25.5rem}
+  .ux-tc-card{width:86%!important;height:24.5rem!important;padding:1.3rem 1.2rem 1.2rem}
+  .ux-tc-card blockquote{font-size:1rem;line-height:1.55}
+  .ux-tc-card figcaption{flex-wrap:wrap}
+}
+@media(max-width:700px){
+  #heroSection .hero-inner{padding-top:4.2rem!important;padding-bottom:3.4rem!important}
+  #heroSection h1{font-size:2rem!important;margin:.6rem 0 .8rem!important}
+  #heroSection p.sub{font-size:.9rem!important;line-height:1.5!important;margin-bottom:1.1rem!important}
+  #heroSection .hero-ctas{gap:.6rem}
+  #heroSection .hero-ctas a{padding:.7rem 1.2rem!important;font-size:.85rem!important}
+  #heroSection .hero-down{bottom:.7rem;width:2.6rem;height:2.6rem;margin-left:-1.3rem}
+}
+@media(max-width:700px){#heroSection .hero-down{display:none!important}#heroSection .hero-inner{padding-bottom:1.5rem!important}}

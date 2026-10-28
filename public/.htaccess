@@ -11,6 +11,9 @@ Options -Indexes
   RewriteCond %{HTTP:X-Forwarded-Proto} !=https
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+  RewriteRule ^about-us/?$ /about/ [R=301,L]
+  RewriteRule ^contact-us/?$ /contact/ [R=301,L]
+
   # Old URLs from earlier versions of the site (permanent redirects)
   RewriteRule ^business-operations/?$ /services/business-operations/ [R=301,L]
   RewriteRule ^hiring-services/?$ /services/hr-payroll/hire-talent/ [R=301,L]
@@ -27,13 +30,13 @@ Options -Indexes
   RewriteRule ^services/it/?$ /services/it-services/ [R=301,L]
   RewriteRule ^shared-workspaces/?$ /services/business-operations/managed-workspace/ [R=301,L]
 
-  # Old .html style URLs go to the clean folder URL (/about-us.html -> /about-us/)
+  # Old .html style URLs go to the clean folder URL (/about.html -> /about/)
   RewriteCond %{THE_REQUEST} \s/+([^\s?]+)\.html[\s?] [NC]
   RewriteCond %{REQUEST_URI} !^/404\.html$
   RewriteRule ^(.+)\.html$ /$1/ [R=301,L,NC]
 </IfModule>
 
-# Trailing slash on folders (/about-us -> /about-us/)
+# Trailing slash on folders (/about -> /about/)
 DirectorySlash On
 
 # Friendly 404

@@ -16,7 +16,7 @@ export default function ServiceSteps({ steps, style }: { steps: { t: string; d: 
             <h2>{n} steps, start to finish.</h2>
             <p className="ux-lead">From the first call to done, with one team and one point of contact.</p>
             <div className="ux-btns">
-              <a className="ux-btn o" href="/contact-us">
+              <a className="ux-btn o" href="/contact">
                 Talk to us <span aria-hidden="true">↗</span>
               </a>
             </div>

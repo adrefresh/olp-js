@@ -57,7 +57,8 @@ export default function ContactForm() {
       <input required type="email" name="email" placeholder="Work email" autoComplete="email" />
       <input required type="tel" name="phone" placeholder="Phone number" autoComplete="tel" minLength={6} />
       <input name="company" placeholder="Company" autoComplete="organization" />
-      <select name="topic" defaultValue="Business Operations" aria-label="What do you need?">
+      <select required name="topic" defaultValue="" aria-label="Select a category">
+        <option value="" disabled>Select a category</option>
         <option>Business Operations</option>
         <option>HR &amp; Payroll</option>
         <option>IT Services</option>

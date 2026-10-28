@@ -20,7 +20,7 @@ export default function HeroSection() {
           <a href="/services" className="btn-primary magnetic" data-cursor="click">
             Explore our services
           </a>
-          <a href="/contact-us/#contact-form" className="btn-ghost-light">
+          <a href="/contact/#contact-form" className="btn-ghost-light">
             Talk to us
           </a>
         </div>

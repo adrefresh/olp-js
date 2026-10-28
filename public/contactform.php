@@ -63,7 +63,7 @@ if (!empty($errors)) {
 }
 
 // 4. EMAIL PREPARATION
-$to      = "revanthrevi131@gmail.com";
+$to      = "hello@opslogic.team,care@opslogic.team";
 $headers = [
     "From" => "Website <no-reply@opslogic.team>",
     "Reply-To" => $email,
@@ -103,10 +103,10 @@ function smtp_send($cfg, $to, $subject, $body, $replyTo) {
     $cmd(base64_encode($cfg["user"]), "334");
     $cmd(base64_encode($cfg["pass"]), "235");
     $cmd("MAIL FROM:<" . $cfg["user"] . ">", "250");
-    $cmd("RCPT TO:<" . $to . ">", "250 251");
+    foreach (array_map("trim", explode(",", $to)) as $rcpt) { $cmd("RCPT TO:<" . $rcpt . ">", "250 251"); }
     $cmd("DATA", "354");
     $headers = "From: Website <" . $cfg["user"] . ">\r\n"
-        . "To: <$to>\r\n"
+        . "To: " . $to . "\r\n"
         . "Reply-To: <$replyTo>\r\n"
         . "Subject: =?UTF-8?B?" . base64_encode($subject) . "?=\r\n"
         . "Date: " . date("r") . "\r\n"

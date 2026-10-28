@@ -17,6 +17,7 @@ export default function ServicePage({ slug }: { slug: string }) {
   const s = SERVICES[slug];
   const cat = CATS.find((c) => c.slug === s.cat)!;
   const v = s.layout;
+  const offers = (s.sections.find((x) => /included/i.test(x.t))?.b.flatMap((b) => ("ul" in b ? b.ul.map((i) => i.h || i.t) : [])) || []).slice(0, 12);
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -24,8 +25,13 @@ export default function ServicePage({ slug }: { slug: string }) {
     description: stripHtml(s.p),
     url: `${SITE}/services/${s.cat}/${slug}/`,
     serviceType: cat.title,
-    provider: { "@type": "Organization", name: "OpsLogic", url: SITE },
+    "@id": `${SITE}/services/${s.cat}/${slug}/#service`,
+    inLanguage: "en-IN",
+    provider: { "@id": `${SITE}/#org` },
+    isPartOf: { "@id": `${SITE}/#website` },
     areaServed: ["IN", "Worldwide"],
+    category: cat.title,
+    ...(offers.length ? { hasOfferCatalog: { "@type": "OfferCatalog", name: `${s.title}: what's included`, itemListElement: offers.map((n) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: n } })) } } : {}),
   };
   return (
     <>

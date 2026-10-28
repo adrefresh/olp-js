@@ -3,13 +3,13 @@ import { useEffect, useState, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
 import type { NavCategory } from "../../lib/nav";
 
-type NavKey = "home" | "about-us" | "careers" | "contact-us" | "services" | "none";
+type NavKey = "home" | "about" | "careers" | "contact" | "services" | "none";
 
 const LINKS: { key: NavKey; label: string; href: string }[] = [
-  { key: "about-us", label: "About Us", href: "/about-us" },
   { key: "services", label: "Services", href: "/services" },
+  { key: "about", label: "About", href: "/about" },
   { key: "careers", label: "Careers", href: "/careers" },
-  { key: "contact-us", label: "Contact", href: "/contact-us" },
+  { key: "contact", label: "Contact", href: "/contact" },
 ];
 
 /** Hamburger + right-side drawer (70% of the screen) shown below 850px. Rendered in a portal so
@@ -17,6 +17,7 @@ const LINKS: { key: NavKey; label: string; href: string }[] = [
 export default function MobileMenu({ active, categories }: { active: NavKey; categories: NavCategory[] }) {
   const [open, setOpen] = useState(false);
   const [svc, setSvc] = useState(false);
+  const [cat, setCat] = useState<string | null>(null);
   const mounted = useSyncExternalStore(() => () => {}, () => true, () => false);
   useEffect(() => {
     document.documentElement.style.overflow = open ? "hidden" : "";
@@ -50,9 +51,14 @@ export default function MobileMenu({ active, categories }: { active: NavKey; cat
                 <div className="md-sub"><div className="md-sub-in">
                   <a href="/services" onClick={close} className="md-all">All services <b aria-hidden="true">→</b></a>
                   {categories.map((c) => (
-                    <div className="md-cat" key={c.slug}>
-                      <a href={c.href} onClick={close} className="md-cat-title">{c.title}</a>
-                      {c.items.map((s) => (<a href={s.href} key={s.slug} onClick={close}>{s.title}</a>))}
+                    <div className={"md-cat" + (cat === c.slug ? " open" : "")} key={c.slug}>
+                      <button type="button" className="md-cat-btn" aria-expanded={cat === c.slug} onClick={() => setCat(cat === c.slug ? null : c.slug)}>
+                        <span>{c.title}</span><i aria-hidden="true" />
+                      </button>
+                      <div className="md-cat-list"><div>
+                        <a href={c.href} onClick={close} className="md-cat-all">All {c.title}</a>
+                        {c.items.map((s) => (<a href={s.href} key={s.slug} onClick={close}>{s.title}</a>))}
+                      </div></div>
                     </div>
                   ))}
                 </div></div>
@@ -68,7 +74,7 @@ export default function MobileMenu({ active, categories }: { active: NavKey; cat
         </nav>
 
         <div className="md-foot">
-          <a href="/contact-us" onClick={close} className="md-cta">Let&apos;s talk <span aria-hidden="true">↗</span></a>
+          <a href="/contact" onClick={close} className="md-cta">Let&apos;s talk <span aria-hidden="true">↗</span></a>
           <p>hello@opslogic.team<br />+91 40 3500 9631</p>
         </div>
       </aside>

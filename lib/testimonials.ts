@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { parseFrontMatter, paragraph } from "./markdown";
 
-export interface Testimonial { quote: string; name: string; role: string; company: string; tag: string; tone: "b" | "o" | "a" }
+export interface Testimonial { quote: string; name: string; role: string; company: string; tag: string; logo: string; tone: "b" | "o" | "a" }
 
 /** Reads content/testimonials/*.md (front matter: name, role, company, tone, order; body: the quote). */
 function load(): Testimonial[] {
@@ -23,6 +23,7 @@ function load(): Testimonial[] {
           role: s("role"),
           company: s("company"),
           tag: s("tag"),
+          logo: s("logo"),
           tone: (tone === "o" || tone === "a" ? tone : "b") as Testimonial["tone"],
         },
       };

@@ -84,7 +84,7 @@ export default function PolicyBody() {
               </div>
             </article>
           ))}
-          <article className="ux-card pp-card pp-last ux-r" id="contact-us">
+          <article className="ux-card pp-card pp-last ux-r" id="contact">
             <span className="pp-n">{String(PARTS.length + 1).padStart(2, "0")}</span>
             <div className="pp-b">
               <h2>Contact Us</h2>

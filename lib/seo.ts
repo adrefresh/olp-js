@@ -8,7 +8,7 @@ export const BASE_KEYWORDS = ["OpsLogic", "business operations partner Hyderabad
 
 const uniq = (a: string[]) => Array.from(new Set(a.map((x) => x.trim()).filter(Boolean)));
 
-/** Title, description, keywords, canonical, language alternates, Open Graph and Twitter tags for one page. `path` is like "/about-us/". */
+/** Title, description, keywords, canonical, language alternates, Open Graph and Twitter tags for one page. `path` is like "/about/". */
 export function pageMeta(title: string, description: string, path: string, keywords: string[] = []): Metadata {
   return {
     title,

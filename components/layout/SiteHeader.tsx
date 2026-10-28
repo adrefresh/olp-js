@@ -1,7 +1,7 @@
 import { CATEGORIES } from "../../lib/nav";
 import MobileMenu from "./MobileMenu";
 
-type NavKey = "home" | "about-us" | "careers" | "contact-us" | "services" | "none";
+type NavKey = "home" | "about" | "careers" | "contact" | "services" | "none";
 
 /** The single site-wide navbar. Services opens a flyout: Services → category → service. */
 export default function SiteHeader({ active }: { active: NavKey }) {
@@ -15,7 +15,6 @@ export default function SiteHeader({ active }: { active: NavKey }) {
         <img className="brand-logo brand-logo-light" src="/brand/opslogic-logo-ondark.png" alt="" aria-hidden="true" width="150" height="40" />
       </a>
       <nav className="nav-links">
-        {/* <a href="/about-us" className={active === "about-us" ? "active" : undefined}>About Us</a> */}
         <div className="nav-drop">
           <button>Services <i className="nav-chev" aria-hidden="true" /></button>
           <div className="nav-drop-menu nav-mega">
@@ -38,11 +37,11 @@ export default function SiteHeader({ active }: { active: NavKey }) {
             </div>
           </div>
         </div>
-        <a href="/about-us" className={active === "about-us" ? "active" : undefined}>About Us</a>
+        <a href="/about" className={active === "about" ? "active" : undefined}>About</a>
         <a href="/careers" className={active === "careers" ? "active" : undefined}>Careers</a>
-        <a href="/contact-us" className={active === "contact-us" ? "active" : undefined}>Contact</a>
+        <a href="/contact" className={active === "contact" ? "active" : undefined}>Contact</a>
       </nav>
-      <a className="nav-cta" href="/contact-us">Let&apos;s talk ↗</a>
+      <a className="nav-cta" href="/contact">Let&apos;s talk ↗</a>
       <MobileMenu active={active} categories={CATEGORIES} />
     </div>
   </header>

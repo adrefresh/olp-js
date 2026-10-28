@@ -36,11 +36,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico?v=3", sizes: "any" },
-      { url: "/brand/favicon-16.png?v=3", sizes: "16x16", type: "image/png" },
-      { url: "/brand/favicon-32.png?v=3", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.ico?v=4", sizes: "any" },
+      { url: "/brand/favicon-16.png?v=4", sizes: "16x16", type: "image/png" },
+      { url: "/brand/favicon-32.png?v=4", sizes: "32x32", type: "image/png" },
     ],
-    apple: [{ url: "/brand/favicon-180.png?v=3", sizes: "180x180", type: "image/png" }],
+    apple: [{ url: "/brand/favicon-180.png?v=4", sizes: "180x180", type: "image/png" }],
   },
 };
 
@@ -66,12 +66,13 @@ const schema = {
       foundingDate: "2022",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Manjeera Trinity Corporate, KPHB Colony, Kukatpally",
+        streetAddress: "1102D, Manjeera Trinity Corporate, JNTU - HiTech City Road, Kukatpally",
         addressLocality: "Hyderabad",
         addressRegion: "Telangana",
         postalCode: "500072",
         addressCountry: "IN",
       },
+      sameAs: ["https://www.linkedin.com/company/opslogic-team/", "https://www.instagram.com/opslogicteam/", "https://www.facebook.com/OpsLogicPrivateLimited"],
       areaServed: ["IN", "Worldwide"],
     },
     {

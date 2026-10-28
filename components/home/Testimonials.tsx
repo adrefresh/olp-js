@@ -26,12 +26,16 @@ export default function Testimonials({ items: all }: { items: Testimonial[] }) {
               {t.tag ? <span className="ux-tc-tag">{t.tag}</span> : null}
               <blockquote>{"\u201C" + t.quote + "\u201D"}</blockquote>
               <figcaption>
-                <i aria-hidden="true">{t.name.trim().charAt(0).toUpperCase()}</i>
-                <span>
+                <span className="ux-tc-who">
                   <b>{t.name}</b>
                   <span>{t.role}</span>
-                  <em>{t.company}</em>
                 </span>
+                {t.logo ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img className="ux-tc-logo" src={t.logo} alt={t.company} loading="lazy" />
+                ) : (
+                  <em className="ux-tc-mark">{t.company}</em>
+                )}
               </figcaption>
             </figure>
           );
