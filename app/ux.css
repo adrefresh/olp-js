@@ -1319,3 +1319,4 @@ body .fx{margin-top:-40px!important;position:relative;z-index:2}
   #heroSection .hero-down{bottom:.7rem;width:2.6rem;height:2.6rem;margin-left:-1.3rem}
 }
 @media(max-width:700px){#heroSection .hero-down{display:none!important}#heroSection .hero-inner{padding-bottom:1.5rem!important}}
+.ux-form .ux-btn,.ux-form button[type=submit]{font-weight:600!important}
