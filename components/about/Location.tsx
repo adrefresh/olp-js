@@ -15,20 +15,11 @@ export default function Location() {
             <br />
             Hyderabad, Telangana 500072
           </address>
-          <a
-            className="ux-btn d"
-            style={{ marginTop: "1.6rem" }}
-            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(QUERY)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Get directions <span aria-hidden="true">↗</span>
-          </a>
         </div>
         <div className="ux-loc-map ux-r" style={{ ["--i" as string]: 1 }}>
           <iframe
             title="OpsLogic office: Manjeera Trinity Corporate, KPHB Colony, Hyderabad"
-            src={`https://www.google.com/maps?q=${encodeURIComponent(QUERY)}&output=embed`}
+            src="https://www.google.com/maps?q=17.4934,78.3996&z=16&output=embed"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             allowFullScreen

@@ -1,5 +1,6 @@
 import SectionHead from "../ui/SectionHead";
 import KekaJobs from "./KekaJobs";
+import MailButton from "./MailButton";
 
 export default function OpenRoles() {
   return (
@@ -9,9 +10,9 @@ export default function OpenRoles() {
         <KekaJobs />
         <p className="ux-lead ux-r">Don&apos;t see the right role? Send your CV anyway. We read everything.</p>
         <div className="ux-btns">
-          <a className="ux-btn d" href="mailto:hello@opslogic.team">
+          <MailButton user="hello" domain="opslogic.team" subject="Application: CV">
             Send your CV <span aria-hidden="true">↗</span>
-          </a>
+          </MailButton>
         </div>
       </div>
     </section>

@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import type { Testimonial } from "../../lib/testimonials";
 
 /** Playful card carousel: the active card sits centre, its neighbours tilt behind it. Rotates on its own, pauses on hover. */
-export default function Testimonials({ items: ITEMS }: { items: Testimonial[] }) {
+export default function Testimonials({ items: all }: { items: Testimonial[] }) {
+  const ITEMS = all.filter((t) => t.quote.trim() && t.name.trim());
   const [cur, setCur] = useState(0);
   const [hold, setHold] = useState(false);
   const n = ITEMS.length;

@@ -40,6 +40,7 @@ function readService(cat: string, file: string): { order: number; s: Service } {
   const secs = parseSections(body);
   const sections: Section[] = secs
     .filter((s) => s.title !== "Steps" && s.title !== "FAQ")
+    .filter((s) => s.lines.some((l) => l.trim() !== ""))
     .map((s) => ({
       t: s.title,
       b: blocks(s.lines).map((bl): Block => (bl[0].startsWith("- ") ? { ul: bullets(bl).map(listItem) } : { p: bl.join(" ") })),

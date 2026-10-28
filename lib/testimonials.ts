@@ -27,6 +27,10 @@ function load(): Testimonial[] {
         },
       };
     })
+    .filter(({ t }) => {
+      const blank = (v: string) => !v.trim() || /^(client quote|name|role|company|quote|tbd|todo)\.?$/i.test(v.trim().replace(/[\u201C\u201D"]/g, ""));
+      return !blank(t.quote) && !blank(t.name);
+    })
     .sort((a, b) => a.order - b.order)
     .map((x) => x.t);
 }
