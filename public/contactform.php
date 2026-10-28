@@ -63,7 +63,7 @@ if (!empty($errors)) {
 }
 
 // 4. EMAIL PREPARATION
-$to      = "revanthrevi131@gmail.com";
+$to      = "hello@opslogic.team";
 $headers = [
     "From" => "Website <no-reply@opslogic.team>",
     "Reply-To" => $email,
