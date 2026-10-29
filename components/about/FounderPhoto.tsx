@@ -60,10 +60,10 @@ export default function FounderPhoto({ src, alt, ini, id }: { src: string; alt: 
       };
       raf = requestAnimationFrame(step);
     };
-    // once half of this photo is on screen, the unwrap plays by itself, slowly, whatever the scroll speed
+    // once half of this photo sits inside the middle band of the screen (so it has really arrived, not just peeking in), the unwrap plays by itself, slowly, whatever the scroll speed
     const io = new IntersectionObserver((en) => {
       if (!started && en.some((x) => x.isIntersecting)) { started = true; io.disconnect(); play(); }
-    }, { threshold: 0.5 });
+    }, { threshold: 0.5, rootMargin: "-20% 0px -20% 0px" });
     if (wrap.current) io.observe(wrap.current);
     return () => { io.disconnect(); cancelAnimationFrame(raf); };
   }, [id]);
