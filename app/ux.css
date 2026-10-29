@@ -1320,3 +1320,24 @@ body .fx{margin-top:-40px!important;position:relative;z-index:2}
 }
 @media(max-width:700px){#heroSection .hero-down{display:none!important}#heroSection .hero-inner{padding-bottom:1.5rem!important}}
 .ux-form .ux-btn,.ux-form button[type=submit]{font-weight:600!important}
+/* v118: real founder photos and client logos */
+.ux-fd-photo,.ux-fd-photo.p2,.ux-fd-photo.p3{aspect-ratio:auto;background:none;border:0;border-radius:0;overflow:visible}
+.ux-fd-photo img{display:block;width:100%;height:auto}
+.ux-tc-logo{height:2.6rem;max-width:8.5rem}
+/* v121: founder photo = paper you unwrap by dragging the corner (once), soft hover window + tilt before that */
+.ux-fp{perspective:900px}
+.ux-fp-in{position:relative;overflow:hidden;border-radius:28px;transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .7s var(--ez),box-shadow .5s;will-change:transform;box-shadow:0 18px 40px -26px rgba(11,27,58,.35)}
+.ux-fp.done .ux-fp-in{transform:none;box-shadow:none;overflow:visible}
+.ux-fp-in img{display:block;width:100%;height:auto;border-radius:28px;user-select:none}
+.ux-fp-paper{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:.9rem;border-radius:28px;background:linear-gradient(145deg,#f4f9fe,#dcecf8 70%,#cfe4f4);
+  clip-path:polygon(0 0,78% 0,100% 22%,100% 100%,0 100%);
+  }
+.ux-fp-paper b{font-size:clamp(5rem,9vw,8rem);font-weight:800;letter-spacing:-.06em;line-height:.8;color:rgba(11,27,58,.1)}
+.ux-fp-paper em{font-style:normal;font-size:.8rem;font-weight:600;color:#56657a;letter-spacing:.02em;transition:opacity .3s;padding:.35rem .9rem;border:1px dashed rgba(11,27,58,.3);border-radius:99px}
+.ux-fp.drag .ux-fp-paper em{opacity:0}
+.ux-fp-flap{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;filter:drop-shadow(-3px 4px 5px rgba(11,27,58,.28))}
+.ux-fp-grab{position:absolute;top:0;right:0;width:24%;aspect-ratio:1;padding:0;border:0;background:none;cursor:pointer;touch-action:none;border-radius:0 28px 0 0}
+.ux-fp-grab:focus-visible{outline:2px solid #1ea7f0;outline-offset:-4px}
+@media(prefers-reduced-motion:no-preference){.ux-fp:not(.drag) .ux-fp-flap{animation:uxFlap 2.6s ease-in-out infinite;transform-origin:100% 0}}
+@keyframes uxFlap{0%,70%,100%{transform:scale(1)}80%{transform:scale(1.08)}90%{transform:scale(1)}}
+@media(hover:none),(pointer:coarse){.ux-fp-in{transform:none!important}}

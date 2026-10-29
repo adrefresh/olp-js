@@ -3,6 +3,7 @@ name: JK Tavva
 role: Senior Manager, Operations
 company: Orbit
 tag: Payroll
+logo: /clients/orbit.png
 tone: o
 order: 2
 ---

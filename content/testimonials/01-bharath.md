@@ -3,6 +3,7 @@ name: Bharath
 role: Founder & CEO
 company: RiseInCloud
 tag: Employer of Record
+logo: /clients/riseincloud.png
 tone: b
 order: 1
 ---

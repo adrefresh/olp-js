@@ -65,5 +65,3 @@ Yes. Many founders start with the plan and hand us parts of it as they grow.
 ### Is this only for startups?
 
 No, but it's built for them.
-
-

@@ -3,6 +3,7 @@ name: Jason
 role: Co-Founder
 company: Audience Group
 tag: Security and Compliance
+logo: /clients/audience-group.png
 tone: o
 order: 5
 ---

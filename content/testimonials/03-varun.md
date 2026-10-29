@@ -3,6 +3,7 @@ name: Varun
 role: Managing Director
 company: DFW
 tag: HR Business Partner
+logo: /clients/dfw.png
 tone: a
 order: 3
 ---

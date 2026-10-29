@@ -1,8 +1,10 @@
 import SectionHead from "../ui/SectionHead";
+import FounderPhoto from "./FounderPhoto";
 
 const FOUNDERS = [
   {
     ini: "PV",
+    photo: "/founders/phani-vanka.jpg",
     name: "Phani Vanka",
     role: "Founder & Managing Director",
     area: "Business Operations",
@@ -11,6 +13,7 @@ const FOUNDERS = [
   },
   {
     ini: "NV",
+    photo: "/founders/niranjan-venkata.jpg",
     name: "Niranjan P Venkata",
     role: "Co-founder & Director",
     area: "IT, Data, Integrations and Digital Marketing",
@@ -19,6 +22,7 @@ const FOUNDERS = [
   },
   {
     ini: "SK",
+    photo: "/founders/kavya-davuluri.jpg",
     name: "Sri Kavya Davuluri",
     role: "Co-founder",
     area: "HR & Payroll",
@@ -42,11 +46,8 @@ export default function Founders() {
         <div className="ux-fds">
           {FOUNDERS.map((f, i) => (
             <article className={"ux-fd" + (i % 2 ? " rev" : "")} key={f.name}>
-              <div className={"ux-fd-photo p" + (i + 1) + " ux-r"} aria-hidden="true">
-                <i className="s1" />
-                <i className="s2" />
-                <b>{f.ini}</b>
-                <em>[Founder photo]</em>
+              <div className={"ux-fd-photo p" + (i + 1) + " ux-r"}>
+                <FounderPhoto src={f.photo} alt={f.name + ", " + f.role} ini={f.ini} id={f.ini.toLowerCase()} />
               </div>
               <div className="ux-fd-body ux-r" style={{ ["--i" as string]: 1 }}>
                 <span className="ux-fd-n">

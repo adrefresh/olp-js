@@ -3,6 +3,7 @@ name: Anusha
 role: Head of Operations
 company: VYSoft
 tag: Managed Workspace
+logo: /clients/vysoft.png
 tone: b
 order: 4
 ---
