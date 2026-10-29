@@ -1341,3 +1341,16 @@ body .fx{margin-top:-40px!important;position:relative;z-index:2}
 @media(prefers-reduced-motion:no-preference){.ux-fp:not(.drag) .ux-fp-flap{animation:uxFlap 2.6s ease-in-out infinite;transform-origin:100% 0}}
 @keyframes uxFlap{0%,70%,100%{transform:scale(1)}80%{transform:scale(1.08)}90%{transform:scale(1)}}
 @media(hover:none),(pointer:coarse){.ux-fp-in{transform:none!important}}
+
+/* v123: scroll-driven founder unwrap; mobile testimonial logo stays beside the name */
+.ux-fp-paper em{white-space:nowrap}
+.ux-fp-grab{display:none}
+@media(max-width:700px){
+  .ux-tc-card figcaption{flex-wrap:nowrap!important;gap:.6rem}
+  .ux-tc-who{flex:1 1 auto;min-width:0}
+  .ux-tc-who b,.ux-tc-who span{overflow-wrap:anywhere}
+  .ux-tc-logo{height:1.9rem;max-width:5.2rem;flex:0 1 auto;margin-left:auto}
+  .ux-tc-mark{max-width:5.5rem;font-size:.85rem}
+}
+@media(max-width:380px){.ux-tc-logo{height:1.6rem;max-width:4.2rem}.ux-tc-who b{font-size:.92rem}.ux-tc-who span{font-size:.8rem}}
+.ux-fp-flap{animation:none!important}
