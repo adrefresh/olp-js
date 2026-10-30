@@ -6,10 +6,10 @@ import type { NavCategory } from "../../lib/nav";
 type NavKey = "home" | "about" | "careers" | "contact" | "services" | "none";
 
 const LINKS: { key: NavKey; label: string; href: string }[] = [
-  { key: "services", label: "Services", href: "/services" },
-  { key: "about", label: "About", href: "/about" },
-  { key: "careers", label: "Careers", href: "/careers" },
-  { key: "contact", label: "Contact", href: "/contact" },
+  { key: "services", label: "Services", href: "/services/" },
+  { key: "about", label: "About", href: "/about/" },
+  { key: "careers", label: "Careers", href: "/careers/" },
+  { key: "contact", label: "Contact", href: "/contact/" },
 ];
 
 /** Hamburger + right-side drawer (70% of the screen) shown below 850px. Rendered in a portal so
@@ -49,7 +49,7 @@ export default function MobileMenu({ active, categories }: { active: NavKey; cat
                   <em>0{i + 1}</em><span>{l.label}</span><i aria-hidden="true" />
                 </button>
                 <div className="md-sub"><div className="md-sub-in">
-                  <a href="/services" onClick={close} className="md-all">All services <b aria-hidden="true">→</b></a>
+                  <a href="/services/" onClick={close} className="md-all">All services <b aria-hidden="true">→</b></a>
                   {categories.map((c) => (
                     <div className={"md-cat" + (cat === c.slug ? " open" : "")} key={c.slug}>
                       <button type="button" className="md-cat-btn" aria-expanded={cat === c.slug} onClick={() => setCat(cat === c.slug ? null : c.slug)}>
@@ -74,7 +74,7 @@ export default function MobileMenu({ active, categories }: { active: NavKey; cat
         </nav>
 
         <div className="md-foot">
-          <a href="/contact" onClick={close} className="md-cta">Let&apos;s talk <span aria-hidden="true">↗</span></a>
+          <a href="/contact/" onClick={close} className="md-cta">Let&apos;s talk <span aria-hidden="true">↗</span></a>
           <p>hello@opslogic.team<br />+91 40 3500 9631</p>
         </div>
       </aside>

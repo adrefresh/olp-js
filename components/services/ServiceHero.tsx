@@ -28,7 +28,7 @@ export default function ServiceHero({ service: s, cat }: { service: Service; cat
           </h1>
           <p className="ux-sub">{s.p}</p>
           <div className="ux-btns ux-hb">
-            <a className="ux-btn o" href="/contact">
+            <a className="ux-btn o" href="/contact/">
               Talk to us <span aria-hidden="true">↗</span>
             </a>
             <a className="ux-btn l" href={catHref(cat.slug)}>

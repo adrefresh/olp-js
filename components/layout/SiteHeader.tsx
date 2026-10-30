@@ -23,7 +23,7 @@ export default function SiteHeader({ active }: { active: NavKey }) {
                 <span>Services</span>
                 <h4>Three areas. One team behind them.</h4>
                 <p>Set up, hire, pay and run, handled by one accountable team.</p>
-                <a href="/services" className="mega-all">View all services <span aria-hidden="true">↗</span></a>
+                <a href="/services/" className="mega-all">View all services <span aria-hidden="true">↗</span></a>
               </div>
               {CATEGORIES.map((c) => (
                 <div className="mega-col" key={c.slug}>
@@ -37,11 +37,11 @@ export default function SiteHeader({ active }: { active: NavKey }) {
             </div>
           </div>
         </div>
-        <a href="/about" className={active === "about" ? "active" : undefined}>About</a>
-        <a href="/careers" className={active === "careers" ? "active" : undefined}>Careers</a>
-        <a href="/contact" className={active === "contact" ? "active" : undefined}>Contact</a>
+        <a href="/about/" className={active === "about" ? "active" : undefined}>About</a>
+        <a href="/careers/" className={active === "careers" ? "active" : undefined}>Careers</a>
+        <a href="/contact/" className={active === "contact" ? "active" : undefined}>Contact</a>
       </nav>
-      <a className="nav-cta" href="/contact">Let&apos;s talk ↗</a>
+      <a className="nav-cta" href="/contact/">Let&apos;s talk ↗</a>
       <MobileMenu active={active} categories={CATEGORIES} />
     </div>
   </header>

@@ -25,7 +25,7 @@ export default function CookieBanner() {
         <h2 id="ck-t">Cookies, kept simple.</h2>
       </div>
       <p id="ck-d">
-        We use a few cookies to keep the site working and to see what&apos;s useful. Nothing creepy. Details in our <a href="/privacy-policy">Privacy Policy</a>.
+        We use a few cookies to keep the site working and to see what&apos;s useful. Nothing creepy. Details in our <a href="/privacy-policy/">Privacy Policy</a>.
       </p>
       <div className="ck-btns">
         <button type="button" className="ck-b ck-no" onClick={() => choose("denied")}>Decline</button>

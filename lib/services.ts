@@ -103,5 +103,5 @@ function loadCats(): Cat[] {
 export const SERVICES: Record<string, Service> = loadServices();
 export const CATS: Cat[] = loadCats();
 
-export const catHref = (c: string) => `/services/${c}`;
-export const svcHref = (slug: string) => `/services/${SERVICES[slug].cat}/${slug}`;
+export const catHref = (c: string) => `/services/${c}/`;
+export const svcHref = (slug: string) => `/services/${SERVICES[slug].cat}/${slug}/`;

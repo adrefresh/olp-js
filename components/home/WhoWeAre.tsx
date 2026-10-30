@@ -12,7 +12,7 @@ export default function WhoWeAre() {
               OpsLogic is a business operations partner based in Hyderabad, India. Most of the companies we meet aren&apos;t short on ambition. They&apos;re short on hours, so we take on the setup, hiring, payroll and
               IT.
             </p>
-            <a className="ux-btn d ux-btn-light" style={{ marginTop: "2rem" }} href="/about">
+            <a className="ux-btn d ux-btn-light" style={{ marginTop: "2rem" }} href="/about/">
               Meet the team <span aria-hidden="true">→</span>
             </a>
           </div>

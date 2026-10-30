@@ -13,7 +13,7 @@ export default function SiteFooter({ showEmail }: { showEmail?: boolean } = {}) 
             </h2>
             <p className="fx-sub">Book a free consultation. No pitch deck, no pressure. Just a conversation about what&apos;s slowing you down.</p>
           </div>
-          <a className="fx-badge" href="/contact" aria-label="Talk to us">
+          <a className="fx-badge" href="/contact/" aria-label="Talk to us">
             <svg className="fx-ring" viewBox="0 0 160 160" aria-hidden="true">
               <defs><path id="fxcirc" d="M80,80 m-62,0 a62,62 0 1,1 124,0 a62,62 0 1,1 -124,0" /></defs>
               <text fontSize="12.5" fontWeight="800" fill="currentColor"><textPath href="#fxcirc" textLength="384" lengthAdjust="spacing">TALK TO US • BOOK A FREE CALL • </textPath></text>
@@ -40,16 +40,16 @@ export default function SiteFooter({ showEmail }: { showEmail?: boolean } = {}) 
           </div>
           <nav className="fx-col" aria-label="Services">
             <div className="fx-k">Services</div>
-            <a className="fx-a" href="/services/business-operations"><span>Business Operations</span></a>
-            <a className="fx-a" href="/services/hr-payroll"><span>HR &amp; Payroll</span></a>
-            <a className="fx-a" href="/services/it-services"><span>IT Services</span></a>
+            <a className="fx-a" href="/services/business-operations/"><span>Business Operations</span></a>
+            <a className="fx-a" href="/services/hr-payroll/"><span>HR &amp; Payroll</span></a>
+            <a className="fx-a" href="/services/it-services/"><span>IT Services</span></a>
           </nav>
           <nav className="fx-col fx-company" aria-label="Company">
             <div className="fx-k">Company</div>
             <a className="fx-a" href="/"><span>Home</span></a>
-            <a className="fx-a" href="/about"><span>About</span></a>
-            <a className="fx-a" href="/careers"><span>Careers</span></a>
-            <a className="fx-a" href="/contact"><span>Contact</span></a>
+            <a className="fx-a" href="/about/"><span>About</span></a>
+            <a className="fx-a" href="/careers/"><span>Careers</span></a>
+            <a className="fx-a" href="/contact/"><span>Contact</span></a>
           </nav>
         </div>
 
@@ -57,7 +57,7 @@ export default function SiteFooter({ showEmail }: { showEmail?: boolean } = {}) 
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/brand/opslogic-logo-ondark.png" alt="OpsLogic" />
           <span>© 2026 OpsLogic Private Limited. All rights reserved.</span>
-          <span className="fx-links"><a href="/privacy-policy">Privacy Policy</a></span>
+          <span className="fx-links"><a href="/privacy-policy/">Privacy Policy</a></span>
         </div>
       </div>
     </footer>
