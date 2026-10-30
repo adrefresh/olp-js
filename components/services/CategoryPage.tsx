@@ -28,7 +28,7 @@ export default function CategoryPage({ slug }: { slug: string }) {
   return (
     <>
       <SiteHeader active="services" />
-      <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: c.title }]} />
+      <Breadcrumbs items={[{ label: "Services", href: "/services/" }, { label: c.title }]} />
       <main className={"ux ly-" + layout}>
         <PageHero className="h-rings" eyebrow={c.title} lines={c.h ? lines(c.h) : [c.title]} sub={c.p} />
 

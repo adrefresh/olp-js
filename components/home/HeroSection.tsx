@@ -17,7 +17,7 @@ export default function HeroSection() {
           started the business for.
         </p>
         <div className="hero-ctas">
-          <a href="/services" className="btn-primary magnetic" data-cursor="click">
+          <a href="/services/" className="btn-primary magnetic" data-cursor="click">
             Explore our services
           </a>
           <a href="/contact/#contact-form" className="btn-ghost-light">

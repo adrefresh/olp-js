@@ -22,7 +22,7 @@ export default function ServicePage({ slug }: { slug: string }) {
   return (
     <>
       <SiteHeader active="services" />
-      <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: cat.title, href: catHref(cat.slug) }, { label: s.title }]} />
+      <Breadcrumbs items={[{ label: "Services", href: "/services/" }, { label: cat.title, href: catHref(cat.slug) }, { label: s.title }]} />
       <main className={"ux an-" + v.anim}>
         <ServiceHero service={s} cat={cat} />
         {s.sections.map((sec, i) => (
