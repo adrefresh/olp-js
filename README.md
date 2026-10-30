@@ -22,16 +22,3 @@ Run locally: `npm install`, then `npm run dev`. Production build: `npm run build
 | Careers (live roles from Keka) | `/careers/` |
 | Contact | `/contact/` |
 | Privacy Policy | `/privacy-policy/` |
-
-Success Stories is hidden for now. Its code is kept in `app/_success-stories/`; the leading underscore stops Next.js from building it as a page. Rename the folder back to `success-stories` and add its entries back to `app/sitemap.ts` and `app/llms.txt/route.ts` to show it again.
-
-## Workflow
-
-`.github/workflows/deploy.yml` builds and deploys on every push:
-
-- Push to `dev`: build without GTM, then rsync `out/` to `public_html/dev` (dev site).
-- Push to `main`: build with `NEXT_PUBLIC_ENABLE_GTM=true`, then rsync `out/` to `public_html/olpjs`.
-
-Both jobs use the repository secrets `SSH_PRIVATE_KEY`, `REMOTE_HOST`, `REMOTE_USER` and `REMOTE_PORT`. The server file `mail-config.php` (SMTP settings for the contact form) is never overwritten by a deploy.
-
-To edit text: services, categories and testimonials are in `content/` (one `.md` file each). Everything else is in `app/` and `components/`.
