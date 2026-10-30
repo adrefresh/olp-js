@@ -1,0 +1,5 @@
+// Shared behavior for all non-home pages: nav scroll state, dynamic breadcrumb,
+// reveal-on-scroll, current year, contact form submit. Ported from shared-pages.js,
+// with only the internal .html hrefs rewritten to clean Next.js route paths.
+
+export const SITE_SCRIPT: string = "(function(){\n  const nav=document.querySelector('.site-nav');\n  if(nav){\n    const setNavState=()=>nav.classList.toggle('scrolled',window.scrollY>30);setNavState();window.addEventListener('scroll',setNavState,{passive:true});\n  }\n  document.querySelectorAll('.reveal,.service-slide').forEach(el=>new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.1}).observe(el));\n  document.querySelectorAll('[data-year]').forEach(x=>x.textContent=new Date().getFullYear());\n\n})();\n";

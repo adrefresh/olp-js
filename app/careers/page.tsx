@@ -1,35 +1,40 @@
 import type { Metadata } from "next";
-import "./page.css";
-import SharedHeader from "../../comps/shared/SharedHeader";
-import SharedFooter from "../../comps/shared/SharedFooter";
-import ScriptRunner from "../../comps/shared/ScriptRunner";
-import { SITE_SCRIPT } from "../../comps/shared/siteScript";
-import Breadcrumbs from "../../comps/shared/Breadcrumbs";
-import Hero from "../../comps/careers-comps/Hero";
-import VibeCheck from "../../comps/careers-comps/VibeCheck";
-import LifeHere from "../../comps/careers-comps/LifeHere";
-import OpenRoles from "../../comps/careers-comps/OpenRoles";
-import NoFitCta from "../../comps/careers-comps/NoFitCta";
+import "../services/page.css";
+import Breadcrumbs from "../../components/layout/Breadcrumbs";
+import SiteHeader from "../../components/layout/SiteHeader";
+import SiteFooter from "../../components/layout/SiteFooter";
+import ScriptRunner from "../../components/layout/ScriptRunner";
+import PageHero from "../../components/ui/PageHero";
+import { SITE_SCRIPT } from "../../lib/site-script";
+import TypeCards from "../../components/careers/TypeCards";
+import WorkingHere from "../../components/careers/WorkingHere";
+import HiringSteps from "../../components/careers/HiringSteps";
+import OpenRoles from "../../components/careers/OpenRoles";
+import { pageMeta } from "../../lib/seo";
+import PageSchema from "../../components/ui/PageSchema";
 
-export const metadata: Metadata = {
-  title: "Careers — OpsLogic",
-  description:
-    "Careers at OpsLogic — join a team of clear thinkers, kind collaborators and restless improvers.",
-};
+const TITLE = "Careers — OpsLogic";
+const DESC = "We're always interested in people who are careful, curious and good with details.";
+export const metadata: Metadata = pageMeta(TITLE, DESC, "/careers/", ["careers at OpsLogic", "jobs in Hyderabad", "operations jobs", "HR and payroll jobs Hyderabad"]);
 
 export default function CareersPage() {
   return (
     <>
-      <SharedHeader active="careers" />
-      <main>
-        <div className="wrap"><Breadcrumbs items={[{ label: "Careers" }]} /></div>
-        <Hero />
-        <VibeCheck />
-        <LifeHere />
+      <SiteHeader active="careers" />
+      <Breadcrumbs items={[{ label: "Careers" }]} />
+      <main className="ux">
+        <PageHero
+          eyebrow="Careers"
+          lines={["Do work that keeps", <>other <em>businesses</em></>, "running."]}
+          sub="We're always interested in people who are careful, curious and good with details."
+          aside={<TypeCards />}
+        />
+        <WorkingHere />
+        <HiringSteps />
         <OpenRoles />
-        <NoFitCta />
       </main>
-      <SharedFooter showEmail={false} />
+      <PageSchema type="WebPage" title={TITLE} description={DESC} path="/careers/" />
+      <SiteFooter />
       <ScriptRunner script={SITE_SCRIPT} />
     </>
   );

@@ -1,5 +1,12 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import "./site.css";
+import "./ux.css";
+import CookieBanner from "../components/layout/CookieBanner";
+import GoogleTagManager from "../components/layout/GoogleTagManager";
+import FloatingContact from "../components/layout/FloatingContact";
+import ScrollMotion from "../components/ui/ScrollMotion";
+import { organizationSchema } from "../libraries/schema/organizationSchema";
 
 export const metadata: Metadata = {
   title: {
@@ -8,6 +15,40 @@ export const metadata: Metadata = {
   },
   description:
     "OpsLogic — Business Operations, IT, Hiring, Payroll, SAP & Shared Workspace solutions.",
+  metadataBase: new URL("https://www.opslogic.team"),
+  applicationName: "OpsLogic",
+  authors: [{ name: "OpsLogic Private Limited", url: "https://www.opslogic.team" }],
+  creator: "OpsLogic Private Limited",
+  publisher: "OpsLogic Private Limited",
+  category: "Business services",
+  referrer: "strict-origin-when-cross-origin",
+  formatDetection: { telephone: true, email: true, address: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
+  },
+  other: {
+    "geo.region": "IN-TG",
+    "geo.placename": "Hyderabad",
+    "geo.position": "17.4948;78.3996",
+    ICBM: "17.4948, 78.3996",
+    rating: "general",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico?v=5", sizes: "any" },
+      { url: "/brand/favicon-16.png?v=5", sizes: "16x16", type: "image/png" },
+      { url: "/brand/favicon-32.png?v=5", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [{ url: "/brand/favicon-180.png?v=5", sizes: "180x180", type: "image/png" }],
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0b1b3a",
 };
 
 export default function RootLayout({
@@ -16,20 +57,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Manrope is self-hosted via @font-face in globals.css — no external font links needed. */}
-      
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('consent','default',{ad_storage:'denied',analytics_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});",
+          }}
+        />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@graph": [
-                {"@type":"Organization","name":"OpsLogic","url":"https://www.opslogic.team","logo":"https://www.opslogic.team/favicon.ico"},
-                {"@type":"WebSite","name":"OpsLogic","url":"https://www.opslogic.team"}
-              ]
-            }) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </head>
-      <body>{children}</body>
+      <body id="top">
+        <ScrollMotion />
+        <noscript><style>{".ux-r{opacity:1!important;transform:none!important}.ux-l>span{transform:none!important}.ux-sub{opacity:1!important}"}</style></noscript>
+        {children}
+        <GoogleTagManager />
+        <FloatingContact />
+        <CookieBanner />
+      </body>
     </html>
   );
 }

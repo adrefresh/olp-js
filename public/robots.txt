@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /contactform.php
+Disallow: /mail-test.php
+Disallow: /mail-config.php
 
 Sitemap: https://www.opslogic.team/sitemap.xml
