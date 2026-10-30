@@ -1,8 +1,9 @@
 "use client";
 import { useState, useSyncExternalStore } from "react";
 
-const KEY = "opslogic-cookie-consent";
-const read = () => { try { return localStorage.getItem(KEY); } catch { return null; } };
+const KEY = "consent_granted"; // "granted" = Accept all, "denied" = Decline
+const OLD_KEY = "opslogic-cookie-consent"; // earlier builds stored "all" / "essential" here
+const read = () => { try { return localStorage.getItem(KEY) || localStorage.getItem(OLD_KEY); } catch { return null; } };
 const noop = () => () => {};
 
 /** Cookie notice shown until the visitor chooses. The choice is remembered in localStorage. */
@@ -10,8 +11,8 @@ export default function CookieBanner() {
   const mounted = useSyncExternalStore(noop, () => true, () => false);
   const [done, setDone] = useState(false);
   if (!mounted || done || read()) return null;
-  const choose = (v: "all" | "essential") => {
-    try { localStorage.setItem(KEY, v); } catch { /* storage blocked: the notice just won't be remembered */ }
+  const choose = (v: "granted" | "denied") => {
+    try { localStorage.setItem(KEY, v); localStorage.removeItem(OLD_KEY); } catch { /* storage blocked: the notice just won't be remembered */ }
     window.dispatchEvent(new Event("opslogic-consent"));
     setDone(true);
   };
@@ -27,8 +28,8 @@ export default function CookieBanner() {
         We use a few cookies to keep the site working and to see what&apos;s useful. Nothing creepy. Details in our <a href="/privacy-policy">Privacy Policy</a>.
       </p>
       <div className="ck-btns">
-        <button type="button" className="ck-b ck-no" onClick={() => choose("essential")}>Decline</button>
-        <button type="button" className="ck-b ck-yes" onClick={() => choose("all")}>Accept all</button>
+        <button type="button" className="ck-b ck-no" onClick={() => choose("denied")}>Decline</button>
+        <button type="button" className="ck-b ck-yes" onClick={() => choose("granted")}>Accept all</button>
       </div>
     </div>
   );

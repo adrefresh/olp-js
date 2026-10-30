@@ -20,7 +20,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     e("/about/", 0.7, "monthly"),
     e("/contact/", 0.7, "yearly"),
     e("/careers/", 0.6, "weekly"),
-    e("/success-stories/", 0.5, "monthly"),
     e("/privacy-policy/", 0.3, "yearly"),
   ];
 }

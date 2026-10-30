@@ -2,9 +2,10 @@
 import { useEffect } from "react";
 
 /** Google Tag Manager container. It loads only after the visitor accepts cookies ("Accept all");
- *  "Essential only" keeps it off. Consent Mode defaults to denied (see app/layout.tsx). */
+ *  "Decline" keeps it off. Consent Mode defaults to denied (see app/layout.tsx). */
 export const GTM_ID = "GTM-NS26TN3G";
-export const CONSENT_KEY = "opslogic-cookie-consent";
+export const CONSENT_KEY = "consent_granted"; // "granted" = Accept all, "denied" = Decline
+const OLD_KEY = "opslogic-cookie-consent"; // earlier builds: "all" / "essential"
 export const CONSENT_EVENT = "opslogic-consent";
 
 type Win = Window & { dataLayer?: unknown[]; gtag?: (...a: unknown[]) => void };
@@ -30,8 +31,8 @@ export default function GoogleTagManager() {
     if (!ENABLED) return;
     const check = () => {
       let v: string | null = null;
-      try { v = localStorage.getItem(CONSENT_KEY); } catch { /* storage blocked */ }
-      if (v === "all") load();
+      try { v = localStorage.getItem(CONSENT_KEY) || (localStorage.getItem(OLD_KEY) === "all" ? "granted" : null); } catch { /* storage blocked */ }
+      if (v === "granted") load();
     };
     check();
     window.addEventListener(CONSENT_EVENT, check);

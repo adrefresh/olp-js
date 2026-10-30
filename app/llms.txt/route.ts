@@ -18,7 +18,6 @@ export function GET() {
     line("Home", "/"),
     line("About Us", "/about/", "who we are, the founders and where we work"),
     line("Services", "/services/", "everything we offer, in three areas"),
-    line("Success stories", "/success-stories/", "what clients say about working with us"),
     line("Careers", "/careers/", "open roles and how we hire"),
     line("Contact Us", "/contact/", "talk to the team"),
     line("Privacy Policy", "/privacy-policy/"),

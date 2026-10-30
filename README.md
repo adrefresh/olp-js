@@ -1,42 +1,37 @@
 # OpsLogic website
 
-Next.js (App Router), static export. Run `npm install`, then `npm run dev` or `npm run build` (output in `out/`).
+Marketing site for OpsLogic, a Hyderabad-based business operations partner. It offers HR and payroll, IT services and business operations (company setup, compliance, finance) to companies in India and abroad. The site explains the services, introduces the team and takes enquiries through a contact form.
 
-## Folders
+## Tech stack
 
-```
-app/                 routes only (thin page.tsx files) + the CSS files
-components/          ALL components, one folder, grouped by page
-  layout/            SiteHeader, SiteFooter, MobileMenu, Breadcrumbs, CookieBanner, FooterClock, ScriptRunner
-  ui/                PageHero, SectionHead, Html, ScrollMotion (shared)
-  home/  about/  careers/  contact/  services/  success-stories/  privacy/
-content/             editable .md files
-  services/<category>/<slug>.md    one file per service page
-  categories/<slug>.md             the three category pages
-  testimonials/*.md                home-page testimonials
-lib/                 loaders and data (services, testimonials, nav, markdown parser, scripts, india map)
-public/              images, brand assets
-```
+- Next.js (App Router), React 19, TypeScript, static export (`output: "export"`)
+- Tailwind CSS v4 plus `app/ux.css` for the site styles
+- Content in Markdown files under `content/`
+- PHP contact form (`public/contactform.php`) on Hostinger
+- Hosting on Hostinger, deployed with GitHub Actions
 
-There is no `comps/` folder any more. If you still have one from an older version, delete it.
+Run locally: `npm install`, then `npm run dev`. Production build: `npm run build` (output in `out/`).
 
-## Editing content
+## Current pages
 
-Service, category and testimonial text lives in `content/`. Each file has front matter between `---` lines, then the body.
-Testimonials: change `name`, `role`, `company` in the front matter and the quote in the body.
+| Page | Route |
+|---|---|
+| Home | `/` |
+| Services (3 categories: HR & Payroll, IT Services, Business Operations, with a page for each service) | `/services/` |
+| About | `/about/` |
+| Careers (live roles from Keka) | `/careers/` |
+| Contact | `/contact/` |
+| Privacy Policy | `/privacy-policy/` |
 
-## Contact form mail (Gmail SMTP)
+Success Stories is hidden for now. Its code is kept in `app/_success-stories/`; the leading underscore stops Next.js from building it as a page. Rename the folder back to `success-stories` and add its entries back to `app/sitemap.ts` and `app/llms.txt/route.ts` to show it again.
 
-1. Google Account > Security > turn on 2-Step Verification > App passwords > create one (16 characters).
-2. On the server, in the same folder as `contactform.php`, copy `mail-config.sample.php` to `mail-config.php` and put the App Password in `pass`.
-3. Submit the form on the live site. Errors are written to `contact-error.log` on the server.
+## Workflow
 
-If `mail-config.php` is missing, the form falls back to PHP `mail()`.
+`.github/workflows/deploy.yml` builds and deploys on every push:
 
-## Google Tag Manager
+- Push to `dev`: build without GTM, then rsync `out/` to `public_html/dev` (dev site).
+- Push to `main`: build with `NEXT_PUBLIC_ENABLE_GTM=true`, then rsync `out/` to `public_html/olpjs`.
 
-Container `GTM-NS26TN3G` lives in `components/layout/GoogleTagManager.tsx`. It is included only when the build runs with `NEXT_PUBLIC_ENABLE_GTM=true` (the production build; dev builds stay GTM-free, as in `.github/workflows/deploy.yml`) and it loads only after the visitor clicks "Accept all" in the cookie banner. Consent Mode starts as "denied".
+Both jobs use the repository secrets `SSH_PRIVATE_KEY`, `REMOTE_HOST`, `REMOTE_USER` and `REMOTE_PORT`. The server file `mail-config.php` (SMTP settings for the contact form) is never overwritten by a deploy.
 
-## Mail check
-
-Open `https://your-site/mail-test.php` once after deploying. It sends one test mail and prints exactly what works or fails. Delete the file afterwards.
+To edit text: services, categories and testimonials are in `content/` (one `.md` file each). Everything else is in `app/` and `components/`.
