@@ -10,7 +10,7 @@ import ServiceSteps from "./ServiceSteps";
 import RelatedServices from "./RelatedServices";
 import ServiceFaq from "./ServiceFaq";
 import JsonLd from "../ui/JsonLd";
-import { SITE, stripHtml } from "../../lib/seo";
+import { serviceSchema } from "../../libraries/schema/serviceSchema";
 
 /** One service detail page, assembled from content/services/<category>/<slug>.md. */
 export default function ServicePage({ slug }: { slug: string }) {
@@ -18,21 +18,7 @@ export default function ServicePage({ slug }: { slug: string }) {
   const cat = CATS.find((c) => c.slug === s.cat)!;
   const v = s.layout;
   const offers = (s.sections.find((x) => /included/i.test(x.t))?.b.flatMap((b) => ("ul" in b ? b.ul.map((i) => i.h || i.t) : [])) || []).slice(0, 12);
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: s.title,
-    description: stripHtml(s.p),
-    url: `${SITE}/services/${s.cat}/${slug}/`,
-    serviceType: cat.title,
-    "@id": `${SITE}/services/${s.cat}/${slug}/#service`,
-    inLanguage: "en-IN",
-    provider: { "@id": `${SITE}/#org` },
-    isPartOf: { "@id": `${SITE}/#website` },
-    areaServed: ["IN", "Worldwide"],
-    category: cat.title,
-    ...(offers.length ? { hasOfferCatalog: { "@type": "OfferCatalog", name: `${s.title}: what's included`, itemListElement: offers.map((n) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: n } })) } } : {}),
-  };
+  const schema = serviceSchema(s, cat, offers);
   return (
     <>
       <SiteHeader active="services" />

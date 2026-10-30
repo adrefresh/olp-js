@@ -35,6 +35,3 @@ export default function WhoWeAre() {
     </div>
   );
 }
-
-
-// wew

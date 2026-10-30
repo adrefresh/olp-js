@@ -21,19 +21,3 @@ export function pageMeta(title: string, description: string, path: string, keywo
 }
 
 export const stripHtml = (h: string) => h.replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
-
-/** schema.org page type for the JSON-LD block of a page. */
-export type PageType = "WebPage" | "AboutPage" | "ContactPage" | "CollectionPage";
-export function pageSchema(type: PageType, name: string, description: string, path: string) {
-  return {
-    "@context": "https://schema.org",
-    "@type": type,
-    name,
-    description,
-    url: SITE + path,
-    inLanguage: "en-IN",
-    isPartOf: { "@id": SITE + "/#website" },
-    about: { "@id": SITE + "/#org" },
-    primaryImageOfPage: { "@type": "ImageObject", url: SITE + OG_IMAGE.url },
-  };
-}
