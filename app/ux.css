@@ -1354,3 +1354,125 @@ body .fx{margin-top:-40px!important;position:relative;z-index:2}
 }
 @media(max-width:380px){.ux-tc-logo{height:1.6rem;max-width:4.2rem}.ux-tc-who b{font-size:.92rem}.ux-tc-who span{font-size:.8rem}}
 .ux-fp-flap{animation:none!important}
+
+/* v132: "Brands that bet on us" client stickers (About, above the map) */
+.cs{position:relative;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;gap:2rem;padding:clamp(1.8rem,4vw,3.4rem);border-radius:36px;border:1px solid rgba(11,27,58,.08);
+  background-color:#f3f7fc;background-image:linear-gradient(rgba(11,27,58,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(11,27,58,.045) 1px,transparent 1px);background-size:26px 26px;overflow:hidden}
+.cs-copy{position:relative;z-index:1}
+.ux .cs h2{margin:1.1rem 0 0;font-size:clamp(3.2rem,6.4vw,5.6rem);line-height:.92;font-weight:800;letter-spacing:-.055em;color:var(--n)}
+.ux .cs h2 em{font-style:italic;color:var(--b)}
+.ux .cs h2 i{font-style:normal;color:var(--o);margin-left:-.05em}
+.cs-rule{display:block;width:3.4rem;height:3px;margin-top:1.4rem;border-radius:3px;background:var(--o)}
+.cs-note{margin:2.4rem 0 0;position:relative;width:15rem;color:var(--o)}
+.cs-note span{display:inline-block;font-size:1.15rem;font-weight:700;font-style:italic;letter-spacing:-.01em;transform:rotate(-5deg);transform-origin:left}
+.cs-note svg{display:block;margin-top:-.2rem}
+.cs-arrow,.cs-head{stroke-dasharray:260;stroke-dashoffset:260;transition:stroke-dashoffset 1.1s var(--ez) .9s}
+.cs-head{stroke-dasharray:80;stroke-dashoffset:80;transition-delay:1.7s;transition-duration:.4s}
+.cs.in .cs-arrow,.cs.in .cs-head{stroke-dashoffset:0}
+
+.cs-stage{position:relative;aspect-ratio:1/1.02;width:100%}
+.cs-spark{position:absolute;pointer-events:none;color:var(--o);animation:csTwinkle 3.2s ease-in-out infinite}
+.cs-spark.a{width:2.6rem;left:-4%;top:-2%}
+.cs-spark.b{width:1.9rem;right:-1%;top:55%;color:var(--b);animation-delay:1.1s}
+@keyframes csTwinkle{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(1.25) rotate(18deg)}}
+
+.cs-stk{--x:0px;--y:0px;--t:0deg;position:absolute;left:var(--l);top:var(--tp);width:var(--w);display:block;box-sizing:border-box;text-decoration:none;
+  translate:var(--x) var(--y);rotate:calc(var(--r) + var(--t));scale:1;opacity:0;touch-action:none;user-select:none;-webkit-user-select:none;cursor:pointer;transition:rotate .45s var(--ez)}
+.cs-stk.card,.cs-stk.round,.cs-stk.cta{aspect-ratio:1/1}
+.cs-stk.wide{aspect-ratio:1.95/1}
+.cs-stk.strip{aspect-ratio:2.5/1}
+/* the visible sticker; it alone wobbles, so the hit area never moves while the pointer is over it */
+.cs-in{position:absolute;inset:0;display:grid;place-items:center;box-sizing:border-box;background:#fff;
+  box-shadow:0 1px 0 #fff inset,0 16px 30px -12px rgba(11,27,58,.28),0 2px 6px rgba(11,27,58,.08);transition:box-shadow .3s}
+.cs-in img{display:block;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.card .cs-in{padding:12%;border-radius:12%}
+.wide .cs-in{padding:7% 9%;border-radius:18%/32%}
+.strip .cs-in{padding:6% 11%;border-radius:20%/40%}
+.round .cs-in{padding:13% 20%;border-radius:50%;box-shadow:0 0 0 6px #fff,0 18px 34px -12px rgba(11,27,58,.3)}
+.cs-stk.peel .cs-in::after{content:"";position:absolute;right:0;bottom:0;width:17%;aspect-ratio:1;background:linear-gradient(135deg,#fff 0 50%,#d7dde7 50% 100%);border-radius:100% 0 12% 0;box-shadow:-3px -3px 6px rgba(11,27,58,.12)}
+.round.peel .cs-in::after{right:2%;bottom:6%}
+.cs-stk.tape .cs-in::before{content:"";position:absolute;left:34%;top:-12%;width:34%;height:24%;background:rgba(30,167,240,.45);transform:rotate(-4deg);box-shadow:0 2px 4px rgba(11,27,58,.1)}
+.cta .cs-in{border-radius:50%;background:var(--o);color:#fff;font-size:clamp(.9rem,1.5vw,1.3rem);font-weight:800;line-height:1.05;text-align:center;padding:5%;overflow:hidden;letter-spacing:-.02em;
+  box-shadow:0 0 0 6px #fff,0 18px 34px -12px rgba(255,107,26,.5)}
+.cs-stk.drag{z-index:50}
+.cs-stk.drag .cs-in{box-shadow:0 28px 46px -14px rgba(11,27,58,.38),0 4px 10px rgba(11,27,58,.1)}
+.round.drag .cs-in{box-shadow:0 0 0 6px #fff,0 30px 48px -14px rgba(11,27,58,.4)}
+.cta.drag .cs-in{box-shadow:0 0 0 6px #fff,0 30px 48px -14px rgba(255,107,26,.55)}
+
+/* slap on when the section arrives; a hover starts one short wobble (JS adds .wob, and only again after it ends) */
+.cs.in .cs-stk{opacity:1;animation:csSlap .75s var(--ez) both;animation-delay:calc(var(--k)*.13s + .15s)}
+@keyframes csSlap{0%{opacity:0;scale:1.6;translate:var(--x) calc(var(--y) - 40px)}55%{opacity:1;scale:.93}100%{opacity:1;scale:1;translate:var(--x) var(--y)}}
+.cs-stk.wob:not(.drag) .cs-in{animation:csWob .6s ease-in-out}
+@keyframes csWob{0%,100%{rotate:0deg}25%{rotate:-4deg}55%{rotate:3deg}80%{rotate:-1.5deg}}
+
+@media(max-width:860px){
+  .cs{grid-template-columns:1fr;gap:2.4rem;border-radius:28px}
+  .ux .cs h2{font-size:clamp(3rem,15vw,4.4rem)}
+  .cs-note{margin-top:1.6rem}
+  .cs-stage{aspect-ratio:1/1.04}
+  .cs-stk.cta{width:30%!important}.cta .cs-in{font-size:.8rem}
+}
+@media(prefers-reduced-motion:reduce){.cs-stk{opacity:1!important;animation:none!important}.cs-spark{animation:none}.cs-arrow,.cs-head{stroke-dashoffset:0;transition:none}}
+
+/* v136: the clients section fills the screen like the sections above it */
+body .ux .cs-sec{min-height:100svh;display:flex;align-items:center;padding-top:calc(var(--sp)*.5 + var(--sh,44px))!important;padding-bottom:calc(var(--sp)*.5)!important}
+body .ux .cs-sec>.ux-wrap{width:min(1200px,90vw)}
+@media(min-width:861px){
+  body .ux .cs-sec{padding-top:calc(var(--sh,44px) + 1.4rem)!important;padding-bottom:1.4rem!important}
+  .cs{padding:clamp(1.2rem,3.4svh,3.2rem) clamp(1.8rem,4vw,3.4rem)}
+  .ux .cs h2{font-size:clamp(2.8rem,min(6.4vw,10svh),5.6rem)}
+  .cs-note{margin-top:clamp(1rem,3svh,2.4rem)}
+  .cs-stage{width:min(100%,max(22rem,calc((100svh - 11rem)/1.02)));margin-left:auto}
+}
+
+/* v137: the grid paper runs the full width of the screen (100vw), not just a card inside the page width */
+body .ux .cs-sec{background-color:#f3f7fc;background-image:linear-gradient(rgba(11,27,58,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(11,27,58,.045) 1px,transparent 1px);background-size:26px 26px}
+body .ux .cs{background:none;border:0;border-radius:0;overflow:visible;padding-left:0;padding-right:0}
+
+/* v138: clients section 110vh (grid stays 100vw) */
+body .ux .cs-sec{min-height:110svh}
+@media(min-width:861px){.cs-stage{width:min(100%,max(22rem,calc((110svh - 11rem)/1.02)))}}
+
+/* v140: "What we believe" numbers: outline becomes a solid fill and nudges right on hover, slowly */
+.ux-vt .big{--fill:var(--b);background:none;-webkit-background-clip:border-box;background-clip:border-box;transition:color 1.2s ease,transform 1.2s var(--ez)}
+.ux-vt:hover .big{color:var(--fill);transform:translateX(8px)}
+.ux-vt.v1 .big{--fill:#0c7ec4}
+.ux-vt.v4 .big{--fill:var(--o)}
+@media(prefers-reduced-motion:reduce){.ux-vt .big{transition:none}}
+
+/* v138: contact "Get in touch directly" card: bigger text, social icons instead of the map */
+.ux-info .ux-touch{display:flex;flex-direction:column;justify-content:center;gap:1.1rem;padding:clamp(1.8rem,3vw,2.8rem)}
+.ux-info .ux-touch h3{margin:0;font-size:clamp(1.9rem,3vw,2.7rem);line-height:1.1;letter-spacing:-.03em}
+.ux-touch-lines{margin:0!important;display:grid;gap:.5rem}
+.ux-touch-lines a{font-size:clamp(1.25rem,2.1vw,1.85rem);font-weight:700;letter-spacing:-.02em;color:var(--n);overflow-wrap:anywhere;transition:color .3s}
+.ux-touch-lines a:hover{color:var(--bd)}
+.ux-soc{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:.6rem}
+.ux-soc a{display:grid;place-items:center;width:3.3rem;height:3.3rem;border-radius:50%;background:#fff;border:1.5px solid rgba(11,27,58,.14);color:var(--n);box-shadow:0 6px 16px -8px rgba(11,27,58,.25);transition:transform .45s var(--ez),background .3s,color .3s,border-color .3s,box-shadow .45s var(--ez)}
+.ux-soc a:hover,.ux-soc a:focus-visible{transform:translateY(-6px) rotate(-6deg);color:#fff;border-color:transparent;box-shadow:0 16px 26px -10px rgba(11,27,58,.4)}
+.ux-soc a.ux-soc-linkedin:hover{background:#0a66c2}
+.ux-soc a.ux-soc-instagram:hover{background:#e1306c}
+.ux-soc a.ux-soc-x:hover{background:#0b1b3a}
+.ux-soc a.ux-soc-facebook:hover{background:#1877f2}
+
+/* v139: category pages: rows of two cards, big+small / small+big / big+small ... */
+.ux-pairs{display:grid;gap:1.1rem;margin-top:2.6rem}
+.ux-prow{display:grid;grid-template-columns:2fr 1fr;gap:1.1rem}
+.ux-prow.flip{grid-template-columns:1fr 2fr}
+.ux-prow.solo{grid-template-columns:1fr}
+.ux-pairs .ux-tile{min-height:15rem;padding:1.9rem 2rem}
+.ux-pairs .ux-tile.big{min-height:15rem}
+.ux-pairs .ux-tile.big h3{font-size:1.7rem;max-width:22ch}
+.ux-pairs .ux-tile.big p{max-width:52ch}
+.ux-pairs .ux-tile:not(.big) h3{font-size:1.25rem}
+.ux-pairs .ux-tile .ux-num{font-size:.85rem;font-weight:800;letter-spacing:.1em;color:var(--bd)}
+@media(max-width:860px){.ux-prow,.ux-prow.flip{grid-template-columns:1fr}.ux-pairs .ux-tile,.ux-pairs .ux-tile.big{min-height:0}.ux-pairs .ux-tile.big h3{font-size:1.45rem}}
+body .ux-pairs .ux-tile,body .ux-pairs .ux-tile.big{grid-column:auto}
+
+/* v140: clients text starts top-left, level with the top of the stickers */
+body .ux .cs{align-items:start}
+body .ux .cs-copy{padding-top:.4rem}
+@media(max-width:860px){body .ux .cs-copy{padding-top:0}}
+
+/* v141: no big empty band above the clients content: it starts near the top, and the stickers use the full column */
+body .ux .cs-sec{align-items:flex-start;padding-top:calc(var(--sh,44px) + 2rem)!important;padding-bottom:3rem!important}
+@media(min-width:861px){.cs-stage{width:min(100%,42rem)}}

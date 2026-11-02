@@ -10,7 +10,7 @@ import HeroStickers from "../../components/about/HeroStickers";
 import Story from "../../components/about/Story";
 import Founders from "../../components/about/Founders";
 import Beliefs from "../../components/about/Beliefs";
-import Location from "../../components/about/Location";
+import ClientStickers from "../../components/about/ClientStickers";
 import { pageMeta } from "../../lib/seo";
 import PageSchema from "../../components/ui/PageSchema";
 
@@ -33,7 +33,7 @@ export default function AboutUsPage() {
         <Story />
         <Founders />
         <Beliefs />
-        <Location />
+        <ClientStickers />
       </main>
       <PageSchema type="AboutPage" title={TITLE} description={DESC} path="/about/" />
       <SiteFooter />

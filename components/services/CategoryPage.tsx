@@ -8,13 +8,7 @@ import PageHero from "../ui/PageHero";
 import SectionHead from "../ui/SectionHead";
 import { SITE_SCRIPT } from "../../lib/site-script";
 import { CATS } from "../../lib/services";
-import CategoryGroup, { type CategoryLayout } from "./CategoryGroup";
-
-const LAYOUT: Record<string, CategoryLayout> = {
-  "business-operations": "journey",
-  "hr-payroll": "editorial",
-  "it-services": "bento",
-};
+import CategoryGroup from "./CategoryGroup";
 
 function lines(h: string): ReactNode[] {
   const parts = h.split(/(?<=[.?!])\s+/).filter(Boolean);
@@ -24,12 +18,11 @@ function lines(h: string): ReactNode[] {
 /** One category page (Business Operations, HR & Payroll, IT Services) from content/categories/<slug>.md. */
 export default function CategoryPage({ slug }: { slug: string }) {
   const c = CATS.find((x) => x.slug === slug)!;
-  const layout = LAYOUT[slug];
   return (
     <>
       <SiteHeader active="services" />
       <Breadcrumbs items={[{ label: "Services", href: "/services/" }, { label: c.title }]} />
-      <main className={"ux ly-" + layout}>
+      <main className="ux ly-pairs">
         <PageHero className="h-rings" eyebrow={c.title} lines={c.h ? lines(c.h) : [c.title]} sub={c.p} />
 
         <section className="ux-sec t0">
@@ -42,7 +35,7 @@ export default function CategoryPage({ slug }: { slug: string }) {
         </section>
 
         {c.groups.map((g, gi) => (
-          <CategoryGroup key={g.t} group={g} gi={gi} layout={layout} />
+          <CategoryGroup key={g.t} group={g} gi={gi} />
         ))}
 
       </main>

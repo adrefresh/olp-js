@@ -9,6 +9,7 @@ import { SITE_SCRIPT } from "../../lib/site-script";
 import HeroArt from "../../components/contact/HeroArt";
 import ContactForm from "../../components/contact/ContactForm";
 import TouchCard from "../../components/contact/TouchCard";
+import Location from "../../components/contact/Location";
 import NextSteps from "../../components/contact/NextSteps";
 import { pageMeta } from "../../lib/seo";
 import PageSchema from "../../components/ui/PageSchema";
@@ -38,6 +39,7 @@ export default function ContactUsPage() {
             </div>
           </div>
         </section>
+        <Location />
       </main>
       <PageSchema type="ContactPage" title={TITLE} description={DESC} path="/contact/" />
       <SiteFooter />

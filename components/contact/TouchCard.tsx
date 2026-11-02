@@ -1,19 +1,15 @@
-import IndiaMap from "./IndiaMap";
+import SocialLinks from "./SocialLinks";
 
-/** "Get in touch directly": contact details on the left, India map with the Hyderabad pin on the right. */
+/** "Get in touch directly": email and phone, then the social icons. */
 export default function TouchCard() {
   return (
     <div className="ux-card ux-touch">
-      <div className="ux-touch-txt">
-        <h3>Get in touch directly</h3>
-        <p>
-          <a href="mailto:hello@opslogic.team">hello@opslogic.team</a>
-          <br />
-          <a href="tel:+914035009631">+91 40 3500 9631</a>
-        </p>
-        <p>Hyderabad, India</p>
-      </div>
-      <IndiaMap />
+      <h3>Get in touch directly</h3>
+      <p className="ux-touch-lines">
+        <a href="mailto:hello@opslogic.team">hello@opslogic.team</a>
+        <a href="tel:+914035009631">+91 40 3500 9631</a>
+      </p>
+      <SocialLinks />
     </div>
   );
 }
