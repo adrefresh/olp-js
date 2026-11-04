@@ -65,7 +65,7 @@
 
 /* ---- component utilities ---- */
 @utility wrap {
-  width: min(1240px,88vw);
+  width: min(var(--wrap,1240px),88vw);
   margin: 0 auto;
   max-width: 1240px;
   padding: 0 6vw;
@@ -136,7 +136,7 @@
   }
 }
 @utility nav-shell {
-  width: min(1240px,92vw);
+  width: min(var(--wrap,1240px),92vw);
   margin: auto;
   display: flex;
   align-items: center;
@@ -2505,7 +2505,7 @@
 #services {background:linear-gradient(180deg,#f4f7fb 0%,#e8f4fd 100%);padding-top:7rem;padding-bottom:8rem}
 #services .services-head h2 {font-size:clamp(1.9rem,3.6vw,3.2rem);max-width:none}
 @media (min-width:768px){#services .services-head h2 {white-space:nowrap}}
-#services .gallery-track {display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;width:min(1240px,88vw);margin:2rem auto 0;padding:0;overflow:visible}
+#services .gallery-track {display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;width:min(var(--wrap,1240px),88vw);margin:2rem auto 0;padding:0;overflow:visible}
 #services .service-slide {position:relative!important;display:flex!important;flex-direction:column!important;justify-content:space-between!important;min-height:350px;width:auto!important;margin:0!important;padding:1.7rem!important;border:1px solid rgba(11,27,58,.11)!important;border-radius:28px!important;background:#fff!important;overflow:hidden;box-shadow:0 10px 0 rgba(11,27,58,.04);opacity:0;transform:translateY(35px) rotate(var(--card-rot,0deg));transition:opacity .7s var(--ease),transform .7s var(--ease),box-shadow .35s var(--ease),background .35s var(--ease)!important}
 #services .service-slide:nth-child(1) {--card-rot:-1.2deg;background:#e8f4fd!important}
 #services .service-slide.in {opacity:1;transform:translateY(0) rotate(var(--card-rot))}

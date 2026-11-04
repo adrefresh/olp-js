@@ -2,7 +2,7 @@
 .ux,.ux *{box-sizing:border-box}
 .ux{--n:#0b1b3a;--b:#1ea7f0;--bd:#0c7ec4;--o:#ff6b1a;--g:#e8edf3;--t1:#f4f8fc;--t2:#e8f4fd;--ln:rgba(11,27,58,.11);--mu:#46567a;--sp:6.5rem;--ez:cubic-bezier(.22,1,.36,1);font-family:"Plus Jakarta Sans",sans-serif;color:var(--n)}
 .ux a{text-decoration:none;color:inherit}
-.ux-wrap{width:min(1200px,90vw);margin:0 auto}
+.ux-wrap{width:min(var(--wrap,1200px),90vw);margin:0 auto}
 .ux .ux-sec{padding:var(--sp) 0!important;position:relative;overflow:visible}
 .ux .t0{background:#fff}.ux .t1{background:var(--t1)}.ux .t2{background:var(--t2)}.ux .tg{background:var(--g)}
 
@@ -526,7 +526,7 @@ main.ux{animation:uxPage .7s var(--ez) both}
 /* footer: light, merged with CTA */
 .ft{background:linear-gradient(180deg,#e6f3fd,#d9edfb)!important;color:var(--n)!important}
 .ft-glow.a{background:rgba(30,167,240,.2)}.ft-glow.b{background:rgba(255,107,26,.12)}
-.ft-cta{width:min(1200px,90vw);margin:0 auto;padding:5.5rem 0 3.4rem;display:grid;grid-template-columns:1.3fr 1fr;gap:2.4rem 4rem;align-items:end;border-bottom:1px solid rgba(11,27,58,.12)}
+.ft-cta{width:min(var(--wrap,1200px),90vw);margin:0 auto;padding:5.5rem 0 3.4rem;display:grid;grid-template-columns:1.3fr 1fr;gap:2.4rem 4rem;align-items:end;border-bottom:1px solid rgba(11,27,58,.12)}
 .ft-cta h2{margin:0;font-size:clamp(2.4rem,4.6vw,4.2rem);line-height:1.04;font-weight:800;letter-spacing:-.04em;color:#0b1b3a}
 .ft-cta h2 span{color:#ff6b1a}
 .ft-cta-r p{margin:0 0 1.5rem;font-size:1.1rem;line-height:1.65;color:#3e4d63;max-width:44ch}
@@ -549,7 +549,7 @@ main.ux{animation:uxPage .7s var(--ez) both}
 #services.ux{padding-top:7rem}
 #services .services-head{display:block;margin:0}
 #services .services-head h2{margin:1rem 0 0;max-width:none}
-#services .gallery-track{width:min(1200px,90vw)!important}
+#services .gallery-track{width:min(var(--wrap,1200px),90vw)!important}
 
 /* home: who we are facts */
 .ux-who .ux-split{grid-template-columns:1.25fr 1fr;align-items:center}
@@ -721,7 +721,7 @@ body:has(#heroSection) #services.ux{background:#fff5ec!important;border-top:1px 
 /* v38: inner-page heroes fit the first screen (100vh) */
 @media(min-width:901px){
 .ux-hero{min-height:100svh;display:flex;align-items:center;padding:8rem 0 3rem!important}
-.ux-hero>.ux-wrap{width:min(1200px,90vw)}
+.ux-hero>.ux-wrap{width:min(var(--wrap,1200px),90vw)}
 .ux-hero h1{font-size:clamp(2.2rem,min(5.2vw,8vh),4.8rem);max-width:19ch;margin-top:1rem}
 .ux-hero .ux-sub{margin-top:1.2rem;font-size:1.05rem;line-height:1.6}
 .ux-ty{min-height:0;gap:.8rem}.ux-tyc{min-height:5.4rem;padding:1rem 1.4rem}
@@ -1416,7 +1416,7 @@ body .fx{margin-top:-40px!important;position:relative;z-index:2}
 
 /* v136: the clients section fills the screen like the sections above it */
 body .ux .cs-sec{min-height:100svh;display:flex;align-items:center;padding-top:calc(var(--sp)*.5 + var(--sh,44px))!important;padding-bottom:calc(var(--sp)*.5)!important}
-body .ux .cs-sec>.ux-wrap{width:min(1200px,90vw)}
+body .ux .cs-sec>.ux-wrap{width:min(var(--wrap,1200px),90vw)}
 @media(min-width:861px){
   body .ux .cs-sec{padding-top:calc(var(--sh,44px) + 1.4rem)!important;padding-bottom:1.4rem!important}
   .cs{padding:clamp(1.2rem,3.4svh,3.2rem) clamp(1.8rem,4vw,3.4rem)}
@@ -1476,3 +1476,75 @@ body .ux .cs-copy{padding-top:.4rem}
 /* v141: no big empty band above the clients content: it starts near the top, and the stickers use the full column */
 body .ux .cs-sec{align-items:flex-start;padding-top:calc(var(--sh,44px) + 2rem)!important;padding-bottom:3rem!important}
 @media(min-width:861px){.cs-stage{width:min(100%,42rem)}}
+
+/* v142: card rows (a trio of small cards ends an odd group), clients background = hero pattern, contact tweaks, gap under category cards */
+.ux-prow.trio{grid-template-columns:repeat(3,1fr)}
+.ux-pairs .ux-prow.trio .ux-tile{min-height:13rem}
+@media(max-width:860px){.ux-prow.trio{grid-template-columns:1fr}}
+@media(min-width:861px) and (max-width:1000px){.ux-prow.trio{grid-template-columns:repeat(3,1fr)}.ux-pairs .ux-prow.trio .ux-tile{padding:1.5rem 1.4rem}}
+
+body .ux .cs-sec{background:linear-gradient(135deg,#f6faff 0%,#e6f3fd 52%,#d6ebfa 100%);isolation:isolate}
+body .ux .cs-sec::after{content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;background-image:radial-gradient(rgba(12,126,196,.2) 1.4px,transparent 1.7px);background-size:28px 28px;-webkit-mask-image:linear-gradient(110deg,transparent 45%,#000 100%);mask-image:linear-gradient(110deg,transparent 45%,#000 100%)}
+
+.ux-touch-lines a{font-weight:600}
+.ux-form select:required:invalid{color:#7a879c;font-weight:500}
+.ux-form select option{color:var(--n);font-weight:600}
+.ux-form select option[disabled]{color:#7a879c}
+
+body .ux.ly-pairs>.ux-sec:last-of-type{padding-bottom:calc(var(--sp) + 4.5rem)!important}
+
+/* v142: large screens (1920x1080 and up): wider content column and slightly larger type, everything in rem scales with it */
+@media(min-width:1700px){:root{--wrap:1440px}html{font-size:17px}}
+@media(min-width:2200px){:root{--wrap:1760px}html{font-size:20px}}
+@media(min-width:3000px){:root{--wrap:2200px}html{font-size:26px}}
+
+/* v142: tablets (641-860px): keep rows of two (and the trio) instead of one long column */
+@media(min-width:641px) and (max-width:860px){
+  .ux-prow{grid-template-columns:1.4fr 1fr}
+  .ux-prow.flip{grid-template-columns:1fr 1.4fr}
+  .ux-prow.solo{grid-template-columns:1fr}
+  .ux-prow.trio{grid-template-columns:repeat(3,1fr)}
+  .ux-pairs .ux-tile,.ux-pairs .ux-tile.big{min-height:13rem;padding:1.5rem 1.4rem}
+  .ux-pairs .ux-tile.big h3{font-size:1.35rem}
+}
+@media(min-width:641px) and (max-width:900px){.ux-fd-photo{max-width:28rem;margin-left:auto;margin-right:auto}}
+
+/* v143: more client stickers → taller stage */
+.cs-stage{aspect-ratio:1/1.25}
+@media(max-width:860px){.cs-stage{aspect-ratio:1/1.27}}
+
+/* v143: warm orange section background */
+body .ux .cs-sec{background:linear-gradient(135deg,#fff8f2 0%,#ffe9d8 52%,#ffd9bd 100%)}
+body .ux .cs-sec::after{background-image:radial-gradient(rgba(255,107,26,.28) 1.4px,transparent 1.7px)}
+
+/* v144: clients section = exactly one screen */
+body .ux .cs-sec{min-height:100svh}
+@media(min-width:861px){
+  body .ux .cs-sec{padding-top:calc(var(--sh,44px) + 1rem)!important;padding-bottom:1rem!important;align-items:center}
+  body .ux .cs{padding-top:0;padding-bottom:0}
+  .cs-stage{width:min(100%,42rem,calc((100svh - var(--sh,44px) - 8rem)/1.25))}
+}
+
+/* v145: stickers live in the right half (from 50vw), bigger */
+.cs-stage{aspect-ratio:1/1}
+@media(max-width:860px){.cs-stage{aspect-ratio:1/1.2}}
+@media(min-width:861px){
+  .cs-stage{justify-self:end;margin-right:calc((min(var(--wrap,1200px),90vw) - 100vw)/2 + 1.5rem);width:min(calc(50vw - 2.5rem),calc(100svh - var(--sh,44px) - 5rem))}
+}
+
+/* v146: equal breathing room above and below the sticker stage */
+@media(min-width:861px){
+  body .ux .cs-sec{padding-top:6rem!important;padding-bottom:6rem!important;align-items:center}
+  .cs-stage{width:min(calc(50vw - 2.5rem),calc(100svh - 12.5rem))}
+}
+
+/* v147: bigger stage starting right at 50vw, with room at the bottom */
+@media(min-width:861px){
+  body .ux .cs-sec{padding-top:6rem!important;padding-bottom:4rem!important}
+  .cs-stage{margin-right:calc((min(var(--wrap,1200px),90vw) - 100vw)/2 + .8rem);width:min(calc(50vw - 1.2rem),calc(100svh - 10rem))}
+}
+
+/* v148: width follows the screen (right half from 50vw); a short window just makes the section a bit taller */
+@media(min-width:861px){
+  .cs-stage{width:calc(50vw - 1.2rem)}
+}

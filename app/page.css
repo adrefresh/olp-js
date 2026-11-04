@@ -15,7 +15,7 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:"Plus Jakarta
 a{text-decoration:none;color:inherit}
 h1,h2,h3{font-family:"Plus Jakarta Sans";line-height:.96;letter-spacing:-.045em;margin:0}
 p{line-height:1.7}
-.wrap{width:min(1240px,88vw);margin:auto}
+.wrap{width:min(var(--wrap,1240px),88vw);margin:auto}
 section{position:relative;padding:8rem 0;overflow:hidden}
 .eyebrow{display:inline-flex;align-items:center;gap:.55rem;border:1px solid var(--line);border-radius:100px;padding:.55rem .9rem;font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;background:#fff}
 .eyebrow.orange{background:#ffece0;color:#b84300}
@@ -27,7 +27,7 @@ section{position:relative;padding:8rem 0;overflow:hidden}
 .reveal.in{opacity:1;transform:none}
 
 .site-nav{position:fixed;top:0;left:0;width:100%;z-index:50;padding:18px 0}
-.nav-shell{width:min(1240px,92vw);margin:auto;display:flex;align-items:center;justify-content:space-between;padding:.65rem .7rem .65rem 1rem;border:1px solid transparent;border-radius:100px;transition:.3s var(--ease)}
+.nav-shell{width:min(var(--wrap,1240px),92vw);margin:auto;display:flex;align-items:center;justify-content:space-between;padding:.65rem .7rem .65rem 1rem;border:1px solid transparent;border-radius:100px;transition:.3s var(--ease)}
 .site-nav.scrolled .nav-shell{background:#ffffffed;backdrop-filter:blur(18px);border-color:var(--line);box-shadow:0 12px 34px #00000012}
 .brand{display:flex;align-items:center;font:800 1.1rem ""Plus Jakarta Sans""}
 .mark{width:34px;height:34px;display:grid;place-items:center;background:var(--orange);border-radius:10px;margin-right:.55rem;transform:rotate(-7deg);font-size:.65rem}
@@ -205,7 +205,7 @@ section{position:relative;padding:8rem 0;overflow:hidden}
 
 #services .services-head h2{font-size:clamp(2.6rem,5vw,5rem);max-width:11ch}
 
-#services .gallery-track{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;width:min(1240px,88vw);margin:2rem auto 0;padding:0;overflow:visible}
+#services .gallery-track{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;width:min(var(--wrap,1240px),88vw);margin:2rem auto 0;padding:0;overflow:visible}
 
 #services .service-slide{position:relative!important;display:flex!important;flex-direction:column!important;justify-content:space-between!important;min-height:350px;width:auto!important;margin:0!important;padding:1.7rem!important;border:1px solid rgba(11,27,58,.11)!important;border-radius:28px!important;background:#fff!important;overflow:hidden;box-shadow:0 10px 0 rgba(11,27,58,.04);opacity:0;transform:translateY(35px) rotate(var(--card-rot,0deg));transition:opacity .7s var(--ease),transform .7s var(--ease),box-shadow .35s var(--ease),background .35s var(--ease)!important}
 
@@ -750,7 +750,7 @@ a.service-slide{color:inherit;text-decoration:none;cursor:auto}
 
 
 .site-nav{position:fixed;top:0;left:0;width:100%;z-index:50;padding:18px 0}
-.nav-shell{width:min(1240px,92vw);margin:auto;display:flex;align-items:center;justify-content:space-between;padding:.65rem .7rem .65rem 1rem;border:1px solid transparent;border-radius:100px;transition:.3s var(--ease)}
+.nav-shell{width:min(var(--wrap,1240px),92vw);margin:auto;display:flex;align-items:center;justify-content:space-between;padding:.65rem .7rem .65rem 1rem;border:1px solid transparent;border-radius:100px;transition:.3s var(--ease)}
 .site-nav.scrolled .nav-shell{background:#ffffffed;backdrop-filter:blur(18px);border-color:var(--line);box-shadow:0 12px 34px #00000012}
 .brand{display:flex;align-items:center;font:800 1.1rem ""Plus Jakarta Sans""}
 .mark{width:34px;height:34px;display:grid;place-items:center;background:var(--orange);border-radius:10px;margin-right:.55rem;transform:rotate(-7deg);font-size:.65rem}

@@ -2,7 +2,7 @@ import SectionHead from "../ui/SectionHead";
 
 export default function Story() {
   return (
-    <section className="ux-sec t0" id="story">
+    <section className="ux-sec t1" id="story">
       <div className="ux-wrap ux-split">
         <SectionHead eyebrow="Our story" title="Three founders. One team." />
         <div className="ux-two ux-r" style={{ ["--i" as string]: 1 }}>

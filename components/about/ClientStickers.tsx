@@ -5,13 +5,19 @@ type Stk = { id: string; name: string; src: string; shape: "card" | "round" | "w
 
 /* positions are % of the stage; r = resting tilt in degrees */
 const STICKERS: Stk[] = [
-  { id: "chemtrade", name: "Chemtrade", src: "/clients/chemtrade.png", shape: "strip", w: 46, x: 2, y: 3, r: -4, tape: true },
-  { id: "ambuja", name: "Ambuja Cement", src: "/clients/ambuja-cement.png", shape: "round", w: 30, x: 68, y: 0, r: 4 },
-  { id: "audience", name: "Audience Group", src: "/clients/audience-group.png", shape: "card", w: 27, x: 0, y: 27, r: -6 },
-  { id: "dfw", name: "DFW Consulting", src: "/clients/dfw.png", shape: "strip", w: 32, x: 30, y: 29, r: 3 },
-  { id: "vysoft", name: "Vysoft Solutions", src: "/clients/vysoft.png", shape: "strip", w: 32, x: 66, y: 38, r: 5 },
-  { id: "rise", name: "RiseIn Cloud", src: "/clients/riseincloud.png", shape: "card", w: 28, x: 0, y: 58, r: -4, peel: true },
-  { id: "orbit", name: "Orbit Flight Training Center", src: "/clients/orbit.png", shape: "wide", w: 36, x: 32, y: 60, r: -5 },
+  { id: "chemtrade", name: "Chemtrade", src: "/clients/chemtrade.png", shape: "strip", w: 31.5, x: 0.4, y: 0.7, r: -4, tape: true },
+  { id: "adani", name: "Adani", src: "/clients/adani.png", shape: "strip", w: 21.0, x: 38.5, y: 2.8, r: 3 },
+  { id: "ambuja", name: "Ambuja Cement", src: "/clients/ambuja-cement.png", shape: "round", w: 23.1, x: 65.5, y: -0.6, r: 4 },
+  { id: "pioneer", name: "Pioneer Aluminium Industries", src: "/clients/pioneer.svg", shape: "strip", w: 33.6, x: 0.2, y: 17.7, r: 3 },
+  { id: "tower", name: "Power utility client", src: "/clients/power-tower.png", shape: "card", w: 16.8, x: 42.2, y: 15.6, r: -5 },
+  { id: "vysoft", name: "Vysoft Solutions", src: "/clients/vysoft.png", shape: "strip", w: 24.2, x: 65.4, y: 25.8, r: 5 },
+  { id: "audience", name: "Audience Group", src: "/clients/audience-group.png", shape: "card", w: 21.0, x: 0.5, y: 37.5, r: -6 },
+  { id: "dfw", name: "DFW Consulting", src: "/clients/dfw.png", shape: "strip", w: 26.2, x: 29.4, y: 37.8, r: 3 },
+  { id: "pr", name: "PR Group", src: "/clients/pr-group.png", shape: "wide", w: 23.1, x: 66.5, y: 37.7, r: -4 },
+  { id: "purple", name: "Client logo", src: "/clients/purple-a.png", shape: "card", w: 18.9, x: 30.6, y: 53.5, r: 5 },
+  { id: "rise", name: "RiseIn Cloud", src: "/clients/riseincloud.png", shape: "card", w: 19.9, x: 0.6, y: 60.5, r: -4, peel: true },
+  { id: "orbit", name: "Orbit Flight Training Center", src: "/clients/orbit.png", shape: "wide", w: 29.4, x: 57.3, y: 58.6, r: -5 },
+  { id: "pennar", name: "Pennar Industries", src: "/clients/pennar.png", shape: "strip", w: 35.7, x: 0.1, y: 83.7, r: 3 },
 ];
 
 /** "Brands that bet on us": client logos as die-cut stickers on grid paper. Drag to toss them around, hover to wobble. */
@@ -154,7 +160,7 @@ export default function ClientStickers() {
                 </span>
               </div>
             ))}
-            <a className="cs-stk cta" href="/contact/" style={style(STICKERS.length, 26, 72, 70, 8)} draggable={false}>
+            <a className="cs-stk cta" href="/contact/" style={style(STICKERS.length, 20, 67, 77, 8)} draggable={false}>
               <span className="cs-in">Your logo next?</span>
             </a>
           </div>

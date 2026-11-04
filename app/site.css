@@ -106,7 +106,7 @@ body:has(.internal-hero:not(.themed)) .site-nav:not(.scrolled) .brand-logo-light
 .ft-marq-t span{display:flex;align-items:center;gap:2.6rem;padding-right:2.6rem;font-size:clamp(3rem,8vw,7rem);font-weight:800;letter-spacing:-.045em;line-height:1;white-space:nowrap;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.28)}
 .ft-marq-t span:nth-child(even){-webkit-text-stroke-color:rgba(127,208,251,.6)}
 .ft-marq-t span::after{content:"";width:1rem;height:1rem;border-radius:50%;background:#ff6b1a;flex:none}
-.ft-wrap{width:min(1200px,90vw);margin:0 auto;padding:4rem 0 2.6rem;display:grid;grid-template-columns:4fr 8fr;gap:3rem;align-items:start}
+.ft-wrap{width:min(var(--wrap,1200px),90vw);margin:0 auto;padding:4rem 0 2.6rem;display:grid;grid-template-columns:4fr 8fr;gap:3rem;align-items:start}
 .ft-brand img{display:block;height:46px;width:auto}
 .ft-brand p{margin:1.4rem 0 0;max-width:34ch;font-size:1.05rem;line-height:1.7;color:rgba(255,255,255,.7)}
 .ft-mail{display:inline-flex;align-items:center;gap:.7rem;margin-top:1.8rem;font-size:clamp(1.3rem,2.6vw,1.9rem);font-weight:800;letter-spacing:-.025em;color:#fff;position:relative;padding-bottom:.35rem;transition:color .3s}
@@ -121,7 +121,7 @@ body:has(.internal-hero:not(.themed)) .site-nav:not(.scrolled) .brand-logo-light
 .ft-col a:hover{color:#7fd0fb}
 .ft-col a::after{content:"";position:absolute;left:0;right:100%;bottom:-3px;height:1.5px;background:#ff6b1a;transition:right .35s cubic-bezier(.22,1,.36,1)}
 .ft-col a:hover::after{right:0}
-.ft-bottom{width:min(1200px,90vw);margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;padding:1.4rem 0 1.8rem;border-top:1px solid rgba(255,255,255,.14);font-size:.84rem;font-weight:500;color:rgba(255,255,255,.58)}
+.ft-bottom{width:min(var(--wrap,1200px),90vw);margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;padding:1.4rem 0 1.8rem;border-top:1px solid rgba(255,255,255,.14);font-size:.84rem;font-weight:500;color:rgba(255,255,255,.58)}
 .ft-bottom a{color:rgba(255,255,255,.8);font-weight:600;transition:color .25s}.ft-bottom a:hover{color:#7fd0fb}
 .ft-links{display:flex;align-items:center;gap:1.4rem}
 .ft-top{display:inline-flex;align-items:center;gap:.5rem;padding:.55rem 1rem;border-radius:99px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);transition:background .3s,transform .4s cubic-bezier(.22,1,.36,1)}
@@ -178,7 +178,7 @@ html body .site-nav .nav-drop .nav-mega .mega-intro a.mega-all,html body .site-n
 .fx{position:relative;overflow:hidden;background:#0b2545;color:#c3cedd;border-radius:clamp(24px,2.6vw,40px) clamp(24px,2.6vw,40px) 0 0;margin:0!important;padding:0!important}
 .fx a{text-decoration:none}
 .fx-glow{position:absolute;left:50%;top:-260px;width:900px;height:520px;margin-left:-450px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,173,239,.18),transparent);pointer-events:none}
-.fx-wrap{position:relative;width:min(1200px,90vw);margin:0 auto;padding-top:clamp(64px,7vw,112px)}
+.fx-wrap{position:relative;width:min(var(--wrap,1200px),90vw);margin:0 auto;padding-top:clamp(64px,7vw,112px)}
 .fx-top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:32px;padding-bottom:clamp(48px,6vw,88px)}
 .fx-big{margin:0 0 28px;color:#fff;font-size:clamp(2.4rem,7vw,6rem);line-height:1.02;font-weight:800;letter-spacing:-.06em}
 .fx-line{display:block}
