@@ -9,7 +9,7 @@ const STICKERS: Stk[] = [
   { id: "adani", name: "Adani", src: "/clients/adani.png", shape: "strip", w: 21.0, x: 38.5, y: 2.8, r: 3 },
   { id: "ambuja", name: "Ambuja Cement", src: "/clients/ambuja-cement.png", shape: "round", w: 23.1, x: 65.5, y: -0.6, r: 4 },
   { id: "pioneer", name: "Pioneer Aluminium Industries", src: "/clients/pioneer.svg", shape: "strip", w: 33.6, x: 0.2, y: 17.7, r: 3 },
-  { id: "tower", name: "Power utility client", src: "/clients/power-tower.png", shape: "card", w: 16.8, x: 42.2, y: 15.6, r: -5 },
+  { id: "om", name: "OM Hydropower", src: "/clients/om-hydropower.png", shape: "wide", w: 26.5, x: 37.8, y: 17, r: -4 },
   { id: "vysoft", name: "Vysoft Solutions", src: "/clients/vysoft.png", shape: "strip", w: 24.2, x: 65.4, y: 25.8, r: 5 },
   { id: "audience", name: "Audience Group", src: "/clients/audience-group.png", shape: "card", w: 21.0, x: 0.5, y: 37.5, r: -6 },
   { id: "dfw", name: "DFW Consulting", src: "/clients/dfw.png", shape: "strip", w: 26.2, x: 29.4, y: 37.8, r: 3 },
