@@ -14,7 +14,7 @@ const STICKERS: Stk[] = [
   { id: "audience", name: "Audience Group", src: "/clients/audience-group.png", shape: "card", w: 21.0, x: 0.5, y: 37.5, r: -6 },
   { id: "dfw", name: "DFW Consulting", src: "/clients/dfw.png", shape: "strip", w: 26.2, x: 29.4, y: 37.8, r: 3 },
   { id: "pr", name: "PR Group", src: "/clients/pr-group.png", shape: "card", w: 17.5, x: 70.5, y: 38.5, r: -4 },
-  { id: "purple", name: "Client logo", src: "/clients/purple-a.png", shape: "card", w: 18.9, x: 30.6, y: 53.5, r: 5 },
+  { id: "adrefresh", name: "AdRefresh", src: "/clients/adrefresh.svg", shape: "wide", w: 24.5, x: 30, y: 57, r: 4 },
   { id: "rise", name: "RiseIn Cloud", src: "/clients/riseincloud.png", shape: "card", w: 19.9, x: 0.6, y: 60.5, r: -4, peel: true },
   { id: "orbit", name: "Orbit Flight Training Center", src: "/clients/orbit.png", shape: "wide", w: 29.4, x: 57.3, y: 58.6, r: -5 },
   { id: "pennar", name: "Pennar Industries", src: "/clients/pennar.png", shape: "strip", w: 35.7, x: 0.1, y: 83.7, r: 3 },
