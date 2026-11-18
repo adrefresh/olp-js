@@ -50,9 +50,6 @@ export default function Founders() {
                 <FounderPhoto src={f.photo} alt={f.name + ", " + f.role} ini={f.ini} id={f.ini.toLowerCase()} />
               </div>
               <div className="ux-fd-body ux-r" style={{ ["--i" as string]: 1 }}>
-                <span className="ux-fd-n">
-                  0{i + 1} / 0{FOUNDERS.length}
-                </span>
                 <h3>{f.name}</h3>
                 <div className="ux-fd-chips">
                   <span>{f.role}</span>

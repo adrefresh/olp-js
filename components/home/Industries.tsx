@@ -6,7 +6,6 @@ export default function Industries() {
     <section className="ux-sec t0 ux-indsec" id="industries">
       <div className="ux-wrap ux-ind">
         <div className="ux-r">
-          <span className="ux-eyebrow">Industries</span>
           <h2>Industries we work with</h2>
           <p className="ux-lead">
             Our clients come from IT, manufacturing, automobile, power, hospitality and real estate. Their needs differ, but the basics are the same: set up properly, hire well, pay on time and keep the systems running.

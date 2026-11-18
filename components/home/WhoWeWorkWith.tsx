@@ -55,7 +55,6 @@ export default function WhoWeWorkWith() {
           <div className="ux-ww-spot">
             {ITEMS.map((it, i) => (
               <div className={"ux-ww-pane" + (i === cur ? " on" : "")} key={it.word} aria-hidden={i !== cur}>
-                <span className="ux-ww-k">0{i + 1} / 03 · {it.word}</span>
                 <h3>{it.lead}</h3>
                 <p>{it.text}</p>
                 <span className="ux-ww-tags">

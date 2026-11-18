@@ -12,7 +12,6 @@ export default function ServiceSteps({ steps, style }: { steps: { t: string; d: 
       <section className="ux-sec t3">
         <div className="ux-wrap ux-split ux-stepsplit">
           <div className="ux-stick ux-r">
-            <span className="ux-eyebrow">How it works</span>
             <h2>{n} steps, start to finish.</h2>
             <p className="ux-lead">From the first call to done, with one team and one point of contact.</p>
             <div className="ux-btns">

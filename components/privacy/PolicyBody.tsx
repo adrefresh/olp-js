@@ -59,7 +59,6 @@ export default function PolicyBody() {
     <section className="ux-sec t1 pp-sec">
       <div className="ux-wrap pp-grid">
         <aside className="pp-toc ux-r" aria-label="On this page">
-          <span className="ux-eyebrow">On this page</span>
           <ol>
             {TOC.map((t, i) => (
               <li key={t}><a href={"#" + slug(t)}><span>{String(i + 1).padStart(2, "0")}</span>{t}</a></li>

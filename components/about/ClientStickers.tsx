@@ -130,7 +130,6 @@ export default function ClientStickers() {
       <div className="ux-wrap">
         <div className="cs" ref={root}>
           <div className="cs-copy">
-            <span className="ux-eyebrow">Trusted by</span>
             <h2 id="cs-t">
               Clients
               <br />

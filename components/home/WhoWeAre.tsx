@@ -4,7 +4,6 @@ export default function WhoWeAre() {
       <section className="ux-sec t1 ux-who" id="who-we-are">
         <div className="ux-wrap ux-split">
           <div className="ux-r">
-            <span className="ux-eyebrow">Who we are</span>
             <h2>
               Three founders. <em>One team</em> you can call.
             </h2>
@@ -35,4 +34,3 @@ export default function WhoWeAre() {
     </div>
   );
 }
-// efe

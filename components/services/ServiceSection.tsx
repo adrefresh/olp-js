@@ -16,7 +16,6 @@ export default function ServiceSection({ sec, idx, list }: { sec: { t: string; b
       <section className={"ux-sec " + tone}>
         <div className="ux-wrap">
           <div className="ux-aud ux-r">
-            <span className="ux-eyebrow">{sec.t}</span>
             {nodes.map((n, i) => (n.k === "p" ? <Html as="p" html={n.html} key={i} /> : null))}
           </div>
         </div>

@@ -44,7 +44,6 @@ export default function ServiceHero({ service: s, cat }: { service: Service; cat
                 <li key={i}>{x}</li>
               ))}
             </ul>
-            <p>{s.steps.length} steps from first call to done.</p>
           </aside>
         ) : null}
       </div>

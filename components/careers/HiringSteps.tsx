@@ -11,7 +11,6 @@ export default function HiringSteps() {
     <section className="ux-sec t3" id="how-we-hire">
       <div className="ux-wrap ux-split">
         <div className="ux-stick ux-r">
-          <span className="ux-eyebrow">How we hire</span>
           <h2>Five steps, no surprises.</h2>
           <p className="ux-lead">Every step is short, and you always hear back, whatever the outcome.</p>
           <div className="ux-btns">

@@ -4,7 +4,6 @@ export default function CoreServices() {
       <div className="ux-wrap">
         <div className="services-head reveal">
           <div>
-            <span className="ux-eyebrow">Core services</span>
             <h2>Drag through what we run for you.</h2>
           </div>
         </div>
