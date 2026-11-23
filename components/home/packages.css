@@ -1,0 +1,60 @@
+/* v153: Bundles section – designed closed cards */
+body .ux-pk .no{display:none}
+body .ux-pk{--tint:#eaf5fd;--ac:#1ea7f0}
+body .ux-pk:nth-child(2){--tint:#fff1e8;--ac:#ff6b1a}
+body .ux-pk:nth-child(3){--tint:#eaf5fd;--ac:#1ea7f0}
+body .ux-pk:nth-child(4){--tint:#fff1e8;--ac:#ff6b1a}
+body .ux-pk{background:linear-gradient(160deg,#fff 0%,var(--tint) 100%);isolation:isolate}
+body .ux-pk::before{content:"";position:absolute;right:-3.2rem;bottom:-3.2rem;width:11rem;height:11rem;border-radius:50%;background:var(--ac);opacity:.1;z-index:-1;transition:transform .8s var(--ez),opacity .6s}
+body .ux-pk::after{content:"";position:absolute;inset:0;background-image:radial-gradient(var(--ac) 1.2px,transparent 1.5px);background-size:18px 18px;opacity:.16;-webkit-mask-image:linear-gradient(200deg,#000,transparent 55%);mask-image:linear-gradient(200deg,#000,transparent 55%);z-index:-1;pointer-events:none}
+body .ux-pk .ic{display:grid;place-items:center;width:3.3rem;height:3.3rem;border-radius:16px;background:#fff;color:var(--ac);box-shadow:0 8px 20px -10px rgba(11,27,58,.35);transition:transform .6s var(--ez),background .5s,color .5s}
+body .ux-pk .ic svg{width:1.6rem;height:1.6rem}
+body .ux-pk .tg{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1.3rem;opacity:0;transform:translateY(10px);transition:opacity .5s,transform .7s var(--ez)}
+body .ux-pk .tg b{font-size:.78rem;font-weight:600;padding:.35rem .75rem;border-radius:999px;background:#fff;color:var(--n);border:1px solid rgba(30,167,240,.25)}
+body .ux-pk:hover,body .ux-pk:focus,body .ux-pks:not(:hover):not(:focus-within) .ux-pk:first-child{background:linear-gradient(160deg,#dff1fc 0%,#bfe3f8 100%)}
+body .ux-pk:hover::before,body .ux-pk:focus::before,body .ux-pks:not(:hover):not(:focus-within) .ux-pk:first-child::before{transform:scale(1.5);opacity:.16}
+body .ux-pk:hover .ic,body .ux-pk:focus .ic,body .ux-pks:not(:hover):not(:focus-within) .ux-pk:first-child .ic{background:var(--o);color:#fff;transform:scale(1.08) rotate(-4deg)}
+body .ux-pk:hover .tg,body .ux-pk:focus .tg,body .ux-pks:not(:hover):not(:focus-within) .ux-pk:first-child .tg{opacity:1;transform:none;transition-delay:.3s}
+body .ux-pk .dot{display:none}
+@media(max-width:1100px){body .ux-pk,body .ux-pk:hover,body .ux-pk:focus{background:linear-gradient(160deg,#fff 0%,var(--tint) 100%)}body .ux-pk .tg{opacity:1;transform:none}}
+/* v153b tune */
+body .ux-pk .tg{background:none!important;padding:0!important;width:auto}
+body .ux-pk .ic{width:4rem;height:4rem;border-radius:20px;background:var(--ac);color:#fff;box-shadow:0 14px 26px -12px var(--ac)}
+body .ux-pk .ic svg{width:1.9rem;height:1.9rem}
+body .ux-pk .tg{opacity:1;transform:none;margin-top:1.4rem}
+body .ux-pk:not(:hover):not(:focus) .tg b{font-size:.74rem}
+body .ux-pks:hover .ux-pk:first-child:not(:hover),body .ux-pks:focus-within .ux-pk:first-child:not(:focus){background:linear-gradient(160deg,#fff 0%,var(--tint) 100%)}
+body .ux-pk .ic{flex:none;width:4rem;height:4rem;min-width:4rem}
+
+/* v153c: Bundles – blueprint-style cards (different from Services cards) */
+body .ux-pk,body .ux-pk:nth-child(n){--ac:#1ea7f0;--tint:#fff}
+body .ux-pk:nth-child(even){--ac:#ff6b1a}
+body .ux-pk{background-color:#fff!important;background-image:linear-gradient(rgba(11,27,58,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(11,27,58,.045) 1px,transparent 1px)!important;background-size:34px 34px!important;border:1.5px solid #dbe6f1;box-shadow:none}
+body .ux-pk::before,body .ux-pk::after{display:none!important}
+body .ux-pk .ic{position:absolute;right:.8rem;bottom:.8rem;width:5.8rem;height:5.8rem;min-width:0;border-radius:0;background:none;box-shadow:none;color:var(--ac);opacity:.16;transform:none!important;transition:opacity .6s,transform .8s var(--ez)}
+body .ux-pk .ic svg{width:100%;height:100%;stroke-width:.7}
+body .ux-pk .dot{display:grid!important;place-items:center;position:absolute;right:1.5rem;top:1.5rem;width:2.8rem;height:2.8rem;border-radius:50%;background:#fff!important;border:1.5px solid var(--ac);transform:none!important;transition:background .5s,border-color .5s,transform .6s var(--ez)}
+body .ux-pk .dot::before,body .ux-pk .dot::after{content:"";position:absolute;background:var(--ac);border-radius:2px;transition:transform .5s var(--ez),background .5s}
+body .ux-pk .dot::before{width:1rem;height:2px}
+body .ux-pk .dot::after{width:2px;height:1rem}
+body .ux-pk h3{position:relative;padding-bottom:1.1rem}
+body .ux-pk h3::after{content:"";position:absolute;left:0;bottom:0;width:2rem;height:4px;border-radius:4px;background:var(--ac);transition:width .7s var(--ez)}
+body .ux-pk .tg{position:relative;z-index:1}
+body .ux-pk:hover,body .ux-pk:focus,body .ux-pks:not(:hover):not(:focus-within) .ux-pk:first-child{background-color:#d3ecfb!important;border-color:#a7d6f3}
+body .ux-pk:hover .ic,body .ux-pk:focus .ic,body .ux-pks:not(:hover):not(:focus-within) .ux-pk:first-child .ic{opacity:.3;transform:rotate(-6deg) scale(1.08)!important;background:none;color:var(--ac)}
+body .ux-pk:hover .dot,body .ux-pk:focus .dot,body .ux-pks:not(:hover):not(:focus-within) .ux-pk:first-child .dot{background:var(--o)!important;border-color:var(--o)}
+body .ux-pk:hover .dot::before,body .ux-pk:focus .dot::before,body .ux-pks:not(:hover):not(:focus-within) .ux-pk:first-child .dot::before{background:#fff}
+body .ux-pk:hover .dot::after,body .ux-pk:focus .dot::after,body .ux-pks:not(:hover):not(:focus-within) .ux-pk:first-child .dot::after{background:#fff;transform:scaleY(0)}
+body .ux-pk:hover h3::after,body .ux-pk:focus h3::after,body .ux-pks:not(:hover):not(:focus-within) .ux-pk:first-child h3::after{width:4.5rem;background:var(--o)}
+body .ux-pks:hover .ux-pk:first-child:not(:hover),body .ux-pks:focus-within .ux-pk:first-child:not(:focus){background-color:#fff!important}
+body .ux-pk:hover .ic,body .ux-pk:focus .ic{color:var(--ac)}
+body .ux-pk .tg b{border-color:rgba(11,27,58,.12)}
+@media(max-width:1100px){body .ux-pk,body .ux-pk:hover,body .ux-pk:focus{background-color:#fff!important;border-color:#dbe6f1}body .ux-pk .tg{opacity:1;transform:none}}
+body .ux-pk h3{padding-right:3.4rem}
+@media(min-width:1101px){
+  body .ux-pk .tg{opacity:0;transform:translateY(10px)}
+  body .ux-pk:hover .tg,body .ux-pk:focus .tg,body .ux-pks:not(:hover):not(:focus-within) .ux-pk:first-child .tg{opacity:1;transform:none}
+  body .ux-pks:hover .ux-pk:first-child:not(:hover) .tg,body .ux-pks:focus-within .ux-pk:first-child:not(:focus) .tg{opacity:0}
+}
+
+body .ux-pk .ic svg{width:100%;height:100%;max-width:100%}
