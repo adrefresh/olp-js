@@ -38,6 +38,3 @@ export default function Home() {
     </>
   );
 }
-// console.debug(object);
-// check/check
-// check
