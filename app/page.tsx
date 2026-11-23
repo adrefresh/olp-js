@@ -38,9 +38,3 @@ export default function Home() {
     </>
   );
 }
-
-
-// r
-// fgv// console.debug(object);
-// check/check
-// check
