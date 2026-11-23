@@ -15,7 +15,7 @@ import { pageMeta } from "../../lib/seo";
 import PageSchema from "../../components/ui/PageSchema";
 
 const TITLE = "About Us — OpsLogic";
-const DESC = "We're a team of operations, HR, finance and technology people who like making complicated business problems quietly disappear.";
+const DESC = "We're a team of operations, HR, finance and technology people who like making complicated business problems quietly disappear smoothly.";
 export const metadata: Metadata = pageMeta(TITLE, DESC, "/about/", ["about OpsLogic", "business operations company Hyderabad", "OpsLogic founders", "outsourcing partner India"]);
 
 export default function AboutUsPage() {
