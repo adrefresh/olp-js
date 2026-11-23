@@ -14,7 +14,7 @@ import { pageMeta } from "../../lib/seo";
 import PageSchema from "../../components/ui/PageSchema";
 
 const TITLE = "Careers — OpsLogic";
-const DESC = "We're always interested in people who are careful, curious and good with details.";
+const DESC = "We're always interested in people who are careful, curious, versatile and good with details.";
 export const metadata: Metadata = pageMeta(TITLE, DESC, "/careers/", ["careers at OpsLogic", "jobs in Hyderabad", "operations jobs", "HR and payroll jobs Hyderabad"]);
 
 export default function CareersPage() {
